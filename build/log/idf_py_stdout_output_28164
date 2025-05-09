@@ -1,0 +1,3073 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May  8 2025 19:18:56[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (40) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (67) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b104h ( 45316) map[0m
+[0;32mI (106) esp_image: segment 1: paddr=0001b12c vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (106) esp_image: segment 2: paddr=0001b150 vaddr=3ffb0000 size=02314h (  8980) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=0001d46c vaddr=40080000 size=02bach ( 11180) load[0m
+[0;32mI (122) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=16948h ( 92488) map[0m
+[0;32mI (156) esp_image: segment 5: paddr=00036970 vaddr=40082bac size=0a5c0h ( 42432) load[0m
+[0;32mI (179) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (180) boot: Disabling RNG early entropy source...[0m
+[0;32mI (190) cpu_start: Multicore app[0m
+[0;32mI (198) cpu_start: Pro cpu start user code[0m
+[0;32mI (198) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (198) app_init: Application information:[0m
+[0;32mI (198) app_init: Project name:     MPU[0m
+[0;32mI (202) app_init: App version:      1[0m
+[0;32mI (205) app_init: Compile time:     May  8 2025 19:18:12[0m
+[0;32mI (210) app_init: ELF file SHA256:  6cd2cf94b...[0m
+[0;32mI (215) app_init: ESP-IDF:          v5.4.1-dirty[0m
+[0;32mI (219) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (223) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (227) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (231) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (237) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (242) heap_init: At 3FFB2BF8 len 0002D408 (181 KiB): DRAM[0m
+[0;32mI (247) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (253) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (258) heap_init: At 4008D16C len 00012E94 (75 KiB): IRAM[0m
+[0;32mI (265) spi_flash: detected chip: generic[0m
+[0;32mI (267) spi_flash: flash io: dio[0m
+[0;33mW (270) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (283) main_task: Started on CPU0[0m
+[0;32mI (293) main_task: Calling app_main()[0m
+[0;32mI (293) MPU: Initializing I2C Master....[0m
+[0;32mI (293) MPU: Initializing I2C Slave(MPU)....[0m
+[0;32mI (393) MPU: Waking up I2C Slave(MPU)....[0m
+Raw 14-byte dump: 02 64 00 00 00 00 0E 20 00 00 00 B5 FF 7B 
+Accel Gs: X=0.037 | Y=0.000 | Z=0.000
+Raw 14-byte dump: 02 28 00 00 00 00 0E 20 00 00 00 DD FF 6D 
+Accel Gs: X=0.034 | Y=0.000 | Z=0.000
+Raw 14-byte dump: 02 5C 00 00 00 00 0E 10 00 00 00 B1 FF 7B 
+Accel Gs: X=0.037 | Y=0.000 | Z=0.000
+Raw 14-byte dump: 2A CC 00 00 00 00 0E 10 00 00 EF 2B 01 EF 
+Accel Gs: X=0.669 | Y=0.000 | Z=0.000
+Raw 14-byte dump: 01 90 00 00 00 00 0E 50 00 00 02 C9 FD 3F 
+Accel Gs: X=0.024 | Y=0.000 | Z=0.000
+Raw 14-byte dump: 01 84 00 00 00 00 0E 40 00 00 FE CF FF 90 
+Accel Gs: X=0.024 | Y=0.000 | Z=0.000
+Raw 14-byte dump: FE 0C 00 00 00 00 0E 80 00 00 01 30 FF C0 
+Accel Gs: X=-0.031 | Y=0.000 | Z=0.000
+Raw 14-byte dump: 00 60 00 00 00 00 0E 50 00 00 C8 7E 05 7D 
+Accel Gs: X=0.006 | Y=0.000 | Z=0.000
+[1;31mE (8493) i2c.master: I2C hardware NACK detected[0m
+[1;31mE (8493) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (8493) i2c.master: s_i2c_synchronous_transaction(924): I2C transaction failed[0m
+[1;31mE (8493) i2c.master: i2c_master_transmit_receive(1220): I2C transaction failed[0m
+[1;31mE (8503) MPU: Burst read failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (9503) i2c.master: I2C hardware NACK detected[0m
+[1;31mE (9503) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (9503) i2c.master: s_i2c_synchronous_transaction(924): I2C transaction failed[0m
+[1;31mE (9503) i2c.master: i2c_master_transmit_receive(1220): I2C transaction failed[0m
+[1;31mE (9513) MPU: Burst read failed: ESP_ERR_INVALID_STATE[0m
+Raw 14-byte dump: FD FC 00 5C 45 08 0E 00 FE 6D FB 2A 02 1A 
+Accel Gs: X=-0.031 | Y=0.006 | Z=1.079
+Raw 14-byte dump: FF 20 FF B4 44 0C 0E 00 FF A4 02 B0 FF A7 
+Accel Gs: X=-0.014 | Y=-0.005 | Z=1.063
+Raw 14-byte dump: FD 64 0A 10 4A 44 0E 50 04 DC 14 E5 FF 81 
+Accel Gs: X=-0.041 | Y=0.157 | Z=1.160
+Raw 14-byte dump: FC DC FE A0 45 18 0E 40 00 05 FB 49 04 C4 
+Accel Gs: X=-0.049 | Y=-0.021 | Z=1.080
+Raw 14-byte dump: FE D0 FF 14 43 D4 0E 10 FF E5 00 DD FF 98 
+Accel Gs: X=-0.019 | Y=-0.014 | Z=1.060
+Raw 14-byte dump: FE E8 FE C4 43 C4 0E 10 FF E0 00 E7 FF 72 
+Accel Gs: X=-0.017 | Y=-0.019 | Z=1.059
+Raw 14-byte dump: FF 14 FE E8 43 78 0E 20 FF F4 00 DB FF 6B 
+Accel Gs: X=-0.014 | Y=-0.017 | Z=1.054
+Raw 14-byte dump: FF 18 FE A0 44 10 0E 70 FF ED 00 F5 FF 73 
+Accel Gs: X=-0.014 | Y=-0.021 | Z=1.063
+Raw 14-byte dump: FE C8 FE D4 43 A8 0E 90 FF E6 00 C9 FF 89 
+Accel Gs: X=-0.019 | Y=-0.018 | Z=1.057
+Raw 14-byte dump: FE DC FE AC 43 38 0E 20 FF D7 00 E3 FF 82 
+Accel Gs: X=-0.018 | Y=-0.021 | Z=1.050
+Raw 14-byte dump: FE E8 FE E0 43 94 0E 70 FF F6 00 E4 FF 93 
+Accel Gs: X=-0.017 | Y=-0.018 | Z=1.056
+Raw 14-byte dump: FF 28 FE AC 43 5C 0E 10 FF DE 00 D4 FF A2 
+Accel Gs: X=-0.013 | Y=-0.021 | Z=1.052
+Raw 14-byte dump: FE EC FE E4 43 A0 0E 40 FF CC 00 D8 FF 8B 
+Accel Gs: X=-0.017 | Y=-0.017 | Z=1.057
+Raw 14-byte dump: FF 10 FE CC 43 C8 0E 10 FF F5 00 DA FF 7F 
+Accel Gs: X=-0.015 | Y=-0.019 | Z=1.059
+Raw 14-byte dump: FE E8 FE B4 43 88 0E 10 FF CB 00 D8 FF 97 
+Accel Gs: X=-0.017 | Y=-0.020 | Z=1.055
+Raw 14-byte dump: FE F8 FE CC 43 B4 0E 40 FF E3 00 E5 FF 86 
+Accel Gs: X=-0.016 | Y=-0.019 | Z=1.058
+Raw 14-byte dump: FE F0 FE B8 43 70 0E 70 FF DA 00 D0 FF 9E 
+Accel Gs: X=-0.017 | Y=-0.020 | Z=1.054
+Raw 14-byte dump: FE E8 FE D4 43 84 0E 70 FF E9 00 E5 FF A6 
+Accel Gs: X=-0.017 | Y=-0.018 | Z=1.055
+Raw 14-byte dump: FF 48 FE F0 43 E0 0D E0 FF DB 00 F6 FF 95 
+Accel Gs: X=-0.011 | Y=-0.017 | Z=1.061
+Raw 14-byte dump: FF 54 FE 7C 43 B4 0E 10 FF EF 00 E9 FF 85 
+Accel Gs: X=-0.010 | Y=-0.024 | Z=1.058
+Raw 14-byte dump: FF 30 FE 9C 43 9C 0E 70 FF E2 00 E2 FF 7B 
+Accel Gs: X=-0.013 | Y=-0.022 | Z=1.056
+Raw 14-byte dump: FE E0 FE B4 43 B0 0E 10 FF D5 00 DE FF 8C 
+Accel Gs: X=-0.018 | Y=-0.020 | Z=1.058
+Raw 14-byte dump: FE B8 FE C4 43 DC 0E 10 FF E8 00 DE FF 74 
+Accel Gs: X=-0.020 | Y=-0.019 | Z=1.060
+Raw 14-byte dump: FF 20 FE E0 43 D4 0E 50 FF F3 00 FE FF 9B 
+Accel Gs: X=-0.014 | Y=-0.018 | Z=1.060
+Raw 14-byte dump: FF 14 FE CC 43 64 0E 10 FF D8 00 D5 FF AD 
+Accel Gs: X=-0.014 | Y=-0.019 | Z=1.053
+Raw 14-byte dump: FE F4 FE B8 43 4C 0E 10 FF CF 00 E9 FF 8E 
+Accel Gs: X=-0.016 | Y=-0.020 | Z=1.052
+Raw 14-byte dump: FF 24 FE B0 43 B0 0E 50 FF E3 01 0F FF 7F 
+Accel Gs: X=-0.013 | Y=-0.021 | Z=1.058
+Raw 14-byte dump: FE F4 FE B8 43 BC 0D E0 FF E8 00 DA FF B1 
+Accel Gs: X=-0.016 | Y=-0.020 | Z=1.058
+Raw 14-byte dump: FE F0 FE C8 43 54 0E 40 FF EE 00 E2 FF A2 
+Accel Gs: X=-0.017 | Y=-0.019 | Z=1.052
+Raw 14-byte dump: FF 14 FE BC 43 BC 0E 20 FF F0 00 CF FF 8E 
+Accel Gs: X=-0.014 | Y=-0.020 | Z=1.058
+Raw 14-byte dump: FE F4 FE B8 43 6C 0E 00 FF EE 00 C4 FF 9E 
+Accel Gs: X=-0.016 | Y=-0.020 | Z=1.053
+Raw 14-byte dump: FF 18 FF 00 43 BC 0E 40 FF E2 00 DF FF A3 
+Accel Gs: X=-0.014 | Y=-0.016 | Z=1.058
+Raw 14-byte dump: FF 34 FE DC 43 F4 0E 20 FF E5 00 DA FF 9A 
+Accel Gs: X=-0.012 | Y=-0.018 | Z=1.062
+Raw 14-byte dump: FF 1C FE C0 43 94 0E 10 FF F9 00 EF FF 75 
+Accel Gs: X=-0.014 | Y=-0.020 | Z=1.056
+Raw 14-byte dump: FE FC FE C4 43 D8 0E 40 FF DB 00 EF FF 98 
+Accel Gs: X=-0.016 | Y=-0.019 | Z=1.060
+Raw 14-byte dump: FF 14 FE CC 44 18 0E 10 FF DE 00 C6 FF 9E 
+Accel Gs: X=-0.014 | Y=-0.019 | Z=1.064
+Raw 14-byte dump: FF 50 FE C0 43 5C 0E 10 FF CF 00 D7 FF 95 
+Accel Gs: X=-0.011 | Y=-0.020 | Z=1.052
+Raw 14-byte dump: FF 54 FE F0 43 98 0E 00 FF FF 00 C5 FF 9A 
+Accel Gs: X=-0.010 | Y=-0.017 | Z=1.056
+Raw 14-byte dump: FF 4C FE A8 43 98 0E 10 FF FD 00 EB FF 80 
+Accel Gs: X=-0.011 | Y=-0.021 | Z=1.056
+Raw 14-byte dump: FE E0 FE EC 43 64 0E 20 FF F0 00 ED FF 7E 
+Accel Gs: X=-0.018 | Y=-0.017 | Z=1.053
+Raw 14-byte dump: FF 30 FE C0 43 D0 0E 10 FF D1 00 FB FF 9A 
+Accel Gs: X=-0.013 | Y=-0.020 | Z=1.060
+Raw 14-byte dump: FF 48 FE EC 43 A8 0E 10 FF E8 00 E2 FF 9B 
+Accel Gs: X=-0.011 | Y=-0.017 | Z=1.057
+Raw 14-byte dump: FF 34 FE AC 43 48 0E 40 FF D7 00 E0 FF 9F 
+Accel Gs: X=-0.012 | Y=-0.021 | Z=1.051
+Raw 14-byte dump: FE F0 FE 94 43 AC 0E 40 FF D8 00 E7 FF 9A 
+Accel Gs: X=-0.017 | Y=-0.022 | Z=1.057
+Raw 14-byte dump: FF 54 FE D4 43 C0 0E 20 FF F3 00 C9 FF AE 
+Accel Gs: X=-0.010 | Y=-0.018 | Z=1.059
+Raw 14-byte dump: FF 1C FE E0 43 74 0E 20 00 0E 00 CF FF 8D 
+Accel Gs: X=-0.014 | Y=-0.018 | Z=1.054
+Raw 14-byte dump: FF 44 FF 04 43 98 0E 20 FF E5 00 DE FF 83 
+Accel Gs: X=-0.011 | Y=-0.015 | Z=1.056
+Raw 14-byte dump: FF 08 FE D8 43 98 0D E0 FF F6 00 D2 FF 9A 
+Accel Gs: X=-0.015 | Y=-0.018 | Z=1.056
+Raw 14-byte dump: FF 60 FE C4 43 C8 0E 10 00 04 00 F8 FF A0 
+Accel Gs: X=-0.010 | Y=-0.019 | Z=1.059
+Raw 14-byte dump: FF 20 FE E0 44 04 0E 40 FF D4 00 F2 FF A5 
+Accel Gs: X=-0.014 | Y=-0.018 | Z=1.063
+Raw 14-byte dump: FF 38 FE 98 43 90 0E 10 FF DC 00 E2 FF 8A 
+Accel Gs: X=-0.012 | Y=-0.022 | Z=1.056
+Raw 14-byte dump: FF 38 FE DC 43 DC 0E 10 FF D7 00 D7 FF A0 
+Accel Gs: X=-0.012 | Y=-0.018 | Z=1.060
+Raw 14-byte dump: FF 24 FE F0 43 A4 0E 50 FF E6 00 FA FF 8E 
+Accel Gs: X=-0.013 | Y=-0.017 | Z=1.057
+Raw 14-byte dump: FF 20 FE 8C 44 1C 0E 50 FF E5 00 DC FF BA 
+Accel Gs: X=-0.014 | Y=-0.023 | Z=1.064
+Raw 14-byte dump: FF 0C FE 8C 43 DC 0E 00 FF EA 00 BE FF 9D 
+Accel Gs: X=-0.015 | Y=-0.023 | Z=1.060
+Raw 14-byte dump: FF 20 FE D0 43 70 0E 10 FF F5 00 D6 FF A0 
+Accel Gs: X=-0.014 | Y=-0.019 | Z=1.054
+Raw 14-byte dump: FF 60 FE AC 43 44 0E 10 FF D1 00 D8 FF 87 
+Accel Gs: X=-0.010 | Y=-0.021 | Z=1.051
+Raw 14-byte dump: FF 2C FE A4 44 14 0E 20 00 06 00 D6 FF A5 
+Accel Gs: X=-0.013 | Y=-0.021 | Z=1.064
+Raw 14-byte dump: FF 50 FE E4 42 EC 0E 10 FF FC 00 FE FF AE 
+Accel Gs: X=-0.011 | Y=-0.017 | Z=1.046
+Raw 14-byte dump: FF 5C FE EC 43 A4 0E 20 FF E3 00 DE FF 86 
+Accel Gs: X=-0.010 | Y=-0.017 | Z=1.057
+Raw 14-byte dump: FF D0 FF 0C 43 B8 0E 40 FF D2 00 E3 FF 73 
+Accel Gs: X=-0.003 | Y=-0.015 | Z=1.058
+Raw 14-byte dump: FF 20 FE CC 44 0C 0E 20 FF F0 00 D4 FF 8D 
+Accel Gs: X=-0.014 | Y=-0.019 | Z=1.063
+Raw 14-byte dump: FF 3C FE E0 43 DC 0E 20 FF F4 00 BD FF 96 
+Accel Gs: X=-0.012 | Y=-0.018 | Z=1.060
+Raw 14-byte dump: FF 08 FE FC 43 C0 0E 10 FF E2 00 DD FF 89 
+Accel Gs: X=-0.015 | Y=-0.016 | Z=1.059
+Raw 14-byte dump: FF 0C FE D8 43 B8 0E 00 FF F1 00 EF FF 9D 
+Accel Gs: X=-0.015 | Y=-0.018 | Z=1.058
+Raw 14-byte dump: FF 38 FE C4 43 AC 0E 20 FF EC 00 ED FF 89 
+Accel Gs: X=-0.012 | Y=-0.019 | Z=1.057
+Raw 14-byte dump: FE DC FE E0 43 B0 0E 00 FF D6 00 D0 FF 83 
+Accel Gs: X=-0.018 | Y=-0.018 | Z=1.058
+Raw 14-byte dump: FF 00 FE E4 43 28 0E 50 FF EF 00 E2 FF 93 
+Accel Gs: X=-0.016 | Y=-0.017 | Z=1.049
+Raw 14-byte dump: FF 2C FE 98 43 84 0E 10 FF E9 00 CD FF 8B 
+Accel Gs: X=-0.013 | Y=-0.022 | Z=1.055
+Raw 14-byte dump: FF 1C FE F4 43 B8 0E 50 FF E4 00 C4 FF 97 
+Accel Gs: X=-0.014 | Y=-0.016 | Z=1.058
+Raw 14-byte dump: FE E4 FE B8 43 98 0E 70 FF F2 00 C4 FF AF 
+Accel Gs: X=-0.017 | Y=-0.020 | Z=1.056
+Raw 14-byte dump: FF 4C FE B0 43 74 0E 00 00 0B 00 EE FF A5 
+Accel Gs: X=-0.011 | Y=-0.021 | Z=1.054
+Raw 14-byte dump: FF 20 FE 9C 43 D8 0E 40 FF F9 00 DF FF A8 
+Accel Gs: X=-0.014 | Y=-0.022 | Z=1.060
+Raw 14-byte dump: FF 0C FE C0 43 B4 0E 20 FF ED 00 DF FF 94 
+Accel Gs: X=-0.015 | Y=-0.020 | Z=1.058
+Raw 14-byte dump: FF 2C FE C0 43 60 0E 20 FF EB 00 EC FF 95 
+Accel Gs: X=-0.013 | Y=-0.020 | Z=1.053
+Raw 14-byte dump: FF 2C FE AC 43 DC 0E 20 FF EA 00 D1 FF A5 
+Accel Gs: X=-0.013 | Y=-0.021 | Z=1.060
+Raw 14-byte dump: FF 28 FE D4 43 CC 0E 10 FF D8 00 DB FF 80 
+Accel Gs: X=-0.013 | Y=-0.018 | Z=1.059
+Raw 14-byte dump: FF 18 FE D4 43 60 0E 40 FF DD 00 C7 FF 76 
+Accel Gs: X=-0.014 | Y=-0.018 | Z=1.053
+Raw 14-byte dump: FF 48 FE E4 43 B4 0E 10 FF F6 00 DD FF 8E 
+Accel Gs: X=-0.011 | Y=-0.017 | Z=1.058
+Raw 14-byte dump: FF 78 FE AC 43 C4 0E 10 FF DC 00 E3 FF 7A 
+Accel Gs: X=-0.008 | Y=-0.021 | Z=1.059
+Raw 14-byte dump: FF 1C FE E4 43 84 0E 10 FF D5 00 CD FF 9B 
+Accel Gs: X=-0.014 | Y=-0.017 | Z=1.055
+Raw 14-byte dump: FF 3C FE B8 43 CC 0E 70 FF D5 00 E1 FF A6 
+Accel Gs: X=-0.012 | Y=-0.020 | Z=1.059
+Raw 14-byte dump: FF 40 FE C8 43 90 0E 40 FF DE 00 DB FF 77 
+Accel Gs: X=-0.012 | Y=-0.019 | Z=1.056
+Raw 14-byte dump: FE F0 FF 24 43 B4 0E 10 FF EE 00 D5 FF 93 
+Accel Gs: X=-0.017 | Y=-0.013 | Z=1.058
+Raw 14-byte dump: FF 3C FE B4 43 A0 0E 20 FF DD 00 DD FF 86 
+Accel Gs: X=-0.012 | Y=-0.020 | Z=1.057
+Raw 14-byte dump: FE F8 FE AC 43 64 0E 10 FF D9 00 E4 FF 82 
+Accel Gs: X=-0.016 | Y=-0.021 | Z=1.053
+Raw 14-byte dump: FF 34 FE C0 43 7C 0E 40 FF E5 00 E3 FF 9A 
+Accel Gs: X=-0.012 | Y=-0.020 | Z=1.054
+Raw 14-byte dump: FF 34 FE C4 43 58 0E 70 FF F3 00 EE FF AA 
+Accel Gs: X=-0.012 | Y=-0.019 | Z=1.052
+Raw 14-byte dump: FF 2C FE 84 43 7C 0E 10 FF E2 00 F7 FF 90 
+Accel Gs: X=-0.013 | Y=-0.023 | Z=1.054
+Raw 14-byte dump: FE FC FE B0 43 A0 0E 70 FF E8 00 C0 FF A3 
+Accel Gs: X=-0.016 | Y=-0.021 | Z=1.057
+Raw 14-byte dump: FF 38 FE CC 43 E0 0E 40 FF D3 00 DE FF A3 
+Accel Gs: X=-0.012 | Y=-0.019 | Z=1.061
+Raw 14-byte dump: FF 1C FE A8 43 E8 0E 10 FF EE 00 E1 FF 94 
+Accel Gs: X=-0.014 | Y=-0.021 | Z=1.061
+Raw 14-byte dump: FF 04 FE 78 43 B8 0E 40 FF E4 00 EB FF 8B 
+Accel Gs: X=-0.015 | Y=-0.024 | Z=1.058
+Raw 14-byte dump: FF 1C FE E0 43 B4 0E 00 FF CD 00 F0 FF 8E 
+Accel Gs: X=-0.014 | Y=-0.018 | Z=1.058
+Raw 14-byte dump: FF 30 FE E8 43 BC 0E 40 FF EE 00 F2 FF 88 
+Accel Gs: X=-0.013 | Y=-0.017 | Z=1.058
+Raw 14-byte dump: FF 14 FE B4 43 38 0E 40 FF F5 00 D7 FF 84 
+Accel Gs: X=-0.014 | Y=-0.020 | Z=1.050
+Raw 14-byte dump: FF 08 FE B8 43 9C 0E 10 FF C1 00 D4 FF 88 
+Accel Gs: X=-0.015 | Y=-0.020 | Z=1.056
+Raw 14-byte dump: FF 14 FE F0 44 18 0E 00 FF E9 00 D6 FF 80 
+Accel Gs: X=-0.014 | Y=-0.017 | Z=1.064
+Raw 14-byte dump: FF 10 FE 8C 43 D4 0E 20 FF F4 00 E4 FF AC 
+Accel Gs: X=-0.015 | Y=-0.023 | Z=1.060
+Raw 14-byte dump: FF 34 FE CC 43 70 0E 50 FF E4 00 F2 FF A2 
+Accel Gs: X=-0.012 | Y=-0.019 | Z=1.054
+Raw 14-byte dump: FF 28 FE 98 43 90 0E 00 FF DE 00 D2 FF 81 
+Accel Gs: X=-0.013 | Y=-0.022 | Z=1.056
+Raw 14-byte dump: FF 1C FE F0 43 B8 0E 20 FF F2 00 BD FF 83 
+Accel Gs: X=-0.014 | Y=-0.017 | Z=1.058
+Raw 14-byte dump: FE F4 FE B4 43 FC 0E 10 FF D4 00 DF FF A1 
+Accel Gs: X=-0.016 | Y=-0.020 | Z=1.062
+Raw 14-byte dump: FE E8 FE E0 43 B4 0E 10 FF DC 00 D4 FF A9 
+Accel Gs: X=-0.017 | Y=-0.018 | Z=1.058
+Raw 14-byte dump: FF 48 FE BC 43 B4 0E 80 FF F6 00 E5 FF B3 
+Accel Gs: X=-0.011 | Y=-0.020 | Z=1.058
+Raw 14-byte dump: FF 08 FE E8 43 88 0E 50 FF DC 00 D4 FF B5 
+Accel Gs: X=-0.015 | Y=-0.017 | Z=1.055
+Raw 14-byte dump: FF 3C FE 94 44 34 0E 20 FF EF 00 D8 FF A3 
+Accel Gs: X=-0.012 | Y=-0.022 | Z=1.066
+Raw 14-byte dump: FF 18 FE B4 42 F4 0E 20 FF ED 00 F4 FF 8E 
+Accel Gs: X=-0.014 | Y=-0.020 | Z=1.046
+Raw 14-byte dump: FF 30 FE CC 43 7C 0E 40 FF F2 00 EB FF 89 
+Accel Gs: X=-0.013 | Y=-0.019 | Z=1.054
+Raw 14-byte dump: FF 18 FE B4 43 88 0E 40 FF F1 00 E4 FF AB 
+Accel Gs: X=-0.014 | Y=-0.020 | Z=1.055
+Raw 14-byte dump: FF 5C FE E8 43 B4 0E 50 FF F7 00 E3 FF 9B 
+Accel Gs: X=-0.010 | Y=-0.017 | Z=1.058
+Raw 14-byte dump: FF 24 FE B4 43 8C 0E 10 FF EB 00 B8 FF 7B 
+Accel Gs: X=-0.013 | Y=-0.020 | Z=1.055
+Raw 14-byte dump: FF 50 FE C0 43 10 0E 10 FF D8 00 E2 FF 92 
+Accel Gs: X=-0.011 | Y=-0.020 | Z=1.048
+Raw 14-byte dump: FF 24 FE E0 43 94 0E 50 FF E0 00 D3 FF 81 
+Accel Gs: X=-0.013 | Y=-0.018 | Z=1.056
+Raw 14-byte dump: FF 38 FE B0 43 D4 0E 40 FF E2 00 DF FF 9D 
+Accel Gs: X=-0.012 | Y=-0.021 | Z=1.060
+Raw 14-byte dump: FF 68 FE E8 43 50 0E 70 FF D3 00 EB FF 90 
+Accel Gs: X=-0.009 | Y=-0.017 | Z=1.052
+Raw 14-byte dump: FF 0C FE C4 43 F4 0E 10 FF D7 00 E7 FF 67 
+Accel Gs: X=-0.015 | Y=-0.019 | Z=1.062
+Raw 14-byte dump: FF 20 FE C0 43 9C 0E 40 FF FD 00 E9 FF 7F 
+Accel Gs: X=-0.014 | Y=-0.020 | Z=1.056
+Raw 14-byte dump: FF 38 FE D0 43 88 0E 10 00 02 00 CB FF 90 
+Accel Gs: X=-0.012 | Y=-0.019 | Z=1.055
+Raw 14-byte dump: FF 08 FE C4 43 C0 0E 50 FF E0 00 D1 FF 89 
+Accel Gs: X=-0.015 | Y=-0.019 | Z=1.059
+Raw 14-byte dump: FF 0C FE AC 43 B4 0E 10 00 06 00 E3 FF 97 
+Accel Gs: X=-0.015 | Y=-0.021 | Z=1.058
+Raw 14-byte dump: FF 20 FF 00 43 64 0E 70 FF E3 00 D8 FF 92 
+Accel Gs: X=-0.014 | Y=-0.016 | Z=1.053
+Raw 14-byte dump: FF 14 FE F8 43 C0 0E 70 FF FD 00 DD FF 86 
+Accel Gs: X=-0.014 | Y=-0.016 | Z=1.059
+Raw 14-byte dump: FF 14 FE A4 43 B4 0E 40 FF E3 00 CC FF 86 
+Accel Gs: X=-0.014 | Y=-0.021 | Z=1.058
+Raw 14-byte dump: FF 38 FE D8 43 74 0E 20 FF E2 00 CA FF 8D 
+Accel Gs: X=-0.012 | Y=-0.018 | Z=1.054
+Raw 14-byte dump: FF 2C FE C4 43 9C 0E 50 00 0C 00 BE FF 8B 
+Accel Gs: X=-0.013 | Y=-0.019 | Z=1.056
+Raw 14-byte dump: FF 30 FE A4 43 58 0E 10 FF F3 00 F4 FF 93 
+Accel Gs: X=-0.013 | Y=-0.021 | Z=1.052
+Raw 14-byte dump: FF 4C FE E8 43 F8 0E 50 FF CF 00 DA FF 95 
+Accel Gs: X=-0.011 | Y=-0.017 | Z=1.062
+Raw 14-byte dump: FF 3C FE C0 43 D8 0E 50 FF DB 00 CC FF 87 
+Accel Gs: X=-0.012 | Y=-0.020 | Z=1.060
+Raw 14-byte dump: FF 74 FE A4 43 58 0E 40 FF D7 00 E3 FF 8B 
+Accel Gs: X=-0.009 | Y=-0.021 | Z=1.052
+Raw 14-byte dump: FF 0C FE 88 43 48 0E 90 FF E1 00 CE FF A2 
+Accel Gs: X=-0.015 | Y=-0.023 | Z=1.051
+Raw 14-byte dump: FF 60 FE AC 43 70 0E 40 FF DF 00 DC FF 83 
+Accel Gs: X=-0.010 | Y=-0.021 | Z=1.054
+Raw 14-byte dump: FF 4C FE C0 43 F4 0E 40 FF FB 00 CE FF B0 
+Accel Gs: X=-0.011 | Y=-0.020 | Z=1.062
+Raw 14-byte dump: FF 40 FE D8 43 E0 0E 10 FF DE 00 E2 FF 8B 
+Accel Gs: X=-0.012 | Y=-0.018 | Z=1.061
+Raw 14-byte dump: FE F4 FE B8 44 38 0E 70 FF D6 00 E5 FF 7F 
+Accel Gs: X=-0.016 | Y=-0.020 | Z=1.066
+Raw 14-byte dump: FF 24 FE F0 43 44 0E 40 FF E4 00 C5 FF 8E 
+Accel Gs: X=-0.013 | Y=-0.017 | Z=1.051
+Raw 14-byte dump: FF 50 FE C0 42 F8 0E 80 FF DC 00 C4 FF 8F 
+Accel Gs: X=-0.011 | Y=-0.020 | Z=1.046
+Raw 14-byte dump: FF 0C FE B0 43 48 0E 80 FF DA 00 C9 FF 8E 
+Accel Gs: X=-0.015 | Y=-0.021 | Z=1.051
+Raw 14-byte dump: FF 48 FE D4 43 3C 0E 40 FF FD 00 E5 FF 9D 
+Accel Gs: X=-0.011 | Y=-0.018 | Z=1.051
+Raw 14-byte dump: FF 54 FE B0 43 BC 0E 20 FF F1 00 EA FF 79 
+Accel Gs: X=-0.010 | Y=-0.021 | Z=1.058
+Raw 14-byte dump: FF 68 FE B8 43 78 0E 50 FF DE 00 E3 FF 9D 
+Accel Gs: X=-0.009 | Y=-0.020 | Z=1.054
+Raw 14-byte dump: FF 5C FE CC 43 84 0E 70 00 03 00 C4 FF A7 
+Accel Gs: X=-0.010 | Y=-0.019 | Z=1.055
+Raw 14-byte dump: FF 04 FE 80 43 54 0E 70 FF EB 00 D7 FF 71 
+Accel Gs: X=-0.015 | Y=-0.023 | Z=1.052
+Raw 14-byte dump: FE D0 FE 80 43 F8 0E 20 FF DC 00 DF FF A8 
+Accel Gs: X=-0.019 | Y=-0.023 | Z=1.062
+Raw 14-byte dump: FF 00 FE B8 43 64 0E 90 FF DE 00 EF FF 65 
+Accel Gs: X=-0.016 | Y=-0.020 | Z=1.053
+Raw 14-byte dump: FF 18 FE F4 44 00 0E 40 00 0A 00 F8 FF 8A 
+Accel Gs: X=-0.014 | Y=-0.016 | Z=1.062
+Raw 14-byte dump: FF 1C FE A8 44 18 0E 40 FF F2 00 B3 FF A2 
+Accel Gs: X=-0.014 | Y=-0.021 | Z=1.064
+Raw 14-byte dump: FF 18 FE 90 43 BC 0E 40 FF D1 00 EA FF 8B 
+Accel Gs: X=-0.014 | Y=-0.022 | Z=1.058
+Raw 14-byte dump: FF 24 FE E4 43 7C 0E 40 FF D5 00 BE FF 9E 
+Accel Gs: X=-0.013 | Y=-0.017 | Z=1.054
+Raw 14-byte dump: FF 30 FE D0 43 F4 0E 40 FF E4 00 C5 FF 97 
+Accel Gs: X=-0.013 | Y=-0.019 | Z=1.062
+Raw 14-byte dump: FF 3C FE AC 43 AC 0E 90 FF DF 00 E6 FF 88 
+Accel Gs: X=-0.012 | Y=-0.021 | Z=1.057
+Raw 14-byte dump: FF 20 FE C0 43 B8 0E 50 FF E1 00 C5 FF AC 
+Accel Gs: X=-0.014 | Y=-0.020 | Z=1.058
+Raw 14-byte dump: FE F4 FF 08 43 9C 0E 50 FF F8 00 F1 FF 93 
+Accel Gs: X=-0.016 | Y=-0.015 | Z=1.056
+Raw 14-byte dump: FF 04 FE C0 43 BC 0E 00 FF CB 00 E4 FF 97 
+Accel Gs: X=-0.015 | Y=-0.020 | Z=1.058
+Raw 14-byte dump: FF 4C FE EC 43 E4 0E 50 FF EC 00 D3 FF 8A 
+Accel Gs: X=-0.011 | Y=-0.017 | Z=1.061
+Raw 14-byte dump: FF 34 FE CC 43 F4 0E 20 FF D0 00 E8 FF 7F 
+Accel Gs: X=-0.012 | Y=-0.019 | Z=1.062
+Raw 14-byte dump: FF 34 FE C0 43 D0 0E 80 FF D3 01 02 FF 84 
+Accel Gs: X=-0.012 | Y=-0.020 | Z=1.060
+Raw 14-byte dump: FF 4C FE B8 43 A8 0E 50 FF F7 00 DE FF 8E 
+Accel Gs: X=-0.011 | Y=-0.020 | Z=1.057
+Raw 14-byte dump: FF 28 FE C4 43 60 0E 20 FF FA 00 AC FF 90 
+Accel Gs: X=-0.013 | Y=-0.019 | Z=1.053
+Raw 14-byte dump: FE DC FF 8C 43 CC 0E 70 00 4D 01 41 FF B2 
+Accel Gs: X=-0.018 | Y=-0.007 | Z=1.059
+Raw 14-byte dump: 00 90 22 48 38 C8 0E 50 03 BB 01 58 00 4A 
+Accel Gs: X=0.009 | Y=0.536 | Z=0.887
+Raw 14-byte dump: 00 38 22 18 39 68 0E 40 FE 41 00 E1 FE FC 
+Accel Gs: X=0.003 | Y=0.533 | Z=0.897
+Raw 14-byte dump: FE A0 25 6C 37 60 0E 50 17 77 F5 85 F6 B8 
+Accel Gs: X=-0.021 | Y=0.585 | Z=0.865
+Raw 14-byte dump: 0A 8C 3D B8 0E 08 0E 90 01 27 FD 44 F7 2A 
+Accel Gs: X=0.165 | Y=0.964 | Z=0.219
+Raw 14-byte dump: 01 48 3F C4 07 04 0E 50 0B 8F 03 E5 01 86 
+Accel Gs: X=0.020 | Y=0.996 | Z=0.110
+Raw 14-byte dump: FD D4 3F 40 FB 94 0E 70 02 DF 00 EF FE CC 
+Accel Gs: X=-0.034 | Y=0.988 | Z=-0.069
+Raw 14-byte dump: 05 74 39 C8 0A 90 0E 40 B2 F4 12 FB 1D CF 
+Accel Gs: X=0.085 | Y=0.903 | Z=0.165
+Raw 14-byte dump: FE 94 FF 10 43 58 0E 50 FF E6 00 D7 FF 8D 
+Accel Gs: X=-0.022 | Y=-0.015 | Z=1.052
+Raw 14-byte dump: FD 64 00 28 44 5C 0E 90 18 67 12 6B 11 F2 
+Accel Gs: X=-0.041 | Y=0.002 | Z=1.068
+Raw 14-byte dump: FE 60 00 34 44 08 0E 00 00 79 00 F5 03 FA 
+Accel Gs: X=-0.025 | Y=0.003 | Z=1.063
+Raw 14-byte dump: FD 1C 00 A8 43 60 0E 50 FF BD 00 E7 FF EA 
+Accel Gs: X=-0.045 | Y=0.010 | Z=1.053
+Raw 14-byte dump: FD 7C 00 70 43 8C 0E 90 FF F9 00 F5 FF B4 
+Accel Gs: X=-0.039 | Y=0.007 | Z=1.055
+Raw 14-byte dump: FD 8C 00 58 43 B0 0E 90 FF 89 00 B6 00 0B 
+Accel Gs: X=-0.038 | Y=0.005 | Z=1.058
+Raw 14-byte dump: FD 5C 00 48 43 C8 0E 90 FF FA 00 E5 FF 99 
+Accel Gs: X=-0.041 | Y=0.004 | Z=1.059
+Raw 14-byte dump: FD B8 00 54 42 E0 0E 90 FF CB 00 B8 FF 8A 
+Accel Gs: X=-0.036 | Y=0.005 | Z=1.045
+Raw 14-byte dump: FD 60 00 28 43 68 0E 70 00 20 01 20 FF B5 
+Accel Gs: X=-0.041 | Y=0.002 | Z=1.053
+Raw 14-byte dump: FD 94 00 04 43 8C 0E 40 FF D7 00 D3 FF A3 
+Accel Gs: X=-0.038 | Y=0.000 | Z=1.055
+Raw 14-byte dump: FD CC FF F8 42 F4 0E 50 FF F1 00 FD FF 9B 
+Accel Gs: X=-0.034 | Y=-0.000 | Z=1.046
+Raw 14-byte dump: FD C4 00 50 43 B0 0E 40 FF D3 00 E9 FF 99 
+Accel Gs: X=-0.035 | Y=0.005 | Z=1.058
+Raw 14-byte dump: FD 98 00 34 43 3C 0E 50 FF D8 00 DD FF 96 
+Accel Gs: X=-0.038 | Y=0.003 | Z=1.051
+Raw 14-byte dump: FD 98 FF E8 43 8C 0E 20 FF EE 00 DB FF 96 
+Accel Gs: X=-0.038 | Y=-0.001 | Z=1.055
+Raw 14-byte dump: FD 88 00 34 43 98 0E 40 FF EE 00 DA FF 8D 
+Accel Gs: X=-0.039 | Y=0.003 | Z=1.056
+Raw 14-byte dump: FD A8 00 30 43 54 0E 50 FF CF 00 DD FF 8C 
+Accel Gs: X=-0.037 | Y=0.003 | Z=1.052
+Raw 14-byte dump: FD 98 00 2C 43 00 0E 10 FF E4 00 FE FF 98 
+Accel Gs: X=-0.038 | Y=0.003 | Z=1.047
+Raw 14-byte dump: FD EC 00 00 43 98 0E 70 FF BC 00 C3 FF 9E 
+Accel Gs: X=-0.032 | Y=0.000 | Z=1.056
+Raw 14-byte dump: FD 8C 00 14 43 B0 0E 80 FF EC 00 D1 FF 73 
+Accel Gs: X=-0.038 | Y=0.001 | Z=1.058
+Raw 14-byte dump: FD A0 FF A8 43 38 0E 50 FF CF 00 F5 FF 94 
+Accel Gs: X=-0.037 | Y=-0.005 | Z=1.050
+Raw 14-byte dump: FD D4 FF FC 43 EC 0E 80 00 16 01 03 FF 9D 
+Accel Gs: X=-0.034 | Y=-0.000 | Z=1.061
+Raw 14-byte dump: FD 90 FF C4 43 E8 0E 10 FF DA 00 D6 FF B1 
+Accel Gs: X=-0.038 | Y=-0.004 | Z=1.061
+Raw 14-byte dump: FD C4 FF EC 43 38 0E 50 FF CE 00 C7 FF 7D 
+Accel Gs: X=-0.035 | Y=-0.001 | Z=1.050
+Raw 14-byte dump: FD C8 00 18 43 A0 0E 70 00 01 00 D9 FF 92 
+Accel Gs: X=-0.035 | Y=0.001 | Z=1.057
+Raw 14-byte dump: FE 18 FF D4 44 14 0E 90 FF F5 00 D6 FF 96 
+Accel Gs: X=-0.030 | Y=-0.003 | Z=1.064
+Raw 14-byte dump: FD DC 00 40 43 F0 0E 20 FF EB 00 D4 FF 95 
+Accel Gs: X=-0.033 | Y=0.004 | Z=1.062
+Raw 14-byte dump: FD DC FF F4 43 D8 0E 40 FF F5 00 F9 FF 89 
+Accel Gs: X=-0.033 | Y=-0.001 | Z=1.060
+Raw 14-byte dump: FD C8 00 44 43 8C 0E 10 00 07 00 FC FF 7B 
+Accel Gs: X=-0.035 | Y=0.004 | Z=1.055
+Raw 14-byte dump: FD B4 FF CC 43 B0 0E 80 FF D5 00 EB FF 8D 
+Accel Gs: X=-0.036 | Y=-0.003 | Z=1.058
+Raw 14-byte dump: FD F8 FF F8 43 80 0E 20 FF ED 00 E8 FF 94 
+Accel Gs: X=-0.032 | Y=-0.000 | Z=1.055
+Raw 14-byte dump: FD A8 FF B8 43 9C 0E 70 FF F0 00 C3 FF 77 
+Accel Gs: X=-0.037 | Y=-0.004 | Z=1.056
+Raw 14-byte dump: FD F4 FF F4 43 DC 0E 40 FF ED 00 D3 FF 82 
+Accel Gs: X=-0.032 | Y=-0.001 | Z=1.060
+Raw 14-byte dump: FD DC 00 04 43 5C 0E 10 FF E4 00 E1 FF 89 
+Accel Gs: X=-0.033 | Y=0.000 | Z=1.052
+Raw 14-byte dump: FD 7C 00 6C 43 60 0E 20 FF F6 00 CF FF 86 
+Accel Gs: X=-0.039 | Y=0.007 | Z=1.053
+Raw 14-byte dump: FD FC FF FC 43 94 0E 10 FF F6 00 CA FF 95 
+Accel Gs: X=-0.031 | Y=-0.000 | Z=1.056
+Raw 14-byte dump: FD A0 FF FC 43 90 0E 50 FF E9 01 05 FF 79 
+Accel Gs: X=-0.037 | Y=-0.000 | Z=1.056
+Raw 14-byte dump: FE 24 FF 98 43 F8 0D E0 FF EB 00 FF FF 87 
+Accel Gs: X=-0.029 | Y=-0.006 | Z=1.062
+Raw 14-byte dump: FD FC FF C0 43 C8 0E 00 FF FF 00 CB FF 99 
+Accel Gs: X=-0.031 | Y=-0.004 | Z=1.059
+Raw 14-byte dump: FD C4 FF 7C 43 D0 0E 10 FF F0 00 D1 FF 78 
+Accel Gs: X=-0.035 | Y=-0.008 | Z=1.060
+Raw 14-byte dump: FE 08 FF 9C 43 DC 0E 20 FF BD 00 F7 FF 9F 
+Accel Gs: X=-0.031 | Y=-0.006 | Z=1.060
+Raw 14-byte dump: FE 30 FF F8 43 68 0E 50 FF E1 00 E8 FF 77 
+Accel Gs: X=-0.028 | Y=-0.000 | Z=1.053
+Raw 14-byte dump: FE 1C FF DC 43 50 0E 20 FF F0 01 06 FF 93 
+Accel Gs: X=-0.030 | Y=-0.002 | Z=1.052
+Raw 14-byte dump: FD D8 FF CC 43 90 0E 50 FF E6 00 F1 FF A0 
+Accel Gs: X=-0.034 | Y=-0.003 | Z=1.056
+Raw 14-byte dump: FD D4 FF C8 43 A0 0E 40 00 00 00 CB FF B2 
+Accel Gs: X=-0.034 | Y=-0.003 | Z=1.057
+Raw 14-byte dump: FD D0 FF A0 43 CC 0E 20 FF CD 00 CE FF A2 
+Accel Gs: X=-0.034 | Y=-0.006 | Z=1.059
+Raw 14-byte dump: FE 08 FF A8 43 98 0E 10 FF C9 00 E3 FF A6 
+Accel Gs: X=-0.031 | Y=-0.005 | Z=1.056
+Raw 14-byte dump: FD BC FF DC 43 C0 0D E0 00 01 01 09 FF 88 
+Accel Gs: X=-0.035 | Y=-0.002 | Z=1.059
+Raw 14-byte dump: FD FC FF E8 43 C0 0E 20 FF E3 00 F6 FF 96 
+Accel Gs: X=-0.031 | Y=-0.001 | Z=1.059
+Raw 14-byte dump: FD E8 FF A0 43 CC 0E 10 00 0E 00 D0 FF 9D 
+Accel Gs: X=-0.033 | Y=-0.006 | Z=1.059
+Raw 14-byte dump: FD F0 00 10 43 B8 0E 20 FF E3 00 B6 FF 9A 
+Accel Gs: X=-0.032 | Y=0.001 | Z=1.058
+Raw 14-byte dump: FE 18 FF AC 43 8C 0D E0 FF F1 00 F0 FF AD 
+Accel Gs: X=-0.030 | Y=-0.005 | Z=1.055
+Raw 14-byte dump: FD C8 FF 88 43 D0 0E 20 FF DE 00 E2 FF 99 
+Accel Gs: X=-0.035 | Y=-0.007 | Z=1.060
+Raw 14-byte dump: FD DC FF A8 43 64 0D D0 FF D7 00 E9 FF 87 
+Accel Gs: X=-0.033 | Y=-0.005 | Z=1.053
+Raw 14-byte dump: FE 14 FF F8 43 3C 0E 00 FF D4 00 E2 FF 8A 
+Accel Gs: X=-0.030 | Y=-0.000 | Z=1.051
+Raw 14-byte dump: FD FC 00 08 43 58 0E 50 FF ED 00 D3 FF 93 
+Accel Gs: X=-0.031 | Y=0.000 | Z=1.052
+Raw 14-byte dump: FD CC FF B4 43 7C 0E 40 00 0A 00 E6 FF 81 
+Accel Gs: X=-0.034 | Y=-0.005 | Z=1.054
+Raw 14-byte dump: FD D0 FF EC 43 4C 0E 10 FF DF 00 DD FF 99 
+Accel Gs: X=-0.034 | Y=-0.001 | Z=1.052
+Raw 14-byte dump: FD E8 FF 9C 43 30 0E 90 FF DA 00 FE FF 77 
+Accel Gs: X=-0.033 | Y=-0.006 | Z=1.050
+Raw 14-byte dump: FD EC FF D4 43 8C 0E 20 FF F1 00 E4 FF 9A 
+Accel Gs: X=-0.032 | Y=-0.003 | Z=1.055
+Raw 14-byte dump: FE 08 FF EC 43 64 0E 70 FF EC 00 DA FF 8B 
+Accel Gs: X=-0.031 | Y=-0.001 | Z=1.053
+Raw 14-byte dump: FE 14 FF F8 43 48 0E 10 FF E6 01 09 FF 85 
+Accel Gs: X=-0.030 | Y=-0.000 | Z=1.051
+Raw 14-byte dump: FE 08 FF B0 43 C0 0E 50 FF ED 00 D1 FF 8F 
+Accel Gs: X=-0.031 | Y=-0.005 | Z=1.059
+Raw 14-byte dump: FD C8 FF 98 43 F8 0E 40 FF DC 00 D9 FF A2 
+Accel Gs: X=-0.035 | Y=-0.006 | Z=1.062
+Raw 14-byte dump: FD FC FF C0 43 74 0E 00 FF D3 00 D9 FF 92 
+Accel Gs: X=-0.031 | Y=-0.004 | Z=1.054
+Raw 14-byte dump: FD D8 FF FC 43 94 0E 00 FF EC 00 E2 FF 7B 
+Accel Gs: X=-0.034 | Y=-0.000 | Z=1.056
+Raw 14-byte dump: FD D0 FF E4 43 E8 0E 50 FF F8 00 CA FF 9C 
+Accel Gs: X=-0.034 | Y=-0.002 | Z=1.061
+Raw 14-byte dump: FD E4 FF A8 43 58 0E 20 FF EC 00 E9 FF B0 
+Accel Gs: X=-0.033 | Y=-0.005 | Z=1.052
+Raw 14-byte dump: FD C8 FF CC 43 B4 0E 20 FF EF 00 D0 FF 9D 
+Accel Gs: X=-0.035 | Y=-0.003 | Z=1.058
+Raw 14-byte dump: FE 1C FF 94 43 90 0D E0 FF F0 01 06 FF 7E 
+Accel Gs: X=-0.030 | Y=-0.007 | Z=1.056
+Raw 14-byte dump: FE 08 FF CC 43 54 0E 10 FF E4 00 B8 FF 98 
+Accel Gs: X=-0.031 | Y=-0.003 | Z=1.052
+Raw 14-byte dump: FE 20 FF E4 43 34 0E 20 00 08 00 E5 FF 7F 
+Accel Gs: X=-0.029 | Y=-0.002 | Z=1.050
+Raw 14-byte dump: FE 18 FF F0 43 3C 0E 10 FF E9 00 F6 FF 93 
+Accel Gs: X=-0.030 | Y=-0.001 | Z=1.051
+Raw 14-byte dump: FD DC FF 80 43 BC 0E 50 FF E3 00 E3 FF A6 
+Accel Gs: X=-0.033 | Y=-0.008 | Z=1.058
+Raw 14-byte dump: FD EC FF D0 43 C4 0E 70 FF E2 00 E6 FF A9 
+Accel Gs: X=-0.032 | Y=-0.003 | Z=1.059
+Raw 14-byte dump: FE 14 FF 88 43 54 0E 20 FF DE 00 DC FF 8D 
+Accel Gs: X=-0.030 | Y=-0.007 | Z=1.052
+Raw 14-byte dump: FD E8 FF D8 44 3C 0E 50 FF E5 00 E8 FF 99 
+Accel Gs: X=-0.033 | Y=-0.002 | Z=1.066
+Raw 14-byte dump: FD FC FF 8C 43 3C 0E 00 FF D1 00 F0 FF B6 
+Accel Gs: X=-0.031 | Y=-0.007 | Z=1.051
+Raw 14-byte dump: FD C4 FF DC 43 40 0E 40 00 13 00 F9 FF 84 
+Accel Gs: X=-0.035 | Y=-0.002 | Z=1.051
+Raw 14-byte dump: FE 48 FF A4 43 D4 0E 50 FF C0 00 D4 FF 99 
+Accel Gs: X=-0.027 | Y=-0.006 | Z=1.060
+Raw 14-byte dump: FE 20 FF B0 43 D4 0E 20 00 00 00 DB FF 85 
+Accel Gs: X=-0.029 | Y=-0.005 | Z=1.060
+Raw 14-byte dump: FE 00 FF CC 43 CC 0E 10 FF D3 00 C6 FF 69 
+Accel Gs: X=-0.031 | Y=-0.003 | Z=1.059
+Raw 14-byte dump: FD FC FF E8 43 D8 0E 20 FF F7 00 FD FF 73 
+Accel Gs: X=-0.031 | Y=-0.001 | Z=1.060
+Raw 14-byte dump: FE 18 FF BC 43 90 0E 10 FF C3 00 AA FF 92 
+Accel Gs: X=-0.030 | Y=-0.004 | Z=1.056
+Raw 14-byte dump: FD E4 FF B4 43 78 0E 10 FF C0 00 AA FF 75 
+Accel Gs: X=-0.033 | Y=-0.005 | Z=1.054
+Raw 14-byte dump: FE 24 FF E8 43 B8 0E 40 FF EC 00 E3 FF 9C 
+Accel Gs: X=-0.029 | Y=-0.001 | Z=1.058
+Raw 14-byte dump: FE 08 FF B4 43 74 0E 40 FF E0 00 F5 FF 9D 
+Accel Gs: X=-0.031 | Y=-0.005 | Z=1.054
+Raw 14-byte dump: FD F4 FF B4 43 4C 0E 10 FF EC 00 D9 FF 8C 
+Accel Gs: X=-0.032 | Y=-0.005 | Z=1.052
+Raw 14-byte dump: FD E4 FF A0 43 BC 0E 00 FF ED 00 BB FF 99 
+Accel Gs: X=-0.033 | Y=-0.006 | Z=1.058
+Raw 14-byte dump: FD E0 FF A4 43 98 0E 00 00 14 00 D8 FF 97 
+Accel Gs: X=-0.033 | Y=-0.006 | Z=1.056
+Raw 14-byte dump: FE 10 FF BC 43 8C 0E 10 FF F5 00 E7 FF 86 
+Accel Gs: X=-0.030 | Y=-0.004 | Z=1.055
+Raw 14-byte dump: FE 10 FF 7C 43 4C 0E 10 FF EC 00 D6 FF 97 
+Accel Gs: X=-0.030 | Y=-0.008 | Z=1.052
+Raw 14-byte dump: FE 24 FF B0 43 A8 0E 00 FF EA 00 DA FF 8F 
+Accel Gs: X=-0.029 | Y=-0.005 | Z=1.057
+Raw 14-byte dump: FD E8 FF 88 43 AC 0E 10 FF A6 00 DF FF 8A 
+Accel Gs: X=-0.033 | Y=-0.007 | Z=1.057
+Raw 14-byte dump: FD FC FF B4 43 4C 0E 00 FF D9 00 DF FF AA 
+Accel Gs: X=-0.031 | Y=-0.005 | Z=1.052
+Raw 14-byte dump: FD F0 FF B0 43 9C 0D C0 FF D9 00 E6 FF BA 
+Accel Gs: X=-0.032 | Y=-0.005 | Z=1.056
+Raw 14-byte dump: FE 00 FF DC 43 40 0E 00 FF DB 00 DB FF 9A 
+Accel Gs: X=-0.031 | Y=-0.002 | Z=1.051
+Raw 14-byte dump: FE 08 FF 70 43 3C 0E 00 FF C7 00 DD FF 82 
+Accel Gs: X=-0.031 | Y=-0.009 | Z=1.051
+Raw 14-byte dump: FD D8 FF 9C 43 D4 0D E0 FF F9 00 FA FF AB 
+Accel Gs: X=-0.034 | Y=-0.006 | Z=1.060
+Raw 14-byte dump: FE 64 FF A8 43 2C 0E 10 FF E5 00 EB FF A9 
+Accel Gs: X=-0.025 | Y=-0.005 | Z=1.050
+Raw 14-byte dump: FE 10 FF D8 43 AC 0E 20 FF EB 00 BA FF 90 
+Accel Gs: X=-0.030 | Y=-0.002 | Z=1.057
+Raw 14-byte dump: FE 00 FF F0 43 A4 0E 00 00 01 00 E6 FF 92 
+Accel Gs: X=-0.031 | Y=-0.001 | Z=1.057
+Raw 14-byte dump: FE 24 FF A8 43 94 0E 00 00 0A 00 D7 FF A1 
+Accel Gs: X=-0.029 | Y=-0.005 | Z=1.056
+Raw 14-byte dump: FD F8 FF AC 43 88 0E 10 FF DE 00 EC FF 98 
+Accel Gs: X=-0.032 | Y=-0.005 | Z=1.055
+Raw 14-byte dump: FD D0 FF A8 43 94 0E 10 FF DC 00 D2 FF 83 
+Accel Gs: X=-0.034 | Y=-0.005 | Z=1.056
+Raw 14-byte dump: FD E8 FF 8C 43 20 0E 40 FF DB 00 FF FF B9 
+Accel Gs: X=-0.033 | Y=-0.007 | Z=1.049
+Raw 14-byte dump: FE 08 FF D0 43 A4 0E 00 FF CF 00 BF FF 81 
+Accel Gs: X=-0.031 | Y=-0.003 | Z=1.057
+Raw 14-byte dump: FD F8 FF B0 43 C4 0E 00 FF CA 00 D4 FF 97 
+Accel Gs: X=-0.032 | Y=-0.005 | Z=1.059
+Raw 14-byte dump: FE 00 FF B0 43 F4 0E 20 FF CF 00 E6 FF A8 
+Accel Gs: X=-0.031 | Y=-0.005 | Z=1.062
+Raw 14-byte dump: FE 04 FF 84 44 14 0E 10 FF ED 00 D7 FF 81 
+Accel Gs: X=-0.031 | Y=-0.008 | Z=1.064
+Raw 14-byte dump: FE 28 FF C0 43 C8 0D E0 FF EC 00 D8 FF A6 
+Accel Gs: X=-0.029 | Y=-0.004 | Z=1.059
+Raw 14-byte dump: FD FC FF A4 43 E8 0E 20 FF D0 00 C3 FF 9A 
+Accel Gs: X=-0.031 | Y=-0.006 | Z=1.061
+Raw 14-byte dump: FE 0C FF 78 43 E0 0E 00 FF BA 00 C3 FF 94 
+Accel Gs: X=-0.031 | Y=-0.008 | Z=1.061
+Raw 14-byte dump: FE 10 FF C8 43 70 0E 00 00 0A 00 DF FF 74 
+Accel Gs: X=-0.030 | Y=-0.003 | Z=1.054
+Raw 14-byte dump: FD F8 FF D4 43 24 0D E0 FF DB 00 E3 FF 9D 
+Accel Gs: X=-0.032 | Y=-0.003 | Z=1.049
+Raw 14-byte dump: FE 20 FF FC 43 70 0E 10 FF E6 00 DF FF 8B 
+Accel Gs: X=-0.029 | Y=-0.000 | Z=1.054
+Raw 14-byte dump: FD FC FF B4 43 C8 0E 00 FF F9 00 E9 FF 98 
+Accel Gs: X=-0.031 | Y=-0.005 | Z=1.059
+Raw 14-byte dump: FD F4 FF C4 43 C8 0D C0 FF E5 00 DD FF 95 
+Accel Gs: X=-0.032 | Y=-0.004 | Z=1.059
+Raw 14-byte dump: FE 04 FF D8 43 44 0D E0 FF EC 00 C7 FF 87 
+Accel Gs: X=-0.031 | Y=-0.002 | Z=1.051
+Raw 14-byte dump: FE 3C FF B8 43 C8 0E 20 FF DF 00 E8 FF 9D 
+Accel Gs: X=-0.028 | Y=-0.004 | Z=1.059
+Raw 14-byte dump: FD EC FF DC 43 90 0E 20 FF EC 00 E3 FF 96 
+Accel Gs: X=-0.032 | Y=-0.002 | Z=1.056
+Raw 14-byte dump: FE 18 FF B4 44 3C 0E 10 FF E6 00 CE FF 88 
+Accel Gs: X=-0.030 | Y=-0.005 | Z=1.066
+Raw 14-byte dump: FE 1C FF B4 43 E8 0D E0 FF AA 00 E2 FF 96 
+Accel Gs: X=-0.030 | Y=-0.005 | Z=1.061
+Raw 14-byte dump: FE 04 FF B0 43 90 0D E0 FF EC 00 E3 FF 94 
+Accel Gs: X=-0.031 | Y=-0.005 | Z=1.056
+Raw 14-byte dump: FE 34 FF A4 43 84 0E 00 FF CD 00 D2 FF A5 
+Accel Gs: X=-0.028 | Y=-0.006 | Z=1.055
+Raw 14-byte dump: FE 04 FF C0 43 AC 0E 10 FF D3 00 D6 FF B3 
+Accel Gs: X=-0.031 | Y=-0.004 | Z=1.057
+Raw 14-byte dump: FE 28 FF A8 43 B4 0D D0 FF EA 00 D7 FF A0 
+Accel Gs: X=-0.029 | Y=-0.005 | Z=1.058
+Raw 14-byte dump: FD B8 FF B4 43 84 0E 10 FF E9 00 B5 FF 96 
+Accel Gs: X=-0.036 | Y=-0.005 | Z=1.055
+Raw 14-byte dump: FE 30 FF A0 43 D0 0E 10 FF F0 00 F3 FF AA 
+Accel Gs: X=-0.028 | Y=-0.006 | Z=1.060
+Raw 14-byte dump: FD E8 FF A8 43 84 0D D0 FF E1 00 C3 FF 81 
+Accel Gs: X=-0.033 | Y=-0.005 | Z=1.055
+Raw 14-byte dump: FE 00 FF B4 43 A8 0E 10 FF E4 00 E3 FF A8 
+Accel Gs: X=-0.031 | Y=-0.005 | Z=1.057
+Raw 14-byte dump: FE 34 FF D4 43 90 0D D0 FF F3 00 F9 FF 94 
+Accel Gs: X=-0.028 | Y=-0.003 | Z=1.056
+Raw 14-byte dump: FD E8 FF D0 43 CC 0E 40 00 12 01 0B FF 83 
+Accel Gs: X=-0.033 | Y=-0.003 | Z=1.059
+Raw 14-byte dump: FD E8 FF C8 43 54 0E 10 FF D6 00 D5 FF 7E 
+Accel Gs: X=-0.033 | Y=-0.003 | Z=1.052
+Raw 14-byte dump: FE 40 FF C0 43 D0 0D E0 FF FF 00 E6 FF B1 
+Accel Gs: X=-0.027 | Y=-0.004 | Z=1.060
+Raw 14-byte dump: FD EC FF C4 44 2C 0E 20 FF D4 00 CC FF 8D 
+Accel Gs: X=-0.032 | Y=-0.004 | Z=1.065
+Raw 14-byte dump: FD FC FF B8 43 CC 0D E0 FF D7 00 C5 FF 92 
+Accel Gs: X=-0.031 | Y=-0.004 | Z=1.059
+Raw 14-byte dump: FE 10 FF B8 43 A0 0E 10 FF D2 00 DA FF AE 
+Accel Gs: X=-0.030 | Y=-0.004 | Z=1.057
+Raw 14-byte dump: FE 04 FF 78 43 E4 0E 10 FF F7 01 23 FF 9C 
+Accel Gs: X=-0.031 | Y=-0.008 | Z=1.061
+Raw 14-byte dump: FD F8 FF 98 43 78 0E 20 FF F5 00 E4 FF A1 
+Accel Gs: X=-0.032 | Y=-0.006 | Z=1.054
+Raw 14-byte dump: FE 14 FF DC 43 B0 0D C0 FF D0 00 B1 FF AA 
+Accel Gs: X=-0.030 | Y=-0.002 | Z=1.058
+Raw 14-byte dump: FE 18 FF E0 43 DC 0E 00 FF E5 00 D1 FF 9A 
+Accel Gs: X=-0.030 | Y=-0.002 | Z=1.060
+Raw 14-byte dump: FE 14 FF D8 43 A4 0E 10 FF C9 00 CD FF 83 
+Accel Gs: X=-0.030 | Y=-0.002 | Z=1.057
+Raw 14-byte dump: FE 14 FF 94 43 78 0D D0 FF E7 00 FE FF A8 
+Accel Gs: X=-0.030 | Y=-0.007 | Z=1.054
+Raw 14-byte dump: FE 24 FF CC 43 BC 0E 00 FF D2 00 CD FF 98 
+Accel Gs: X=-0.029 | Y=-0.003 | Z=1.058
+Raw 14-byte dump: FE 0C FF D0 43 EC 0E 10 00 02 00 D1 FF 94 
+Accel Gs: X=-0.031 | Y=-0.003 | Z=1.061
+Raw 14-byte dump: FE 00 FF C4 43 78 0D D0 FF FA 00 FA FF 97 
+Accel Gs: X=-0.031 | Y=-0.004 | Z=1.054
+Raw 14-byte dump: FE 48 FF 9C 43 9C 0D E0 FF EB 00 E0 FF 9E 
+Accel Gs: X=-0.027 | Y=-0.006 | Z=1.056
+Raw 14-byte dump: FE 20 FF 94 43 54 0D C0 FF F2 00 DE FF 80 
+Accel Gs: X=-0.029 | Y=-0.007 | Z=1.052
+Raw 14-byte dump: FE 20 FF 90 43 C0 0D E0 FF DE 00 E2 FF 8A 
+Accel Gs: X=-0.029 | Y=-0.007 | Z=1.059
+Raw 14-byte dump: FE 0C FF B4 43 B0 0D E0 FF F4 00 FA FF A9 
+Accel Gs: X=-0.031 | Y=-0.005 | Z=1.058
+Raw 14-byte dump: FE 18 FF C4 43 5C 0D E0 FF F9 00 C3 FF A3 
+Accel Gs: X=-0.030 | Y=-0.004 | Z=1.052
+Raw 14-byte dump: FD DC FF 98 43 C0 0D D0 FF E8 00 F5 FF 91 
+Accel Gs: X=-0.033 | Y=-0.006 | Z=1.059
+Raw 14-byte dump: FD F8 FF BC 43 BC 0D D0 FF E6 00 B3 FF 82 
+Accel Gs: X=-0.032 | Y=-0.004 | Z=1.058
+Raw 14-byte dump: FE 30 FF 8C 43 D4 0E 00 FF F1 00 F5 FF A0 
+Accel Gs: X=-0.028 | Y=-0.007 | Z=1.060
+Raw 14-byte dump: FD DC FF A4 43 BC 0E 00 FF FE 00 D9 FF 9C 
+Accel Gs: X=-0.033 | Y=-0.006 | Z=1.058
+Raw 14-byte dump: FE 20 FF A4 43 78 0E 00 FF E8 00 DC FF 9E 
+Accel Gs: X=-0.029 | Y=-0.006 | Z=1.054
+Raw 14-byte dump: FD F4 FF 80 43 38 0D D0 FF D9 00 D6 FF 86 
+Accel Gs: X=-0.032 | Y=-0.008 | Z=1.050
+Raw 14-byte dump: FE 10 FF 9C 43 80 0E 10 FF F8 00 EA FF 9A 
+Accel Gs: X=-0.030 | Y=-0.006 | Z=1.055
+Raw 14-byte dump: FD EC FF 8C 43 54 0E 00 00 09 00 ED FF 91 
+Accel Gs: X=-0.032 | Y=-0.007 | Z=1.052
+Raw 14-byte dump: FE 0C FF A4 43 DC 0E 10 FF DE 00 E1 FF 9C 
+Accel Gs: X=-0.031 | Y=-0.006 | Z=1.060
+Raw 14-byte dump: FE 1C FF C4 43 A0 0D C0 FF D7 00 F2 FF 8C 
+Accel Gs: X=-0.030 | Y=-0.004 | Z=1.057
+Raw 14-byte dump: FE 24 FF C4 43 E4 0E 10 FF F3 00 D5 FF 93 
+Accel Gs: X=-0.029 | Y=-0.004 | Z=1.061
+Raw 14-byte dump: FE 24 FF 9C 43 8C 0E 10 FF E8 00 D1 FF 99 
+Accel Gs: X=-0.029 | Y=-0.006 | Z=1.055
+Raw 14-byte dump: FE 14 FF 98 43 80 0E 00 FF E1 00 CA FF 9D 
+Accel Gs: X=-0.030 | Y=-0.006 | Z=1.055
+Raw 14-byte dump: FE 28 FF C4 43 7C 0E 10 FF E9 00 D8 FF 75 
+Accel Gs: X=-0.029 | Y=-0.004 | Z=1.054
+Raw 14-byte dump: FE 5C FF CC 43 D4 0D E0 FF D1 00 DF FF A6 
+Accel Gs: X=-0.026 | Y=-0.003 | Z=1.060
+Raw 14-byte dump: FE 00 FF 6C 43 BC 0E 00 FF D8 00 E5 FF B9 
+Accel Gs: X=-0.031 | Y=-0.009 | Z=1.058
+Raw 14-byte dump: FE 1C FF CC 43 6C 0E 10 FF EF 00 E1 FF 94 
+Accel Gs: X=-0.030 | Y=-0.003 | Z=1.053
+Raw 14-byte dump: FE 34 FF C4 43 AC 0D A0 FF F3 00 DF FF A2 
+Accel Gs: X=-0.028 | Y=-0.004 | Z=1.057
+Raw 14-byte dump: FD E4 FF BC 43 C4 0D E0 FF F5 00 C9 FF 82 
+Accel Gs: X=-0.033 | Y=-0.004 | Z=1.059
+Raw 14-byte dump: FD F8 FF A4 43 84 0D E0 FF CD 00 DD FF 86 
+Accel Gs: X=-0.032 | Y=-0.006 | Z=1.055
+Raw 14-byte dump: FE 14 FF 88 43 FC 0D E0 FF CA 00 E2 FF 8F 
+Accel Gs: X=-0.030 | Y=-0.007 | Z=1.062
+Raw 14-byte dump: FD FC FF B0 43 4C 0E 00 FF F8 01 01 FF 83 
+Accel Gs: X=-0.031 | Y=-0.005 | Z=1.052
+Raw 14-byte dump: FE 18 FF B4 43 BC 0D A0 FF E9 00 DC FF 8D 
+Accel Gs: X=-0.030 | Y=-0.005 | Z=1.058
+Raw 14-byte dump: FD D4 FF 80 43 98 0E 10 FF C8 00 BC FF A3 
+Accel Gs: X=-0.034 | Y=-0.008 | Z=1.056
+Raw 14-byte dump: FE 24 FF BC 43 DC 0D E0 FF DC 00 DC FF 84 
+Accel Gs: X=-0.029 | Y=-0.004 | Z=1.060
+Raw 14-byte dump: FE 28 FF 80 43 9C 0E 10 FF C8 00 D6 FF C0 
+Accel Gs: X=-0.029 | Y=-0.008 | Z=1.056
+Raw 14-byte dump: FD FC FF 9C 43 B8 0E 10 FF EC 01 01 FF A6 
+Accel Gs: X=-0.031 | Y=-0.006 | Z=1.058
+Raw 14-byte dump: FE 70 FF C0 43 84 0E 10 FF E8 01 06 FF 8C 
+Accel Gs: X=-0.024 | Y=-0.004 | Z=1.055
+Raw 14-byte dump: FD E8 FF 88 43 60 0D C0 00 0A 00 EB FF A7 
+Accel Gs: X=-0.033 | Y=-0.007 | Z=1.053
+Raw 14-byte dump: FD 8C FF C0 43 C0 0D D0 00 0B 00 F1 FF 7E 
+Accel Gs: X=-0.038 | Y=-0.004 | Z=1.059
+Raw 14-byte dump: FD F0 FF 94 44 24 0D A0 FF FF 00 E9 FF 8F 
+Accel Gs: X=-0.032 | Y=-0.007 | Z=1.065
+Raw 14-byte dump: FE 0C FF 98 43 58 0D D0 FF E8 01 00 FF 9E 
+Accel Gs: X=-0.031 | Y=-0.006 | Z=1.052
+Raw 14-byte dump: FD E4 FF 8C 43 88 0D E0 FF F0 00 DB FF 8D 
+Accel Gs: X=-0.033 | Y=-0.007 | Z=1.055
+Raw 14-byte dump: FE 10 FF A0 43 70 0E 10 FF EF 00 D9 FF 92 
+Accel Gs: X=-0.030 | Y=-0.006 | Z=1.054
+Raw 14-byte dump: FE 50 FF 94 43 C8 0D D0 FF FB 01 08 FF 80 
+Accel Gs: X=-0.026 | Y=-0.007 | Z=1.059
+Raw 14-byte dump: FD B4 FF AC 43 80 0E 10 FF F0 00 D6 FF 90 
+Accel Gs: X=-0.036 | Y=-0.005 | Z=1.055
+Raw 14-byte dump: FE 18 FF AC 43 9C 0D E0 FF FE 01 03 FF 9A 
+Accel Gs: X=-0.030 | Y=-0.005 | Z=1.056
+Raw 14-byte dump: FE 04 FF BC 43 40 0D E0 FF E4 00 DC FF 6F 
+Accel Gs: X=-0.031 | Y=-0.004 | Z=1.051
+Raw 14-byte dump: FE 20 FF D0 43 20 0E 00 FF CB 00 C2 FF 9C 
+Accel Gs: X=-0.029 | Y=-0.003 | Z=1.049
+Raw 14-byte dump: FE 30 FF 90 43 4C 0E 00 FF E6 00 E0 FF 9E 
+Accel Gs: X=-0.028 | Y=-0.007 | Z=1.052
+Raw 14-byte dump: FE 08 FF A4 43 DC 0E 00 FF C7 00 CF FF 84 
+Accel Gs: X=-0.031 | Y=-0.006 | Z=1.060
+Raw 14-byte dump: FE 3C FF B0 43 A4 0E 00 FF C8 00 B5 FF 9A 
+Accel Gs: X=-0.028 | Y=-0.005 | Z=1.057
+Raw 14-byte dump: FD E4 FF A8 43 EC 0E 00 FF E6 00 EF FF 99 
+Accel Gs: X=-0.033 | Y=-0.005 | Z=1.061
+Raw 14-byte dump: FE 10 FF A0 43 D8 0D D0 FF BB 00 B7 FF 98 
+Accel Gs: X=-0.030 | Y=-0.006 | Z=1.060
+Raw 14-byte dump: FE 44 FF B4 43 78 0E 50 FF E8 00 E4 FF B1 
+Accel Gs: X=-0.027 | Y=-0.005 | Z=1.054
+Raw 14-byte dump: FE 08 FF 68 43 70 0D C0 00 1C 00 E7 FF 96 
+Accel Gs: X=-0.031 | Y=-0.009 | Z=1.054
+Raw 14-byte dump: FE 38 FF 9C 43 94 0D C0 FF F1 00 DC FF 72 
+Accel Gs: X=-0.028 | Y=-0.006 | Z=1.056
+Raw 14-byte dump: FE 40 FF A8 43 B8 0D D0 FF EB 00 C7 FF 88 
+Accel Gs: X=-0.027 | Y=-0.005 | Z=1.058
+Raw 14-byte dump: FE 10 FF 98 43 B4 0E 00 FF CC 00 CC FF 85 
+Accel Gs: X=-0.030 | Y=-0.006 | Z=1.058
+Raw 14-byte dump: FE 0C FF E4 43 9C 0D C0 FF BE 00 E8 FF AA 
+Accel Gs: X=-0.031 | Y=-0.002 | Z=1.056
+Raw 14-byte dump: FE 38 FF A0 43 7C 0D C0 FF F0 00 C8 FF A8 
+Accel Gs: X=-0.028 | Y=-0.006 | Z=1.054
+Raw 14-byte dump: FD DC FF E8 43 C4 0D E0 FF E7 00 E2 FF 9D 
+Accel Gs: X=-0.033 | Y=-0.001 | Z=1.059
+Raw 14-byte dump: FE 14 FF 9C 43 E0 0E 10 FF C5 00 EA FF 88 
+Accel Gs: X=-0.030 | Y=-0.006 | Z=1.061
+Raw 14-byte dump: FE 40 FF 78 43 E0 0E 00 FF F2 00 EB FF 8F 
+Accel Gs: X=-0.027 | Y=-0.008 | Z=1.061
+Raw 14-byte dump: FD FC FF C8 43 DC 0D E0 FF E8 00 C8 FF 87 
+Accel Gs: X=-0.031 | Y=-0.003 | Z=1.060
+Raw 14-byte dump: FD E4 FF 80 43 E4 0D E0 FF FC 00 EB FF 83 
+Accel Gs: X=-0.033 | Y=-0.008 | Z=1.061
+Raw 14-byte dump: FE 24 FF A8 43 7C 0E 00 FF E4 00 D8 FF 8F 
+Accel Gs: X=-0.029 | Y=-0.005 | Z=1.054
+Raw 14-byte dump: FD E4 FF 80 43 C4 0D D0 FF F8 00 E4 FF 7E 
+Accel Gs: X=-0.033 | Y=-0.008 | Z=1.059
+Raw 14-byte dump: FE 28 FF 9C 43 38 0E 20 FF E7 00 E2 FF 7E 
+Accel Gs: X=-0.029 | Y=-0.006 | Z=1.050
+Raw 14-byte dump: FE 34 FF 8C 43 30 0D C0 FF DC 00 D4 FF 7D 
+Accel Gs: X=-0.028 | Y=-0.007 | Z=1.050
+Raw 14-byte dump: FD E4 FF 80 43 A4 0E 20 FF DC 00 EE FF 99 
+Accel Gs: X=-0.033 | Y=-0.008 | Z=1.057
+Raw 14-byte dump: FD F8 FF A8 44 00 0D C0 FF DB 00 E0 FF 8A 
+Accel Gs: X=-0.032 | Y=-0.005 | Z=1.062
+Raw 14-byte dump: FE 10 FF 70 43 04 0E 00 FF CD 00 E7 FF 8F 
+Accel Gs: X=-0.030 | Y=-0.009 | Z=1.047
+Raw 14-byte dump: FE 18 FF 88 43 C4 0E 10 FF F1 00 D6 FF 93 
+Accel Gs: X=-0.030 | Y=-0.007 | Z=1.059
+Raw 14-byte dump: FE 50 FF B4 43 E0 0E 00 00 0A 00 E9 FF A4 
+Accel Gs: X=-0.026 | Y=-0.005 | Z=1.061
+Raw 14-byte dump: FD E4 FF C4 43 E4 0D C0 FF D1 00 E4 FF 8F 
+Accel Gs: X=-0.033 | Y=-0.004 | Z=1.061
+Raw 14-byte dump: FE 20 FF B4 43 EC 0D D0 00 05 00 F9 FF 96 
+Accel Gs: X=-0.029 | Y=-0.005 | Z=1.061
+Raw 14-byte dump: FE 20 FF BC 43 4C 0D D0 FF ED 00 E3 FF 6D 
+Accel Gs: X=-0.029 | Y=-0.004 | Z=1.052
+Raw 14-byte dump: FE 3C FF 7C 43 88 0D A0 FF E6 00 DF FF B1 
+Accel Gs: X=-0.028 | Y=-0.008 | Z=1.055
+Raw 14-byte dump: FE 10 FF 94 43 70 0D C0 FF F3 00 FF FF 5C 
+Accel Gs: X=-0.030 | Y=-0.007 | Z=1.054
+Raw 14-byte dump: FE 0C FF D0 43 D0 0E 10 00 05 00 FB FF 99 
+Accel Gs: X=-0.031 | Y=-0.003 | Z=1.060
+Raw 14-byte dump: FE 18 FF A4 43 54 0D E0 FF F6 00 FC FF AD 
+Accel Gs: X=-0.030 | Y=-0.006 | Z=1.052
+Raw 14-byte dump: FD E8 FF 84 43 98 0D D0 FF D6 00 F9 FF 81 
+Accel Gs: X=-0.033 | Y=-0.008 | Z=1.056
+Raw 14-byte dump: FE 44 FF C4 43 7C 0E 20 FF DF 00 E5 FF 9D 
+Accel Gs: X=-0.027 | Y=-0.004 | Z=1.054
+Raw 14-byte dump: FD F4 FF 58 44 08 0D D0 FF E5 00 F7 FF 91 
+Accel Gs: X=-0.032 | Y=-0.010 | Z=1.063
+Raw 14-byte dump: FE 2C FF 64 43 B8 0D E0 FF DC 00 CC FF 86 
+Accel Gs: X=-0.029 | Y=-0.010 | Z=1.058
+Raw 14-byte dump: FE 04 FF 6C 43 6C 0D C0 FF F5 00 E0 FF 82 
+Accel Gs: X=-0.031 | Y=-0.009 | Z=1.053
+Raw 14-byte dump: FD DC FF 7C 44 14 0D E0 00 08 00 E2 FF BA 
+Accel Gs: X=-0.033 | Y=-0.008 | Z=1.064
+Raw 14-byte dump: FE 00 FF 50 43 C4 0E 20 FF FA 00 E1 FF 94 
+Accel Gs: X=-0.031 | Y=-0.011 | Z=1.059
+Raw 14-byte dump: FE 14 FF B8 43 C8 0D E0 00 15 00 F8 FF 9A 
+Accel Gs: X=-0.030 | Y=-0.004 | Z=1.059
+Raw 14-byte dump: FE 2C FF 8C 44 4C 0E 20 FF F7 00 CC FF 77 
+Accel Gs: X=-0.029 | Y=-0.007 | Z=1.067
+Raw 14-byte dump: FD FC FF A8 43 A0 0E 00 FF D4 00 BE FF A7 
+Accel Gs: X=-0.031 | Y=-0.005 | Z=1.057
+Raw 14-byte dump: FD E0 FF B0 43 08 0D E0 00 05 01 01 FF 8E 
+Accel Gs: X=-0.033 | Y=-0.005 | Z=1.047
+Raw 14-byte dump: FD E4 FF BC 44 18 0E 00 FF DF 00 D2 FF 96 
+Accel Gs: X=-0.033 | Y=-0.004 | Z=1.064
+Raw 14-byte dump: FE 38 FF 9C 43 50 0E 10 FF E1 00 F4 FF 95 
+Accel Gs: X=-0.028 | Y=-0.006 | Z=1.052
+Raw 14-byte dump: FD F0 FF C0 43 E0 0D E0 FF EC 00 DA FF AE 
+Accel Gs: X=-0.032 | Y=-0.004 | Z=1.061
+Raw 14-byte dump: FE 34 00 14 44 40 0D E0 FF F1 00 EA FF A4 
+Accel Gs: X=-0.028 | Y=0.001 | Z=1.066
+Raw 14-byte dump: FE 34 FF AC 43 9C 0E 00 FF F3 00 EA FF A1 
+Accel Gs: X=-0.028 | Y=-0.005 | Z=1.056
+Raw 14-byte dump: FE 0C FF 9C 43 CC 0D A0 FF CC 00 C9 FF A5 
+Accel Gs: X=-0.031 | Y=-0.006 | Z=1.059
+Raw 14-byte dump: FE 24 FF AC 43 6C 0D E0 FF CE 00 C5 FF 86 
+Accel Gs: X=-0.029 | Y=-0.005 | Z=1.053
+Raw 14-byte dump: FE 3C FF 88 43 5C 0D D0 FF F2 00 CA FF A8 
+Accel Gs: X=-0.028 | Y=-0.007 | Z=1.052
+Raw 14-byte dump: FE 00 FF AC 43 D8 0D D0 FF E8 00 CF FF 87 
+Accel Gs: X=-0.031 | Y=-0.005 | Z=1.060
+Raw 14-byte dump: FD E8 FF 88 43 64 0E 10 FF DB 00 D2 FF 7E 
+Accel Gs: X=-0.033 | Y=-0.007 | Z=1.053
+Raw 14-byte dump: FE 08 FF A4 43 94 0D E0 00 04 00 DA FF 91 
+Accel Gs: X=-0.031 | Y=-0.006 | Z=1.056
+Raw 14-byte dump: FD EC FF 80 43 F8 0D D0 FF C6 00 FF FF 9F 
+Accel Gs: X=-0.032 | Y=-0.008 | Z=1.062
+Raw 14-byte dump: FE 28 FF 88 43 80 0D C0 FF CC 00 E5 FF A2 
+Accel Gs: X=-0.029 | Y=-0.007 | Z=1.055
+Raw 14-byte dump: FE 2C FF B0 43 A4 0E 00 FF D2 00 E4 FF 78 
+Accel Gs: X=-0.029 | Y=-0.005 | Z=1.057
+Raw 14-byte dump: FE 3C FF C8 43 CC 0D E0 FF D5 00 F6 FF A2 
+Accel Gs: X=-0.028 | Y=-0.003 | Z=1.059
+Raw 14-byte dump: FE 24 FF CC 43 C8 0D E0 FF FB 00 DE FF 9C 
+Accel Gs: X=-0.029 | Y=-0.003 | Z=1.059
+Raw 14-byte dump: FE 30 FF D4 43 A4 0E 00 FF E7 00 DC FF A6 
+Accel Gs: X=-0.028 | Y=-0.003 | Z=1.057
+Raw 14-byte dump: FE 18 FF 6C 43 B0 0D E0 FF C1 00 CE FF 8D 
+Accel Gs: X=-0.030 | Y=-0.009 | Z=1.058
+Raw 14-byte dump: FD E8 FF A8 43 88 0D D0 FF D0 00 CE FF 9E 
+Accel Gs: X=-0.033 | Y=-0.005 | Z=1.055
+Raw 14-byte dump: FD E8 FF 80 43 CC 0E 10 FF CD 00 D6 FF 8F 
+Accel Gs: X=-0.033 | Y=-0.008 | Z=1.059
+Raw 14-byte dump: FD CC FF 70 43 D0 0E 10 FF D2 00 BA FF 93 
+Accel Gs: X=-0.034 | Y=-0.009 | Z=1.060
+Raw 14-byte dump: FD D8 FF 78 44 48 0D E0 FF E8 00 C6 FF 8F 
+Accel Gs: X=-0.034 | Y=-0.008 | Z=1.067
+Raw 14-byte dump: FE 24 FF C4 43 3C 0D E0 FF E2 00 EA FF A4 
+Accel Gs: X=-0.029 | Y=-0.004 | Z=1.051
+Raw 14-byte dump: FD F8 FF B0 43 94 0E 10 FF E0 00 E6 FF 7C 
+Accel Gs: X=-0.032 | Y=-0.005 | Z=1.056
+Raw 14-byte dump: FE 18 FF AC 43 74 0E 10 FF ED 00 C9 FF 86 
+Accel Gs: X=-0.030 | Y=-0.005 | Z=1.054
+Raw 14-byte dump: FE 10 FF 8C 43 C0 0E 20 FF F3 00 EC FF 9C 
+Accel Gs: X=-0.030 | Y=-0.007 | Z=1.059
+Raw 14-byte dump: FE 28 FF 7C 43 3C 0E 40 FF F1 00 F1 FF A6 
+Accel Gs: X=-0.029 | Y=-0.008 | Z=1.051
+Raw 14-byte dump: FE 18 FF C0 43 54 0D E0 FF C0 00 E3 FF 8C 
+Accel Gs: X=-0.030 | Y=-0.004 | Z=1.052
+Raw 14-byte dump: FE 10 FF C0 44 10 0E 00 FF EE 00 E4 FF 9E 
+Accel Gs: X=-0.030 | Y=-0.004 | Z=1.063
+Raw 14-byte dump: FE 04 FF 8C 43 FC 0E 40 FF EF 00 E0 FF 7F 
+Accel Gs: X=-0.031 | Y=-0.007 | Z=1.062
+Raw 14-byte dump: FE 34 FF A4 43 80 0E 20 FF DC 00 BA FF 99 
+Accel Gs: X=-0.028 | Y=-0.006 | Z=1.055
+Raw 14-byte dump: FE 10 FF 74 43 B4 0E 10 00 07 00 FD FF 9A 
+Accel Gs: X=-0.030 | Y=-0.009 | Z=1.058
+Raw 14-byte dump: FE 1C FF B0 43 78 0E 40 FF E5 00 F5 FF 82 
+Accel Gs: X=-0.030 | Y=-0.005 | Z=1.054
+Raw 14-byte dump: FE 08 FF B8 43 4C 0E 00 FF D2 00 DC FF 86 
+Accel Gs: X=-0.031 | Y=-0.004 | Z=1.052
+Raw 14-byte dump: FE 20 FF 90 43 38 0E 20 00 0E 00 F4 FF 94 
+Accel Gs: X=-0.029 | Y=-0.007 | Z=1.050
+Raw 14-byte dump: FE 18 FF 94 43 E4 0E 40 FF D7 00 DB FF 90 
+Accel Gs: X=-0.030 | Y=-0.007 | Z=1.061
+Raw 14-byte dump: FE 08 FF 74 43 D0 0E 50 FF E5 00 C2 FF 95 
+Accel Gs: X=-0.031 | Y=-0.009 | Z=1.060
+Raw 14-byte dump: FD F4 FF 88 43 A4 0E 50 FF EA 00 FB FF A2 
+Accel Gs: X=-0.032 | Y=-0.007 | Z=1.057
+Raw 14-byte dump: FE 28 FF 78 43 B0 0E 10 FF D1 00 CD FF 87 
+Accel Gs: X=-0.029 | Y=-0.008 | Z=1.058
+Raw 14-byte dump: FE 30 FF 3C 43 AC 0E 50 FF D6 00 EC FF 8F 
+Accel Gs: X=-0.028 | Y=-0.012 | Z=1.057
+Raw 14-byte dump: FE 48 FF A0 43 78 0E 50 FF E6 00 F2 FF 9C 
+Accel Gs: X=-0.027 | Y=-0.006 | Z=1.054
+Raw 14-byte dump: FE 14 FF 6C 43 84 0E 50 FF EF 00 F3 FF 89 
+Accel Gs: X=-0.030 | Y=-0.009 | Z=1.055
+Raw 14-byte dump: FE 00 FF D4 43 A0 0E 70 00 09 01 09 FF 9D 
+Accel Gs: X=-0.031 | Y=-0.003 | Z=1.057
+Raw 14-byte dump: FE 14 FF C0 44 04 0E 40 FF E7 00 C9 FF 9A 
+Accel Gs: X=-0.030 | Y=-0.004 | Z=1.063
+Raw 14-byte dump: FE 10 FF 90 43 98 0E 90 FF C6 00 E7 FF 95 
+Accel Gs: X=-0.030 | Y=-0.007 | Z=1.056
+Raw 14-byte dump: FE 14 FF 9C 43 B0 0E 70 FF D1 00 DC FF 8F 
+Accel Gs: X=-0.030 | Y=-0.006 | Z=1.058
+Raw 14-byte dump: FD F4 FF 94 43 F0 0E 70 FF F2 00 C7 FF 93 
+Accel Gs: X=-0.032 | Y=-0.007 | Z=1.062
+Raw 14-byte dump: FE 04 FF 94 43 FC 0E B0 FF DB 00 BD FF B2 
+Accel Gs: X=-0.031 | Y=-0.007 | Z=1.062
+Raw 14-byte dump: FE 00 FF 60 43 D0 0E 50 FF DC 00 D9 FF 95 
+Accel Gs: X=-0.031 | Y=-0.010 | Z=1.060
+Raw 14-byte dump: FD C0 FF 70 43 CC 0E 90 FF DD 00 D7 FF 9B 
+Accel Gs: X=-0.035 | Y=-0.009 | Z=1.059
+Raw 14-byte dump: FD C8 FF 9C 43 80 0E 40 FF F8 00 CC FF A2 
+Accel Gs: X=-0.035 | Y=-0.006 | Z=1.055
+Raw 14-byte dump: FD A4 FF 98 43 F8 0E 80 FF DF 00 CF FF 99 
+Accel Gs: X=-0.037 | Y=-0.006 | Z=1.062
+Raw 14-byte dump: FD F8 FF 88 43 74 0E 70 FF E9 00 DC FF A2 
+Accel Gs: X=-0.032 | Y=-0.007 | Z=1.054
+Raw 14-byte dump: FE 28 FF AC 43 90 0E 70 FF E9 00 E7 FF 74 
+Accel Gs: X=-0.029 | Y=-0.005 | Z=1.056
+Raw 14-byte dump: FE 10 FF 94 44 10 0E 40 FF FA 00 E7 FF 74 
+Accel Gs: X=-0.030 | Y=-0.007 | Z=1.063
+Raw 14-byte dump: FD E8 FF C0 43 A8 0E 50 FF F1 00 D2 FF 79 
+Accel Gs: X=-0.033 | Y=-0.004 | Z=1.057
+Raw 14-byte dump: FE 20 FF 98 43 D4 0E 50 FF DF 00 D1 FF 8D 
+Accel Gs: X=-0.029 | Y=-0.006 | Z=1.060
+Raw 14-byte dump: FE 04 FF 94 43 80 0E B0 FF FC 00 D7 FF 8C 
+Accel Gs: X=-0.031 | Y=-0.007 | Z=1.055
+Raw 14-byte dump: FE 18 FF A8 43 60 0E 90 FF E7 00 F5 FF A1 
+Accel Gs: X=-0.030 | Y=-0.005 | Z=1.053
+Raw 14-byte dump: FE 20 FF 98 43 FC 0E C0 FF DB 00 E1 FF 80 
+Accel Gs: X=-0.029 | Y=-0.006 | Z=1.062
+Raw 14-byte dump: FE 18 FF E4 43 58 0E 70 FF E8 00 D8 FF 83 
+Accel Gs: X=-0.030 | Y=-0.002 | Z=1.052
+Raw 14-byte dump: FE 88 FF 40 43 74 0E 90 00 49 01 1B FF 97 
+Accel Gs: X=-0.023 | Y=-0.012 | Z=1.054
+Raw 14-byte dump: FE 30 FF 74 43 C0 0E C0 FF E6 00 FB FF 8C 
+Accel Gs: X=-0.028 | Y=-0.009 | Z=1.059
+Raw 14-byte dump: FE 38 FF 90 43 5C 0E 90 FF C4 00 DD FF 95 
+Accel Gs: X=-0.028 | Y=-0.007 | Z=1.052
+Raw 14-byte dump: FE 20 FF A4 43 C4 0E 90 FF EF 00 EB FF B2 
+Accel Gs: X=-0.029 | Y=-0.006 | Z=1.059
+Raw 14-byte dump: FD F8 FF C8 43 90 0E 80 FF D0 00 EA FF 95 
+Accel Gs: X=-0.032 | Y=-0.003 | Z=1.056
+Raw 14-byte dump: FE 50 FF 90 43 6C 0E 70 FF F0 00 E4 FF A0 
+Accel Gs: X=-0.026 | Y=-0.007 | Z=1.053
+Raw 14-byte dump: FE 24 FF 90 43 7C 0E 90 FF D0 00 E7 FF A0 
+Accel Gs: X=-0.029 | Y=-0.007 | Z=1.054
+Raw 14-byte dump: FE 1C FF A8 44 00 0E B0 FF F2 00 F2 FF 69 
+Accel Gs: X=-0.030 | Y=-0.005 | Z=1.062
+Raw 14-byte dump: FE 3C FF A4 43 74 0E 50 FF E8 00 ED FF 85 
+Accel Gs: X=-0.028 | Y=-0.006 | Z=1.054
+Raw 14-byte dump: FE 10 FF A4 43 EC 0E 90 FF EB 00 ED FF 8A 
+Accel Gs: X=-0.030 | Y=-0.006 | Z=1.061
+Raw 14-byte dump: FE 20 FF AC 43 BC 0E 80 FF E1 00 D8 FF 91 
+Accel Gs: X=-0.029 | Y=-0.005 | Z=1.058
+Raw 14-byte dump: FE 04 FF 98 43 C4 0E 70 FF ED 00 E4 FF 7C 
+Accel Gs: X=-0.031 | Y=-0.006 | Z=1.059
+Raw 14-byte dump: FD E8 FF 90 43 60 0E C0 FF E8 00 D4 FF 86 
+Accel Gs: X=-0.033 | Y=-0.007 | Z=1.053
+Raw 14-byte dump: FD CC FF 70 43 6C 0E 50 FF FB 01 01 FF 9B 
+Accel Gs: X=-0.034 | Y=-0.009 | Z=1.053
+Raw 14-byte dump: FE 24 FF 64 43 2C 0E B0 FF DF 00 CB FF A3 
+Accel Gs: X=-0.029 | Y=-0.010 | Z=1.050
+Raw 14-byte dump: FE 18 FF C8 43 E0 0E 80 FF EC 00 F6 FF 9C 
+Accel Gs: X=-0.030 | Y=-0.003 | Z=1.061
+Raw 14-byte dump: FE 30 FF 94 43 68 0E 80 FF EC 00 ED FF B0 
+Accel Gs: X=-0.028 | Y=-0.007 | Z=1.053
+Raw 14-byte dump: FE 3C FF 9C 43 80 0E 80 FF ED 00 B9 FF 9D 
+Accel Gs: X=-0.028 | Y=-0.006 | Z=1.055
+Raw 14-byte dump: FE 0C FF 88 43 E0 0E 90 FF DD 00 BD FF 9E 
+Accel Gs: X=-0.031 | Y=-0.007 | Z=1.061
+Raw 14-byte dump: FE 14 FF CC 43 9C 0E 90 FF EB 00 D9 FF 94 
+Accel Gs: X=-0.030 | Y=-0.003 | Z=1.056
+Raw 14-byte dump: FE 10 FF 90 43 1C 0E 90 00 12 00 F7 FF 96 
+Accel Gs: X=-0.030 | Y=-0.007 | Z=1.049
+Raw 14-byte dump: FE 1C FF 64 43 0C 0E F0 FF D1 00 E8 FF 90 
+Accel Gs: X=-0.030 | Y=-0.010 | Z=1.048
+Raw 14-byte dump: FE 04 FF BC 43 B0 0E C0 FF F7 00 FA FF 95 
+Accel Gs: X=-0.031 | Y=-0.004 | Z=1.058
+Raw 14-byte dump: FE 28 FF 5C 43 78 0E 50 FF E1 00 F0 FF 86 
+Accel Gs: X=-0.029 | Y=-0.010 | Z=1.054
+Raw 14-byte dump: FE 2C FF B8 43 1C 0E 90 FF E7 00 EA FF 91 
+Accel Gs: X=-0.029 | Y=-0.004 | Z=1.049
+Raw 14-byte dump: FE 44 FF B8 43 B8 0E 90 FF D7 00 C0 FF 97 
+Accel Gs: X=-0.027 | Y=-0.004 | Z=1.058
+Raw 14-byte dump: FD E0 FF 88 43 C0 0E 70 FF E0 00 DE FF 82 
+Accel Gs: X=-0.033 | Y=-0.007 | Z=1.059
+Raw 14-byte dump: FE 18 FF 98 43 9C 0E C0 FF DB 00 F7 FF 8C 
+Accel Gs: X=-0.030 | Y=-0.006 | Z=1.056
+Raw 14-byte dump: FE 3C FF 98 43 C0 0E B0 FF D6 00 D6 FF 7D 
+Accel Gs: X=-0.028 | Y=-0.006 | Z=1.059
+Raw 14-byte dump: FE 0C FF 98 43 EC 0E B0 FF D2 00 EC FF 65 
+Accel Gs: X=-0.031 | Y=-0.006 | Z=1.061
+Raw 14-byte dump: FE 3C FF A0 43 A0 0E C0 FF C8 01 07 FF 76 
+Accel Gs: X=-0.028 | Y=-0.006 | Z=1.057
+Raw 14-byte dump: FD E8 FF 7C 43 C0 0E 90 FF CD 00 D8 FF 96 
+Accel Gs: X=-0.033 | Y=-0.008 | Z=1.059
+Raw 14-byte dump: FD EC FF 80 44 3C 0E B0 FF F5 00 CB FF 90 
+Accel Gs: X=-0.032 | Y=-0.008 | Z=1.066
+Raw 14-byte dump: FE 24 FF 80 43 74 0E 80 00 08 00 C3 FF 85 
+Accel Gs: X=-0.029 | Y=-0.008 | Z=1.054
+Raw 14-byte dump: FE 24 FF D0 43 C4 0E C0 FF D7 00 E3 FF 8B 
+Accel Gs: X=-0.029 | Y=-0.003 | Z=1.059
+Raw 14-byte dump: FE 28 FF EC 43 B8 0E C0 FF E9 00 E7 FF 8A 
+Accel Gs: X=-0.029 | Y=-0.001 | Z=1.058
+Raw 14-byte dump: FE 00 FF B4 43 8C 0E C0 FF E6 00 DF FF 96 
+Accel Gs: X=-0.031 | Y=-0.005 | Z=1.055
+Raw 14-byte dump: FE 0C FF 84 43 50 0E B0 FF CD 00 E3 FF 97 
+Accel Gs: X=-0.031 | Y=-0.008 | Z=1.052
+Raw 14-byte dump: FE 14 FF 94 43 DC 0E 90 FF EA 00 D0 FF 8C 
+Accel Gs: X=-0.030 | Y=-0.007 | Z=1.060
+Raw 14-byte dump: FD D8 FF 58 43 DC 0E 90 FF E1 00 F3 FF 8D 
+Accel Gs: X=-0.034 | Y=-0.010 | Z=1.060
+Raw 14-byte dump: FE 20 FF A8 43 14 0E 70 FF DC 00 D3 FF 8E 
+Accel Gs: X=-0.029 | Y=-0.005 | Z=1.048
+Raw 14-byte dump: FD DC FF DC 43 CC 0E D0 FF F0 00 D7 FF 87 
+Accel Gs: X=-0.033 | Y=-0.002 | Z=1.059
+Raw 14-byte dump: FD E0 FF B0 44 00 0E 90 FF E1 00 E9 FF 95 
+Accel Gs: X=-0.033 | Y=-0.005 | Z=1.062
+Raw 14-byte dump: FE 20 FF C0 43 D0 0E C0 FF E3 00 E5 FF 82 
+Accel Gs: X=-0.029 | Y=-0.004 | Z=1.060
+Raw 14-byte dump: FD E4 FF 4C 43 98 0E B0 FF DF 00 E0 FF 85 
+Accel Gs: X=-0.033 | Y=-0.011 | Z=1.056
+Raw 14-byte dump: FD F0 FF 9C 43 28 0E 90 FF E0 00 E9 FF A4 
+Accel Gs: X=-0.032 | Y=-0.006 | Z=1.049
+Raw 14-byte dump: FE 24 FF B4 43 94 0E D0 FF E8 00 C8 FF A9 
+Accel Gs: X=-0.029 | Y=-0.005 | Z=1.056
+Raw 14-byte dump: FD E8 FF 68 43 44 0E C0 FF EE 00 E4 FF 87 
+Accel Gs: X=-0.033 | Y=-0.009 | Z=1.051
+Raw 14-byte dump: FE 14 FF 7C 43 44 0E C0 FF E8 00 FB FF 87 
+Accel Gs: X=-0.030 | Y=-0.008 | Z=1.051
+Raw 14-byte dump: FE 08 FF 80 43 AC 0E D0 FF F3 00 D9 FF 8D 
+Accel Gs: X=-0.031 | Y=-0.008 | Z=1.057
+Raw 14-byte dump: FE 20 FF 98 43 D4 0E 50 FF E3 00 C9 FF 97 
+Accel Gs: X=-0.029 | Y=-0.006 | Z=1.060
+Raw 14-byte dump: FE 14 FF 70 43 F4 0E B0 FF DA 00 CF FF 91 
+Accel Gs: X=-0.030 | Y=-0.009 | Z=1.062
+Raw 14-byte dump: FE 20 FF B4 44 04 0E D0 FF D5 00 E1 FF 79 
+Accel Gs: X=-0.029 | Y=-0.005 | Z=1.063
+Raw 14-byte dump: FE 4C FF 78 43 74 0E B0 FF E2 00 F0 FF 9C 
+Accel Gs: X=-0.027 | Y=-0.008 | Z=1.054
+Raw 14-byte dump: FE 00 FF D0 43 58 0E 80 FF D2 00 EA FF A4 
+Accel Gs: X=-0.031 | Y=-0.003 | Z=1.052
+Raw 14-byte dump: FE 30 FF 8C 43 DC 0E C0 FF D9 00 CF FF 87 
+Accel Gs: X=-0.028 | Y=-0.007 | Z=1.060
+Raw 14-byte dump: FE 48 FF 78 43 B8 0E B0 FF D3 00 FF FF 95 
+Accel Gs: X=-0.027 | Y=-0.008 | Z=1.058
+Raw 14-byte dump: FE 28 FF 8C 43 3C 0E C0 FF DF 00 D2 FF 86 
+Accel Gs: X=-0.029 | Y=-0.007 | Z=1.051
+Raw 14-byte dump: FE 30 FF 7C 43 80 0E C0 FF D5 00 D5 FF 7F 
+Accel Gs: X=-0.028 | Y=-0.008 | Z=1.055
+Raw 14-byte dump: FE 1C FF B0 44 04 0E 90 FF E8 00 E4 FF 84 
+Accel Gs: X=-0.030 | Y=-0.005 | Z=1.063
+Raw 14-byte dump: FE 00 FF A0 43 80 0E 90 FF F1 00 F5 FF 8E 
+Accel Gs: X=-0.031 | Y=-0.006 | Z=1.055
+Raw 14-byte dump: FE 00 FF 90 43 88 0E B0 FF DD 00 D7 FF 97 
+Accel Gs: X=-0.031 | Y=-0.007 | Z=1.055
+Raw 14-byte dump: FE 3C FF B4 43 48 0E B0 FF DD 00 E5 FF 95 
+Accel Gs: X=-0.028 | Y=-0.005 | Z=1.051
+Raw 14-byte dump: FE 1C FF 64 43 C8 0E 90 FF F2 00 BD FF 96 
+Accel Gs: X=-0.030 | Y=-0.010 | Z=1.059
+Raw 14-byte dump: FD EC FF 88 43 94 0E 90 FF FC 00 C8 FF 75 
+Accel Gs: X=-0.032 | Y=-0.007 | Z=1.056
+Raw 14-byte dump: FD D0 FF 88 43 78 0E 90 FF D6 00 E9 FF 85 
+Accel Gs: X=-0.034 | Y=-0.007 | Z=1.054
+Raw 14-byte dump: FD E4 FF 90 43 AC 0E F0 FF EB 00 E4 FF 95 
+Accel Gs: X=-0.033 | Y=-0.007 | Z=1.057
+Raw 14-byte dump: FE 00 FF AC 43 C8 0E B0 00 08 00 E5 FF 92 
+Accel Gs: X=-0.031 | Y=-0.005 | Z=1.059
+Raw 14-byte dump: FD EC FF B4 43 CC 0E 80 FF D2 00 F2 FF 90 
+Accel Gs: X=-0.032 | Y=-0.005 | Z=1.059
+Raw 14-byte dump: FD FC FF 9C 44 08 0E F0 FF F0 00 D5 FF A5 
+Accel Gs: X=-0.031 | Y=-0.006 | Z=1.063
+Raw 14-byte dump: FE 40 FF 58 43 C0 0E 80 FF EE 00 D3 FF 85 
+Accel Gs: X=-0.027 | Y=-0.010 | Z=1.059
+Raw 14-byte dump: FE 18 FF A0 43 D0 0E C0 FF F0 00 E2 FF 80 
+Accel Gs: X=-0.030 | Y=-0.006 | Z=1.060
+Raw 14-byte dump: FE 10 FF AC 43 70 0E 90 FF DE 00 E2 FF 7C 
+Accel Gs: X=-0.030 | Y=-0.005 | Z=1.054
+Raw 14-byte dump: FE 34 FF C0 43 C0 0E 80 FF FD 00 F8 FF A3 
+Accel Gs: X=-0.028 | Y=-0.004 | Z=1.059
+Raw 14-byte dump: FE 24 FF 90 43 D0 0E D0 00 13 00 DA FF 8B 
+Accel Gs: X=-0.029 | Y=-0.007 | Z=1.060
+Raw 14-byte dump: FE 1C FF A8 43 58 0E 70 FF F4 00 E0 FF 96 
+Accel Gs: X=-0.030 | Y=-0.005 | Z=1.052
+Raw 14-byte dump: FE 14 FF 70 44 24 0E 90 FF F5 00 EC FF 90 
+Accel Gs: X=-0.030 | Y=-0.009 | Z=1.065
+Raw 14-byte dump: FD F4 FF 68 43 58 0E D0 FF D8 00 EC FF 88 
+Accel Gs: X=-0.032 | Y=-0.009 | Z=1.052
+Raw 14-byte dump: FE 58 FF AC 44 24 0E B0 FF F0 00 F1 FF 99 
+Accel Gs: X=-0.026 | Y=-0.005 | Z=1.065
+Raw 14-byte dump: FE 14 FF 9C 43 24 0E 70 FF D7 00 DC FF 80 
+Accel Gs: X=-0.030 | Y=-0.006 | Z=1.049
+Raw 14-byte dump: FE 30 FF 7C 43 A8 0E 70 FF E2 01 0A FF 84 
+Accel Gs: X=-0.028 | Y=-0.008 | Z=1.057
+Raw 14-byte dump: FE 18 FF F8 43 00 0E C0 FF E5 00 CE FF 8C 
+Accel Gs: X=-0.030 | Y=-0.000 | Z=1.047
+Raw 14-byte dump: FE 20 FF 90 43 3C 0E C0 FF F7 00 F7 FF A9 
+Accel Gs: X=-0.029 | Y=-0.007 | Z=1.051
+Raw 14-byte dump: FE 10 FF 3C 43 84 0E 90 FF DB 01 02 FF 99 
+Accel Gs: X=-0.030 | Y=-0.012 | Z=1.055
+Raw 14-byte dump: FE 34 FF B4 44 1C 0E 80 FF EA 00 ED FF 7A 
+Accel Gs: X=-0.028 | Y=-0.005 | Z=1.064
+Raw 14-byte dump: FD EC FF 90 43 DC 0E C0 FF F2 00 F6 FF AA 
+Accel Gs: X=-0.032 | Y=-0.007 | Z=1.060
+Raw 14-byte dump: FE 0C FF 44 43 8C 0E 70 FF DE 00 E1 FF 91 
+Accel Gs: X=-0.031 | Y=-0.011 | Z=1.055
+Raw 14-byte dump: FD F4 FF BC 43 7C 0E 90 FF D8 00 D6 FF A1 
+Accel Gs: X=-0.032 | Y=-0.004 | Z=1.054
+Raw 14-byte dump: FD FC FF 9C 43 A4 0E C0 FF E3 01 06 FF 95 
+Accel Gs: X=-0.031 | Y=-0.006 | Z=1.057
+Raw 14-byte dump: FD E8 FF 84 44 3C 0E 80 FF C4 00 CD FF 7E 
+Accel Gs: X=-0.033 | Y=-0.008 | Z=1.066
+Raw 14-byte dump: FD FC FF 84 43 B0 0E 80 00 0A 00 D6 FF 9F 
+Accel Gs: X=-0.031 | Y=-0.008 | Z=1.058
+Raw 14-byte dump: FE 18 FF B4 43 AC 0E 50 FF EE 00 D8 FF A4 
+Accel Gs: X=-0.030 | Y=-0.005 | Z=1.057
+Raw 14-byte dump: FD EC FF 68 43 6C 0E D0 FF EF 00 F0 FF A1 
+Accel Gs: X=-0.032 | Y=-0.009 | Z=1.053
+Raw 14-byte dump: FD FC FF 8C 43 B0 0E 50 FF BF 00 9D FF AD 
+Accel Gs: X=-0.031 | Y=-0.007 | Z=1.058
+Raw 14-byte dump: FE 00 FF 5C 43 34 0E D0 FF E3 00 DA FF 96 
+Accel Gs: X=-0.031 | Y=-0.010 | Z=1.050
+Raw 14-byte dump: FD E8 FF 8C 43 48 0E 90 FF EA 00 C4 FF AD 
+Accel Gs: X=-0.033 | Y=-0.007 | Z=1.051
+Raw 14-byte dump: FE 10 FF 60 43 E8 0E C0 FF E3 00 E8 FF 82 
+Accel Gs: X=-0.030 | Y=-0.010 | Z=1.061
+Raw 14-byte dump: FE 08 FF 90 43 AC 0E 70 FF D9 00 FC FF 91 
+Accel Gs: X=-0.031 | Y=-0.007 | Z=1.057
+Raw 14-byte dump: FE 30 FF 7C 43 4C 0E C0 FF B5 00 CD FF 85 
+Accel Gs: X=-0.028 | Y=-0.008 | Z=1.052
+Raw 14-byte dump: FE 24 FF 7C 43 FC 0E 50 FF F5 00 E7 FF 86 
+Accel Gs: X=-0.029 | Y=-0.008 | Z=1.062
+Raw 14-byte dump: FE 08 FF 94 43 EC 0E C0 FF F7 00 FB FF 8F 
+Accel Gs: X=-0.031 | Y=-0.007 | Z=1.061
+Raw 14-byte dump: FE 20 FF C4 43 E8 0E 90 FF D6 00 CF FF 78 
+Accel Gs: X=-0.029 | Y=-0.004 | Z=1.061
+Rs: X=-0.030 | Y=-0.010 | Z=1.060
+Raw 14-byte dump: FE 40 FF 90 43 B4 0E C0 00 0A 00 DC FF A8 
+Accel Gs: X=-0.027 | Y=-0.007 | Z=1.058
+Raw 14-byte dump: FE 44 FF 68 43 1C 0E 50 FF EE 00 B4 FF 8E 
+Accel Gs: X=-0.027 | Y=-0.009 | Z=1.049
+Raw 14-byte dump: FE 60 FF 5C 43 C0 0E 70 FF D8 00 D3 FF 93 
+Accel Gs: X=-0.025 | Y=-0.010 | Z=1.059
+Raw 14-byte dump: FE 30 FF 9C 43 EC 0E 20 FF CB 00 D4 FF 84 
+Accel Gs: X=-0.028 | Y=-0.006 | Z=1.061
+Raw 14-byte dump: FD F4 FF 84 43 94 0E 90 FF F3 00 DE FF 91 
+Accel Gs: X=-0.032 | Y=-0.008 | Z=1.056
+Raw 14-byte dump: FD F0 FF CC 44 D0 0E 40 FF E1 00 CB FF A0 
+Accel Gs: X=-0.032 | Y=-0.003 | Z=1.075
+Raw 14-byte dump: FE 4C FF 64 43 A4 0E 70 FF D8 00 C5 FF 95 
+Accel Gs: X=-0.027 | Y=-0.010 | Z=1.057
+Raw 14-byte dump: FE 20 FF 90 43 70 0E 70 FF C3 00 EB FF 8F 
+Accel Gs: X=-0.029 | Y=-0.007 | Z=1.054
+Raw 14-byte dump: FE 14 FF 60 43 F0 0E 20 FF FF 00 D3 FF 89 
+Accel Gs: X=-0.030 | Y=-0.010 | Z=1.062
+Raw 14-byte dump: FE 04 FF 90 43 90 0E 40 FF E7 01 02 FF A7 
+Accel Gs: X=-0.031 | Y=-0.007 | Z=1.056
+Raw 14-byte dump: FE 60 FF 4C 44 18 0E 90 FF E8 01 15 FF A7 
+Accel Gs: X=-0.025 | Y=-0.011 | Z=1.064
+Raw 14-byte dump: FD FC FF D8 44 38 0E 50 FF EC 00 DF FF B2 
+Accel Gs: X=-0.031 | Y=-0.002 | Z=1.066
+Raw 14-byte dump: FE 08 FF 7C 43 68 0E 80 FF D5 00 E2 FF 90 
+Accel Gs: X=-0.031 | Y=-0.008 | Z=1.053
+Raw 14-byte dump: FE 3C FF 94 43 EC 0E 50 FF C6 00 EC FF A3 
+Accel Gs: X=-0.028 | Y=-0.007 | Z=1.061
+Raw 14-byte dump: FE 34 FF 80 43 68 0E 40 FF F6 00 DC FF 62 
+Accel Gs: X=-0.028 | Y=-0.008 | Z=1.053
+Raw 14-byte dump: FE 0C FF 84 43 94 0E 90 FF EC 00 F1 FF 97 
+Accel Gs: X=-0.031 | Y=-0.008 | Z=1.056
+Raw 14-byte dump: FE 40 FF 7C 43 D8 0E 50 FF C8 00 C9 FF 9A 
+Accel Gs: X=-0.027 | Y=-0.008 | Z=1.060
+Raw 14-byte dump: FE 40 FF 84 44 24 0E B0 FF E1 00 CF FF 99 
+Accel Gs: X=-0.027 | Y=-0.008 | Z=1.065
+Raw 14-byte dump: FE 38 FF 60 43 B8 0E 90 FF ED 00 DF FF 7D 
+Accel Gs: X=-0.028 | Y=-0.010 | Z=1.058
+Raw 14-byte dump: FE 38 FF A8 43 C0 0E 50 FF C4 00 CA FF B1 
+Accel Gs: X=-0.028 | Y=-0.005 | Z=1.059
+Raw 14-byte dump: FE 2C FF 78 44 30 0E 90 FF D6 00 CC FF A2 
+Accel Gs: X=-0.029 | Y=-0.008 | Z=1.065
+Raw 14-byte dump: FE 10 FF 94 43 CC 0E 40 FF E4 00 DF FF A4 
+Accel Gs: X=-0.030 | Y=-0.007 | Z=1.059
+Raw 14-byte dump: FD FC FF 6C 43 88 0E 50 FF F8 00 D3 FF 90 
+Accel Gs: X=-0.031 | Y=-0.009 | Z=1.055
+Raw 14-byte dump: FE 1C FF 78 43 3C 0E 70 FF CD 00 F5 FF 92 
+Accel Gs: X=-0.030 | Y=-0.008 | Z=1.051
+Raw 14-byte dump: FE 28 FF 98 44 48 0E 70 FF EC 00 E2 FF 82 
+Accel Gs: X=-0.029 | Y=-0.006 | Z=1.067
+Raw 14-byte dump: FE 10 FF 94 43 F0 0E 70 FF C4 00 D9 FF 84 
+Accel Gs: X=-0.030 | Y=-0.007 | Z=1.062
+Raw 14-byte dump: FE 68 FF 68 43 C4 0E 50 FF F5 00 E0 FF 8F 
+Accel Gs: X=-0.025 | Y=-0.009 | Z=1.059
+Raw 14-byte dump: FE 20 FF 50 43 CC 0E 20 FF D4 00 E6 FF 91 
+Accel Gs: X=-0.029 | Y=-0.011 | Z=1.059
+Raw 14-byte dump: FE 38 FF 94 44 04 0E 20 FF F2 00 EF FF 94 
+Accel Gs: X=-0.028 | Y=-0.007 | Z=1.063
+Raw 14-byte dump: FE 5C FF 5C 44 10 0E 90 FF CC 00 EF FF 93 
+Accel Gs: X=-0.026 | Y=-0.010 | Z=1.063
+Raw 14-byte dump: FE 40 FF C0 44 24 0E 40 FF EA 00 E9 FF A2 
+Accel Gs: X=-0.027 | Y=-0.004 | Z=1.065
+Raw 14-byte dump: FE 0C FF 40 44 28 0E 50 FF EF 00 CA FF 95 
+Accel Gs: X=-0.031 | Y=-0.012 | Z=1.065
+Raw 14-byte dump: FE 48 FF C4 43 50 0E 50 FF FD 00 EB FF 91 
+Accel Gs: X=-0.027 | Y=-0.004 | Z=1.052
+Raw 14-byte dump: FE 3C FF 58 43 B0 0E 50 FF D2 00 DF FF 7D 
+Accel Gs: X=-0.028 | Y=-0.010 | Z=1.058
+Raw 14-byte dump: FE 3C FF A0 43 F8 0E 70 FF D3 00 EA FF 91 
+Accel Gs: X=-0.028 | Y=-0.006 | Z=1.062
+Raw 14-byte dump: FE 2C FF B0 43 A4 0E 70 FF EA 00 D0 FF 8F 
+Accel Gs: X=-0.029 | Y=-0.005 | Z=1.057
+Raw 14-byte dump: FE 20 FF 74 44 24 0E 90 FF E6 00 E4 FF 8A 
+Accel Gs: X=-0.029 | Y=-0.009 | Z=1.065
+Raw 14-byte dump: FE 2C FF 98 43 F0 0E 50 FF DD 00 DB FF A6 
+Accel Gs: X=-0.029 | Y=-0.006 | Z=1.062
+Raw 14-byte dump: FE 4C FF 94 43 9C 0E 50 FF D7 00 DF FF 95 
+Accel Gs: X=-0.027 | Y=-0.007 | Z=1.056
+Raw 14-byte dump: FD F8 FF 58 43 74 0E 90 FF DA 00 D2 FF A9 
+Accel Gs: X=-0.032 | Y=-0.010 | Z=1.054
+Raw 14-byte dump: FE 28 FF 98 43 F4 0E B0 FF F4 00 F3 FF 90 
+Accel Gs: X=-0.029 | Y=-0.006 | Z=1.062
+Raw 14-byte dump: FE 48 FF 40 43 B8 0E 90 FF CF 00 E9 FF 7B 
+Accel Gs: X=-0.027 | Y=-0.012 | Z=1.058
+Raw 14-byte dump: FE 8C FF 80 43 B0 0E 90 00 0B 00 FA FF 9A 
+Accel Gs: X=-0.023 | Y=-0.008 | Z=1.058
+Raw 14-byte dump: FE 14 FF 74 43 BC 0E 70 FF E2 00 E9 FF 80 
+Accel Gs: X=-0.030 | Y=-0.009 | Z=1.058
+Raw 14-byte dump: FE 48 FF A0 43 AC 0E 50 FF F5 00 DA FF 8A 
+Accel Gs: X=-0.027 | Y=-0.006 | Z=1.057
+Raw 14-byte dump: FE 4C FF 8C 43 A0 0E 70 FF D2 00 E9 FF 99 
+Accel Gs: X=-0.027 | Y=-0.007 | Z=1.057
+Raw 14-byte dump: FE 3C FF 8C 44 1C 0E 90 FF C5 00 C1 FF 70 
+Accel Gs: X=-0.028 | Y=-0.007 | Z=1.064
+Raw 14-byte dump: FD E4 FF 7C 43 D4 0E B0 FF CF 01 0D FF A6 
+Accel Gs: X=-0.033 | Y=-0.008 | Z=1.060
+Raw 14-byte dump: FE 2C FF 9C 44 0C 0E B0 FF F1 00 D0 FF 94 
+Accel Gs: X=-0.029 | Y=-0.006 | Z=1.063
+Raw 14-byte dump: FE 50 FF 68 44 0C 0E 90 FF F4 00 EA FF 83 
+Accel Gs: X=-0.026 | Y=-0.009 | Z=1.063
+Raw 14-byte dump: FE 24 FF 80 43 64 0E 80 FF DE 00 E9 FF 9D 
+Accel Gs: X=-0.029 | Y=-0.008 | Z=1.053
+Raw 14-byte dump: FE 54 FF 98 43 BC 0E B0 FF D7 00 C4 FF AC 
+Accel Gs: X=-0.026 | Y=-0.006 | Z=1.058
+Raw 14-byte dump: FD F4 FF A4 43 D4 0E 40 FF CC 00 CA FF AA 
+Accel Gs: X=-0.032 | Y=-0.006 | Z=1.060
+Raw 14-byte dump: FE 58 FF A0 43 DC 0E 40 FF DB 00 F6 FF AB 
+Accel Gs: X=-0.026 | Y=-0.006 | Z=1.060
+Raw 14-byte dump: FD E4 FF 80 44 34 0E 50 FF E8 00 D7 FF 98 
+Accel Gs: X=-0.033 | Y=-0.008 | Z=1.066
+Raw 14-byte dump: FE 60 FF 80 43 80 0E 90 FF FA 00 ED FF 78 
+Accel Gs: X=-0.025 | Y=-0.008 | Z=1.055
+Raw 14-byte dump: FE 40 FF B0 44 08 0E 90 FF E0 00 CC FF 8E 
+Accel Gs: X=-0.027 | Y=-0.005 | Z=1.063
+Raw 14-byte dump: FE 24 FF 9C 43 98 0E 90 FF EC 00 D9 FF 8F 
+Accel Gs: X=-0.029 | Y=-0.006 | Z=1.056
+Raw 14-byte dump: FE 44 FF A4 43 84 0E 90 FF D6 00 C1 FF A7 
+Accel Gs: X=-0.027 | Y=-0.006 | Z=1.055
+Raw 14-byte dump: FE 4C FF 98 43 D8 0E 50 FF DA 00 FA FF 9B 
+Accel Gs: X=-0.027 | Y=-0.006 | Z=1.060
+Raw 14-byte dump: FE 40 FF A0 44 20 0E B0 FF FC 00 D7 FF 8A 
+Accel Gs: X=-0.027 | Y=-0.006 | Z=1.064
+Raw 14-byte dump: FE 50 FF 78 44 30 0E 70 FF CB 00 D0 FF 83 
+Accel Gs: X=-0.026 | Y=-0.008 | Z=1.065
+Raw 14-byte dump: FE 2C FF 48 43 88 0E 90 FF FC 00 D2 FF 83 
+Accel Gs: X=-0.029 | Y=-0.011 | Z=1.055
+Raw 14-byte dump: FE 34 FF 90 44 0C 0E 80 FF E4 00 C0 FF 75 
+Accel Gs: X=-0.028 | Y=-0.007 | Z=1.063
+Raw 14-byte dump: FE 64 FF 60 43 C4 0E 70 FF DE 00 DB FF A7 
+Accel Gs: X=-0.025 | Y=-0.010 | Z=1.059
+Raw 14-byte dump: FE 44 FF 90 43 BC 0E 50 FF D0 00 CF FF 84 
+Accel Gs: X=-0.027 | Y=-0.007 | Z=1.058
+Raw 14-byte dump: FE 80 FF 8C 43 48 0E 40 FF E1 00 D5 FF 82 
+Accel Gs: X=-0.023 | Y=-0.007 | Z=1.051
+Raw 14-byte dump: FE 5C FF 7C 44 28 0E 70 FF BC 00 D6 FF 8C 
+Accel Gs: X=-0.026 | Y=-0.008 | Z=1.065
+Raw 14-byte dump: FE 70 FF 98 44 3C 0E C0 FF D8 00 C0 FF 8A 
+Accel Gs: X=-0.024 | Y=-0.006 | Z=1.066
+Raw 14-byte dump: FD F0 FF 68 44 60 0E 70 FF D6 00 F3 FF 9F 
+Accel Gs: X=-0.032 | Y=-0.009 | Z=1.068
+Raw 14-byte dump: FE 0C FF 9C 44 18 0E 80 FF E2 00 D4 FF BB 
+Accel Gs: X=-0.031 | Y=-0.006 | Z=1.064
+Raw 14-byte dump: FD F8 FF 74 43 98 0E 90 FF E6 00 E6 FF B4 
+Accel Gs: X=-0.032 | Y=-0.009 | Z=1.056
+Raw 14-byte dump: FE 14 FF 40 43 F8 0E 70 FF E5 00 BD FF 81 
+Accel Gs: X=-0.030 | Y=-0.012 | Z=1.062
+Raw 14-byte dump: FE 08 FF 58 43 F4 0E 90 FF DC 00 E3 FF 9C 
+Accel Gs: X=-0.031 | Y=-0.010 | Z=1.062
+Raw 14-byte dump: FE 3C FF 94 44 2C 0E 80 FF D6 00 D7 FF A3 
+Accel Gs: X=-0.028 | Y=-0.007 | Z=1.065
+Raw 14-byte dump: FE 4C FF 78 44 2C 0E 70 FF E4 00 D9 FF 8F 
+Accel Gs: X=-0.027 | Y=-0.008 | Z=1.065
+Raw 14-byte dump: FE 58 FF 7C 43 EC 0E 50 FF F5 00 E9 FF 8E 
+Accel Gs: X=-0.026 | Y=-0.008 | Z=1.061
+Raw 14-byte dump: FE 1C FF 78 44 70 0E 90 FF D3 00 D4 FF 7B 
+Accel Gs: X=-0.030 | Y=-0.008 | Z=1.069
+Raw 14-byte dump: FE 60 FF A0 43 B0 0E C0 FF EC 00 D4 FF 94 
+Accel Gs: X=-0.025 | Y=-0.006 | Z=1.058
+Raw 14-byte dump: FD F8 FF 84 43 E0 0E 70 FF EE 00 F3 FF A6 
+Accel Gs: X=-0.032 | Y=-0.008 | Z=1.061
+Raw 14-byte dump: FE 64 FF 80 44 14 0E 20 FF E2 00 D4 FF 93 
+Accel Gs: X=-0.025 | Y=-0.008 | Z=1.064
+Raw 14-byte dump: FE 94 FF 74 44 18 0E 50 FF E4 00 FA FF 9D 
+Accel Gs: X=-0.022 | Y=-0.009 | Z=1.064
+Raw 14-byte dump: FE 68 FF B8 43 90 0E 50 FF E3 00 C7 FF 7C 
+Accel Gs: X=-0.025 | Y=-0.004 | Z=1.056
+Raw 14-byte dump: FE 50 FF 84 43 90 0E 50 FF D7 00 EB FF 97 
+Accel Gs: X=-0.026 | Y=-0.008 | Z=1.056
+Raw 14-byte dump: FE 30 FF 8C 43 78 0E 70 FF D2 00 D2 FF 74 
+Accel Gs: X=-0.028 | Y=-0.007 | Z=1.054
+Raw 14-byte dump: FE 3C FF B8 43 C0 0E 90 FF CB 00 D8 FF 84 
+Accel Gs: X=-0.028 | Y=-0.004 | Z=1.059
+Raw 14-byte dump: FE 08 FF 7C 43 64 0E 70 FF F3 00 F1 FF 94 
+Accel Gs: X=-0.031 | Y=-0.008 | Z=1.053
+Raw 14-byte dump: FE 28 FF A0 43 B8 0E 70 FF DE 00 E7 FF 7E 
+Accel Gs: X=-0.029 | Y=-0.006 | Z=1.058
+Raw 14-byte dump: FE 18 FF 68 43 48 0E 40 FF FA 00 EA FF A2 
+Accel Gs: X=-0.030 | Y=-0.009 | Z=1.051
+Raw 14-byte dump: FE 20 FF 50 43 50 0E 90 FF FB 00 BF FF 8C 
+Accel Gs: X=-0.029 | Y=-0.011 | Z=1.052
+Raw 14-byte dump: FE 24 FF 44 43 EC 0E 80 FF D9 00 E4 FF 7E 
+Accel Gs: X=-0.029 | Y=-0.011 | Z=1.061
+Raw 14-byte dump: FE 3C FF 80 43 94 0E 80 FF E9 00 ED FF 87 
+Accel Gs: X=-0.028 | Y=-0.008 | Z=1.056
+Raw 14-byte dump: FE 18 FF 80 43 C8 0E 50 FF CE 00 DB FF 88 
+Accel Gs: X=-0.030 | Y=-0.008 | Z=1.059
+Raw 14-byte dump: FE 08 FF 60 43 84 0E C0 FF E2 00 D2 FF 8A 
+Accel Gs: X=-0.031 | Y=-0.010 | Z=1.055
+Raw 14-byte dump: FE 54 FF 78 43 84 0E 90 FF F0 00 C7 FF 81 
+Accel Gs: X=-0.026 | Y=-0.008 | Z=1.055
+Raw 14-byte dump: FE 34 FF 78 43 E8 0E C0 FF D2 00 CA FF A7 
+Accel Gs: X=-0.028 | Y=-0.008 | Z=1.061
+Raw 14-byte dump: FD FC FF 30 43 D0 0E B0 FF F3 00 F0 FF 87 
+Accel Gs: X=-0.031 | Y=-0.013 | Z=1.060
+Raw 14-byte dump: FE 5C FF A0 44 08 0E 90 FF DF 00 E1 FF 80 
+Accel Gs: X=-0.026 | Y=-0.006 | Z=1.063
+Raw 14-byte dump: FE 00 FF 5C 43 E8 0E 50 FF E8 00 C4 FF 96 
+Accel Gs: X=-0.031 | Y=-0.010 | Z=1.061
+Raw 14-byte dump: FE 28 FF 48 43 B8 0E B0 FF E5 00 DA FF 8E 
+Accel Gs: X=-0.029 | Y=-0.011 | Z=1.058
+Raw 14-byte dump: FE 28 FF A0 43 E0 0E 90 FF DA 00 E6 FF 89 
+Accel Gs: X=-0.029 | Y=-0.006 | Z=1.061
+Raw 14-byte dump: FE 5C FF A0 43 7C 0E 90 FF E4 00 EE FF 84 
+Accel Gs: X=-0.026 | Y=-0.006 | Z=1.054
+Raw 14-byte dump: FE 0C FF 84 44 04 0E 90 FF EF 00 E8 FF B3 
+Accel Gs: X=-0.031 | Y=-0.008 | Z=1.063
+Raw 14-byte dump: FE 50 FF AC 43 DC 0E 50 FF DA 00 D9 FF 7B 
+Accel Gs: X=-0.026 | Y=-0.005 | Z=1.060
+Raw 14-byte dump: FE 54 FF 8C 44 20 0E B0 FF E0 00 D4 FF 92 
+Accel Gs: X=-0.026 | Y=-0.007 | Z=1.064
+Raw 14-byte dump: FE 58 FF 74 43 BC 0E 80 FF EE 00 DD FF 7E 
+Accel Gs: X=-0.026 | Y=-0.009 | Z=1.058
+Raw 14-byte dump: FE 48 FF 88 43 E4 0E 40 FF DC 00 D8 FF 95 
+Accel Gs: X=-0.027 | Y=-0.007 | Z=1.061
+Raw 14-byte dump: FE 0C FF A0 44 1C 0E B0 FF CB 00 C8 FF 8C 
+Accel Gs: X=-0.031 | Y=-0.006 | Z=1.064
+Raw 14-byte dump: FE 20 FF AC 44 24 0E 70 FF E3 00 F3 FF A2 
+Accel Gs: X=-0.029 | Y=-0.005 | Z=1.065
+Raw 14-byte dump: FE 1C FF A8 43 B0 0E 50 FF E3 00 E2 FF A2 
+Accel Gs: X=-0.030 | Y=-0.005 | Z=1.058
+Raw 14-byte dump: FE 44 FF 74 44 48 0E 80 FF DF 00 D0 FF 90 
+Accel Gs: X=-0.027 | Y=-0.009 | Z=1.067
+Raw 14-byte dump: FE 2C FF 50 43 90 0E 90 FF E0 00 C2 FF 95 
+Accel Gs: X=-0.029 | Y=-0.011 | Z=1.056
+Raw 14-byte dump: FE 60 FF 94 43 D0 0E 90 FF EB 00 E3 FF 96 
+Accel Gs: X=-0.025 | Y=-0.007 | Z=1.060
+Raw 14-byte dump: FE 5C FF 84 43 E4 0E 90 FF D9 00 F3 FF 89 
+Accel Gs: X=-0.026 | Y=-0.008 | Z=1.061
+Raw 14-byte dump: FE 2C FF 80 43 F4 0E B0 FF E7 00 E7 FF 91 
+Accel Gs: X=-0.029 | Y=-0.008 | Z=1.062
+Raw 14-byte dump: FE 30 FF 88 43 68 0E 50 FF C2 00 D7 FF B7 
+Accel Gs: X=-0.028 | Y=-0.007 | Z=1.053
+Raw 14-byte dump: FE 38 FF 6C 43 D4 0E 80 FF D4 00 C6 FF 80 
+Accel Gs: X=-0.028 | Y=-0.009 | Z=1.060
+Raw 14-byte dump: FE 78 FF B0 43 E8 0E 90 FF D6 00 EA FF 7F 
+Accel Gs: X=-0.024 | Y=-0.005 | Z=1.061
+Raw 14-byte dump: FE 34 FF 74 43 D8 0E 70 FF EF 00 E5 FF 98 
+Accel Gs: X=-0.028 | Y=-0.009 | Z=1.060
+Raw 14-byte dump: FE 50 FF 44 43 CC 0E 50 FF E2 00 BA FF 91 
+Accel Gs: X=-0.026 | Y=-0.011 | Z=1.059
+Raw 14-byte dump: FE 84 FF 88 43 C0 0E 80 FF DD 00 E2 FF AC 
+Accel Gs: X=-0.023 | Y=-0.007 | Z=1.059
+Raw 14-byte dump: FE 24 FF 9C 43 C4 0E 50 FF F5 00 EB FF 95 
+Accel Gs: X=-0.029 | Y=-0.006 | Z=1.059
+Raw 14-byte dump: FE 10 FF 5C 43 9C 0E 90 FF F7 00 EF FF A7 
+Accel Gs: X=-0.030 | Y=-0.010 | Z=1.056
+Raw 14-byte dump: FD FC FF 48 43 90 0E 50 FF DA 00 F1 FF 88 
+Accel Gs: X=-0.031 | Y=-0.011 | Z=1.056
+Raw 14-byte dump: FE 28 FF 54 43 DC 0E 90 FF CF 00 E0 FF 9C 
+Accel Gs: X=-0.029 | Y=-0.010 | Z=1.060
+Raw 14-byte dump: FE 08 FF 8C 44 30 0E B0 FF D7 00 CA FF 92 
+Accel Gs: X=-0.031 | Y=-0.007 | Z=1.065
+Raw 14-byte dump: FE 18 FF 70 43 8C 0E 90 FF EE 00 E0 FF 8A 
+Accel Gs: X=-0.030 | Y=-0.009 | Z=1.055
+Raw 14-byte dump: FE 28 FF 80 43 E0 0E C0 FF D0 00 CF FF A9 
+Accel Gs: X=-0.029 | Y=-0.008 | Z=1.061
+Raw 14-byte dump: FD FC FF 64 44 18 0E 90 FF EA 00 E2 FF 8B 
+Accel Gs: X=-0.031 | Y=-0.010 | Z=1.064
+Raw 14-byte dump: FE 28 FF 4C 43 D4 0E 90 FF FA 00 DB FF AD 
+Accel Gs: X=-0.029 | Y=-0.011 | Z=1.060
+Raw 14-byte dump: FD 9C FF 70 43 EC 0E 50 FF E6 00 F6 FF AB 
+Accel Gs: X=-0.037 | Y=-0.009 | Z=1.061
+Raw 14-byte dump: FE 68 FF 68 43 54 0E 50 FF EB 00 F8 FF 92 
+Accel Gs: X=-0.025 | Y=-0.009 | Z=1.052
+Raw 14-byte dump: FD E4 FF D4 43 9C 0E B0 FF D3 00 D5 FF 79 
+Accel Gs: X=-0.033 | Y=-0.003 | Z=1.056
+Raw 14-byte dump: FE 18 FF A8 43 AC 0E 50 FF DA 00 FB FF 89 
+Accel Gs: X=-0.030 | Y=-0.005 | Z=1.057
+Raw 14-byte dump: FE 00 FF 84 44 00 0E 50 FF F0 00 D1 FF 8F 
+Accel Gs: X=-0.031 | Y=-0.008 | Z=1.062
+Raw 14-byte dump: FE 34 FF B0 43 F8 0E 90 FF DC 00 D6 FF 96 
+Accel Gs: X=-0.028 | Y=-0.005 | Z=1.062
+Raw 14-byte dump: FE 14 FF 80 43 BC 0E 50 FF EE 00 E8 FF A6 
+Accel Gs: X=-0.030 | Y=-0.008 | Z=1.058
+Raw 14-byte dump: FE 60 FF 90 43 C8 0E 70 FF DC 00 EC FF 91 
+Accel Gs: X=-0.025 | Y=-0.007 | Z=1.059
+Raw 14-byte dump: FE 48 FF 68 44 74 0E 40 FF D8 00 C8 FF 9C 
+Accel Gs: X=-0.027 | Y=-0.009 | Z=1.070
+Raw 14-byte dump: FE 18 FF AC 43 D0 0E 90 FF D7 00 F0 FF B7 
+Accel Gs: X=-0.030 | Y=-0.005 | Z=1.060
+Raw 14-byte dump: FD FC FF 58 44 28 0E B0 FF F8 00 DC FF 9B 
+Accel Gs: X=-0.031 | Y=-0.010 | Z=1.065
+Raw 14-byte dump: FE 58 FF 5C 44 1C 0E 90 FF E3 00 CC FF 99 
+Accel Gs: X=-0.026 | Y=-0.010 | Z=1.064
+Raw 14-byte dump: FE 10 FF 7C 43 D0 0E 80 FF DA 00 E5 FF 74 
+Accel Gs: X=-0.030 | Y=-0.008 | Z=1.060
+Raw 14-byte dump: FE 04 FF 98 44 04 0E 90 FF D8 00 D8 FF A7 
+Accel Gs: X=-0.031 | Y=-0.006 | Z=1.063
+Raw 14-byte dump: FE 28 FF 90 44 20 0E 90 FF EE 00 FE FF AC 
+Accel Gs: X=-0.029 | Y=-0.007 | Z=1.064
+Raw 14-byte dump: FE 18 FF 8C 43 F8 0E C0 FF DE 00 E2 FF 9E 
+Accel Gs: X=-0.030 | Y=-0.007 | Z=1.062
+Raw 14-byte dump: FE 2C FF 74 44 08 0E B0 FF D2 00 F3 FF A5 
+Accel Gs: X=-0.029 | Y=-0.009 | Z=1.063
+Raw 14-byte dump: FD E4 FF 80 44 14 0E 40 FF F9 00 CA FF 77 
+Accel Gs: X=-0.033 | Y=-0.008 | Z=1.064
+Raw 14-byte dump: FE 34 FF 98 44 2C 0E 90 FF D7 00 DF FF B3 
+Accel Gs: X=-0.028 | Y=-0.006 | Z=1.065
+Raw 14-byte dump: FE 00 FF BC 43 BC 0E 90 FF D9 00 E1 FF 85 
+Accel Gs: X=-0.031 | Y=-0.004 | Z=1.058
+Raw 14-byte dump: FE 2C FF 60 43 94 0E 70 FF DB 00 E9 FF 9B 
+Accel Gs: X=-0.029 | Y=-0.010 | Z=1.056
+Raw 14-byte dump: FE 34 FF 94 43 94 0E 90 FF D7 00 E1 FF 97 
+Accel Gs: X=-0.028 | Y=-0.007 | Z=1.056
+Raw 14-byte dump: FE 10 FF A0 44 24 0E 90 FF E5 00 DA FF 9B 
+Accel Gs: X=-0.030 | Y=-0.006 | Z=1.065
+Raw 14-byte dump: FE 10 FF 70 43 E0 0E 40 FF BF 00 CA FF 8D 
+Accel Gs: X=-0.030 | Y=-0.009 | Z=1.061
+Raw 14-byte dump: FE 24 FF 84 44 14 0E 70 00 0C 00 E2 FF 95 
+Accel Gs: X=-0.029 | Y=-0.008 | Z=1.064
+Raw 14-byte dump: FE 48 FF 84 43 EC 0E 90 FF E6 00 D1 FF 8E 
+Accel Gs: X=-0.027 | Y=-0.008 | Z=1.061
+Raw 14-byte dump: FE 30 FF 8C 43 D0 0E 50 FF E4 00 F0 FF 84 
+Accel Gs: X=-0.028 | Y=-0.007 | Z=1.060
+Raw 14-byte dump: FE 14 FF A8 43 E4 0E 80 FF DD 00 F0 FF 81 
+Accel Gs: X=-0.030 | Y=-0.005 | Z=1.061
+Raw 14-byte dump: FE 50 FF AC 43 A8 0E 70 FF EF 00 DB FF A1 
+Accel Gs: X=-0.026 | Y=-0.005 | Z=1.057
+Raw 14-byte dump: FD E8 FF 8C 43 C0 0E 70 FF EC 00 E2 FF A5 
+Accel Gs: X=-0.033 | Y=-0.007 | Z=1.059
+Raw 14-byte dump: FE 2C FF A0 44 00 0E 50 FF D4 00 D3 FF 8F 
+Accel Gs: X=-0.029 | Y=-0.006 | Z=1.062
+Raw 14-byte dump: FE 4C FF 90 43 D4 0E 70 FF D8 00 DA FF A8 
+Accel Gs: X=-0.027 | Y=-0.007 | Z=1.060
+Raw 14-byte dump: FE 08 FF 68 43 8C 0E 70 FF E0 00 D4 FF A2 
+Accel Gs: X=-0.031 | Y=-0.009 | Z=1.055
+Raw 14-byte dump: FE 2C FF 98 43 EC 0E 70 FF FE 00 E3 FF 9B 
+Accel Gs: X=-0.029 | Y=-0.006 | Z=1.061
+Raw 14-byte dump: FE 40 FF 90 44 60 0E 90 FF EE 00 E5 FF A6 
+Accel Gs: X=-0.027 | Y=-0.007 | Z=1.068
+Raw 14-byte dump: FE 10 FF 6C 43 6C 0E B0 FF EC 00 D4 FF 99 
+Accel Gs: X=-0.030 | Y=-0.009 | Z=1.053
+Raw 14-byte dump: FE 50 FF A4 43 B4 0E 90 FF F9 00 BC FF B4 
+Accel Gs: X=-0.026 | Y=-0.006 | Z=1.058
+Raw 14-byte dump: FE 44 FF 88 43 7C 0E 50 FF D1 00 E8 FF 9D 
+Accel Gs: X=-0.027 | Y=-0.007 | Z=1.054
+Raw 14-byte dump: FE 04 FF 90 44 80 0E C0 00 05 00 DA FF A4 
+Accel Gs: X=-0.031 | Y=-0.007 | Z=1.070
+Raw 14-byte dump: FE 54 FF 74 43 F0 0E 20 FF F5 00 E6 FF 76 
+Accel Gs: X=-0.026 | Y=-0.009 | Z=1.062
+Raw 14-byte dump: FE 1C FF A4 43 84 0E 80 FF DF 00 C1 FF 97 
+Accel Gs: X=-0.030 | Y=-0.006 | Z=1.055
+Raw 14-byte dump: FD F4 FF 7C 43 E4 0E 40 00 00 00 E7 FF 96 
+Accel Gs: X=-0.032 | Y=-0.008 | Z=1.061
+Raw 14-byte dump: FD F8 FF B4 43 B4 0E 90 FF D2 00 CE FF 87 
+Accel Gs: X=-0.032 | Y=-0.005 | Z=1.058
+Raw 14-byte dump: FE 38 FF 70 44 24 0E 90 FF DC 00 DF FF 89 
+Accel Gs: X=-0.028 | Y=-0.009 | Z=1.065
+Raw 14-byte dump: FD FC FF BC 43 F4 0E 90 FF FC 00 E4 FF 8F 
+Accel Gs: X=-0.031 | Y=-0.004 | Z=1.062
+Raw 14-byte dump: FE 64 FF A0 44 30 0E 90 FF F0 00 DE FF 71 
+Accel Gs: X=-0.025 | Y=-0.006 | Z=1.065
+Raw 14-byte dump: FE 28 FF C0 43 6C 0E 90 FF F3 00 BE FF 85 
+Accel Gs: X=-0.029 | Y=-0.004 | Z=1.053
+Raw 14-byte dump: FE 14 FF 58 43 C0 0E 10 FF E8 00 CC FF 9F 
+Accel Gs: X=-0.030 | Y=-0.010 | Z=1.059
+Raw 14-byte dump: FE 04 FF 9C 43 8C 0E 70 FF F0 00 E5 FF 93 
+Accel Gs: X=-0.031 | Y=-0.006 | Z=1.055
+Raw 14-byte dump: FE 5C FF 80 43 AC 0E 50 FF E1 00 E4 FF 91 
+Accel Gs: X=-0.026 | Y=-0.008 | Z=1.057
+Raw 14-byte dump: FE 54 FF BC 44 3C 0E 40 FF E3 00 DD FF 84 
+Accel Gs: X=-0.026 | Y=-0.004 | Z=1.066
+Raw 14-byte dump: FE 38 FF AC 44 44 0E 40 FF B3 00 C2 FF 9B 
+Accel Gs: X=-0.028 | Y=-0.005 | Z=1.067
+Raw 14-byte dump: FE 50 FF 9C 43 E4 0E 40 FF F6 00 E6 FF A0 
+Accel Gs: X=-0.026 | Y=-0.006 | Z=1.061
+Raw 14-byte dump: FE 20 FF 84 44 14 0E 90 FF B8 00 D4 FF A3 
+Accel Gs: X=-0.029 | Y=-0.008 | Z=1.064
+Raw 14-byte dump: FE 0C FF 7C 43 F8 0E 90 FF DD 00 CC FF AE 
+Accel Gs: X=-0.031 | Y=-0.008 | Z=1.062
+Raw 14-byte dump: FE 4C FF 94 43 C0 0E 70 FF E7 00 F7 FF AE 
+Accel Gs: X=-0.027 | Y=-0.007 | Z=1.059
+Raw 14-byte dump: FE 44 FF 90 43 F4 0E B0 FF B8 00 BB FF 7D 
+Accel Gs: X=-0.027 | Y=-0.007 | Z=1.062
+Raw 14-byte dump: FE 14 FF 6C 43 A0 0E 50 FF C2 00 F1 FF 95 
+Accel Gs: X=-0.030 | Y=-0.009 | Z=1.057
+Raw 14-byte dump: FE 60 FF 60 43 20 0E 70 00 01 00 EF FF 86 
+Accel Gs: X=-0.025 | Y=-0.010 | Z=1.049
+Raw 14-byte dump: FE 30 FF 94 44 30 0E 50 FF E0 00 D4 FF 7E 
+Accel Gs: X=-0.028 | Y=-0.007 | Z=1.065
+Raw 14-byte dump: FE 28 FF 84 43 C0 0E 90 FF F1 00 CF FF 96 
+Accel Gs: X=-0.029 | Y=-0.008 | Z=1.059
+Raw 14-byte dump: FE 74 FF 50 43 C0 0E B0 FF D1 00 F5 FF B4 
+Accel Gs: X=-0.024 | Y=-0.011 | Z=1.059
+Raw 14-byte dump: FE 04 FF A8 43 84 0E 90 FF EB 00 C6 FF B1 
+Accel Gs: X=-0.031 | Y=-0.005 | Z=1.055
+Raw 14-byte dump: FE 1C FF A8 43 B0 0E 90 FF DE 00 FB FF A5 
+Accel Gs: X=-0.030 | Y=-0.005 | Z=1.058
+Raw 14-byte dump: FD F0 FF 70 43 A8 0E 70 FF E8 00 EC FF 94 
+Accel Gs: X=-0.032 | Y=-0.009 | Z=1.057
+Raw 14-byte dump: FE 34 FF 7C 43 B8 0E C0 FF EC 00 E7 FF 86 
+Accel Gs: X=-0.028 | Y=-0.008 | Z=1.058
+Raw 14-byte dump: FE 00 FF 60 43 A0 0E 80 FF E3 00 E3 FF 95 
+Accel Gs: X=-0.031 | Y=-0.010 | Z=1.057
+Raw 14-byte dump: FE 44 FF 50 44 48 0E 70 FF D0 00 E7 FF 9D 
+Accel Gs: X=-0.027 | Y=-0.011 | Z=1.067
+Raw 14-byte dump: FE 28 FF 40 43 A8 0E 90 FF D8 00 BF FF A2 
+Accel Gs: X=-0.029 | Y=-0.012 | Z=1.057
+Raw 14-byte dump: FE 30 FF 70 43 C0 0E B0 FF E9 00 D8 FF BE 
+Accel Gs: X=-0.028 | Y=-0.009 | Z=1.059
+Raw 14-byte dump: FE 08 FF 50 44 28 0E 90 FF D2 00 DC FF AB 
+Accel Gs: X=-0.031 | Y=-0.011 | Z=1.065
+Raw 14-byte dump: FE 18 FF 8C 43 D4 0E B0 FF EC 00 F6 FF 9A 
+Accel Gs: X=-0.030 | Y=-0.007 | Z=1.060
+Raw 14-byte dump: FE 34 FF 4C 44 04 0E 70 FF C7 00 CB FF AD 
+Accel Gs: X=-0.028 | Y=-0.011 | Z=1.063
+Raw 14-byte dump: FE 18 FF A0 44 1C 0E 90 FF C9 00 E9 FF 97 
+Accel Gs: X=-0.030 | Y=-0.006 | Z=1.064
+Raw 14-byte dump: FE 30 FF 9C 44 10 0E 40 FF DD 00 F1 FF 8E 
+Accel Gs: X=-0.028 | Y=-0.006 | Z=1.063
+Raw 14-byte dump: FE 40 FF 74 43 DC 0E 20 FF CD 00 EA FF 8B 
+Accel Gs: X=-0.027 | Y=-0.009 | Z=1.060
+Raw 14-byte dump: FE 68 FF 58 44 48 0E B0 FF DB 00 F9 FF A1 
+Accel Gs: X=-0.025 | Y=-0.010 | Z=1.067
+Raw 14-byte dump: FE 3C FF 88 44 14 0E 50 FF DB 00 DC FF 84 
+Accel Gs: X=-0.028 | Y=-0.007 | Z=1.064
+Raw 14-byte dump: FE 64 FF 7C 43 70 0E 90 FF D4 00 E2 FF 8F 
+Accel Gs: X=-0.025 | Y=-0.008 | Z=1.054
+Raw 14-byte dump: FE 58 FF 3C 43 BC 0E 90 FF D2 00 C9 FF 99 
+Accel Gs: X=-0.026 | Y=-0.012 | Z=1.058
+Raw 14-byte dump: FE 60 FF B0 43 AC 0E 50 FF DF 00 D0 FF 87 
+Accel Gs: X=-0.025 | Y=-0.005 | Z=1.057
+Raw 14-byte dump: FE 30 FF 7C 43 FC 0E 50 FF F4 00 E3 FF 75 
+Accel Gs: X=-0.028 | Y=-0.008 | Z=1.062
+Raw 14-byte dump: FE 2C FF 94 44 0C 0E 50 FF C4 00 E4 FF A6 
+Accel Gs: X=-0.029 | Y=-0.007 | Z=1.063
+Raw 14-byte dump: FD F0 FF 9C 44 24 0E 70 FF D5 00 DA FF 9C 
+Accel Gs: X=-0.032 | Y=-0.006 | Z=1.065
+Raw 14-byte dump: FE 30 FF 68 43 6C 0E 80 FF D8 00 FA FF 96 
+Accel Gs: X=-0.028 | Y=-0.009 | Z=1.053
+Raw 14-byte dump: FD EC FF E8 43 BC 0E 90 FF E0 00 BD FF A5 
+Accel Gs: X=-0.032 | Y=-0.001 | Z=1.058
+Raw 14-byte dump: FE 38 FF 8C 43 94 0E B0 FF E3 00 C6 FF 7A 
+Accel Gs: X=-0.028 | Y=-0.007 | Z=1.056
+Raw 14-byte dump: FD F4 FF 7C 43 90 0E 90 FF DE 00 E5 FF 95 
+Accel Gs: X=-0.032 | Y=-0.008 | Z=1.056
+Raw 14-byte dump: FE 68 FF 70 43 E4 0E 90 FF DA 00 C0 FF 8F 
+Accel Gs: X=-0.025 | Y=-0.009 | Z=1.061
+Raw 14-byte dump: FE 64 FF 74 43 E4 0E 90 FF E9 00 DB FF 78 
+Accel Gs: X=-0.025 | Y=-0.009 | Z=1.061
+Raw 14-byte dump: FE 48 FF 74 43 DC 0E 70 FF D9 00 C7 FF A8 
+Accel Gs: X=-0.027 | Y=-0.009 | Z=1.060
+Raw 14-byte dump: FE 34 FF 78 43 D8 0E 50 FF EA 00 DE FF 9F 
+Accel Gs: X=-0.028 | Y=-0.008 | Z=1.060
+Raw 14-byte dump: FE 40 FF 78 43 E0 0E 90 FF ED 00 D3 FF 92 
+Accel Gs: X=-0.027 | Y=-0.008 | Z=1.061
+Raw 14-byte dump: FE 54 FF 84 43 F8 0E 70 FF E0 00 D9 FF 85 
+Accel Gs: X=-0.026 | Y=-0.008 | Z=1.062
+Raw 14-byte dump: FE 78 FF 90 43 F8 0E 90 FF E2 00 EC FF 9D 
+Accel Gs: X=-0.024 | Y=-0.007 | Z=1.062
+Raw 14-byte dump: FE 60 FF 68 44 14 0E 80 FF E7 00 E3 FF 97 
+Accel Gs: X=-0.025 | Y=-0.009 | Z=1.064
+Raw 14-byte dump: FE 24 FF 68 44 34 0E 50 FF D2 00 F3 FF C4 
+Accel Gs: X=-0.029 | Y=-0.009 | Z=1.066
+Raw 14-byte dump: FE 20 FF 6C 43 B0 0E 90 FF C9 00 E9 FF 8F 
+Accel Gs: X=-0.029 | Y=-0.009 | Z=1.058
+Raw 14-byte dump: FD F8 FF 78 43 C0 0E 80 FF C8 00 D6 FF 93 
+Accel Gs: X=-0.032 | Y=-0.008 | Z=1.059
+Raw 14-byte dump: FE 44 FF D0 43 CC 0E 80 FF DA 00 D5 FF 6B 
+Accel Gs: X=-0.027 | Y=-0.003 | Z=1.059
+Raw 14-byte dump: FE 3C FF 8C 43 98 0E 90 FF D6 00 E2 FF 8D 
+Accel Gs: X=-0.028 | Y=-0.007 | Z=1.056
+Raw 14-byte dump: FD FC FF A8 43 C0 0E 70 FF BC 00 D2 FF A2 
+Accel Gs: X=-0.031 | Y=-0.005 | Z=1.059
+Raw 14-byte dump: FE 24 FF 58 43 90 0E 40 FF D5 00 C6 FF A3 
+Accel Gs: X=-0.029 | Y=-0.010 | Z=1.056
+Raw 14-byte dump: FE 34 FF 68 43 AC 0E 90 FF F5 00 E9 FF A5 
+Accel Gs: X=-0.028 | Y=-0.009 | Z=1.057
+Raw 14-byte dump: FE 18 FF 98 43 D4 0E C0 FF D1 00 D2 FF 9B 
+Accel Gs: X=-0.030 | Y=-0.006 | Z=1.060
+Raw 14-byte dump: FE 10 FF 84 44 80 0E 90 FF DE 00 D2 FF 86 
+Accel Gs: X=-0.030 | Y=-0.008 | Z=1.070
+Raw 14-byte dump: FD E4 FF 78 43 DC 0E C0 FF D5 00 D8 FF 90 
+Accel Gs: X=-0.033 | Y=-0.008 | Z=1.060
+Raw 14-byte dump: FE 54 FF 3C 43 D0 0E 90 00 06 00 F4 FF 9D 
+Accel Gs: X=-0.026 | Y=-0.012 | Z=1.060
+Raw 14-byte dump: FE 08 FF A0 43 54 0E C0 FF DD 00 DB FF A9 
+Accel Gs: X=-0.031 | Y=-0.006 | Z=1.052
+Raw 14-byte dump: FE 48 FF B0 44 80 0E 50 FF C3 00 DC FF 88 
+Accel Gs: X=-0.027 | Y=-0.005 | Z=1.070
+Raw 14-byte dump: FE 3C FF 80 43 DC 0E B0 FF E3 00 DD FF 9B 
+Accel Gs: X=-0.028 | Y=-0.008 | Z=1.060
+Raw 14-byte dump: FE 48 FF 94 44 00 0E B0 FF E3 00 D2 FF 97 
+Accel Gs: X=-0.027 | Y=-0.007 | Z=1.062
+Raw 14-byte dump: FE 64 FF A4 43 F0 0E B0 FF C7 00 CB FF 92 
+Accel Gs: X=-0.025 | Y=-0.006 | Z=1.062
+Raw 14-byte dump: FE 2C FF 98 44 18 0E 80 FF E9 00 D8 FF 76 
+Accel Gs: X=-0.029 | Y=-0.006 | Z=1.064
+Raw 14-byte dump: FE 30 FF 48 43 E0 0E 90 FF E8 01 12 FF 9E 
+Accel Gs: X=-0.028 | Y=-0.011 | Z=1.061
+Raw 14-byte dump: FE 20 FF 9C 43 7C 0E 50 FF D7 00 F2 FF A6 
+Accel Gs: X=-0.029 | Y=-0.006 | Z=1.054
+Raw 14-byte dump: FE 28 FF 84 43 F8 0E B0 FF D2 00 DD FF 8A 
+Accel Gs: X=-0.029 | Y=-0.008 | Z=1.062
+Raw 14-byte dump: FE 20 FF 78 43 F0 0E B0 FF DB 00 DC FF A3 
+Accel Gs: X=-0.029 | Y=-0.008 | Z=1.062
+Raw 14-byte dump: FE 2C FF 5C 43 E8 0E 90 FF F1 00 E2 FF 8B 
+Accel Gs: X=-0.029 | Y=-0.010 | Z=1.061
+Raw 14-byte dump: FE 44 FF 6C 43 F0 0E C0 FF D6 00 EB FF 96 
+Accel Gs: X=-0.027 | Y=-0.009 | Z=1.062
+Raw 14-byte dump: FE 48 FF 9C 43 98 0E 50 FF D4 00 E8 FF 97 
+Accel Gs: X=-0.027 | Y=-0.006 | Z=1.056
+Raw 14-byte dump: FE 28 FF A4 43 BC 0E D0 FF F2 00 DD FF 83 
+Accel Gs: X=-0.029 | Y=-0.006 | Z=1.058
+Raw 14-byte dump: FD F0 FF 54 43 70 0E 90 FF F0 00 D9 FF 8C 
+Accel Gs: X=-0.032 | Y=-0.010 | Z=1.054
+Raw 14-byte dump: FE 28 FF A8 43 90 0E B0 FF EB 00 C4 FF 79 
+Accel Gs: X=-0.029 | Y=-0.005 | Z=1.056
+Raw 14-byte dump: FE 18 FF 78 44 14 0E 90 FF D9 00 E4 FF 82 
+Accel Gs: X=-0.030 | Y=-0.008 | Z=1.064
+Raw 14-byte dump: FE 4C FF BC 44 20 0E C0 FF CB 00 D1 FF A4 
+Accel Gs: X=-0.027 | Y=-0.004 | Z=1.064
+Raw 14-byte dump: FE 3C FF 84 43 B4 0E 90 FF D3 00 E7 FF 73 
+Accel Gs: X=-0.028 | Y=-0.008 | Z=1.058
+Raw 14-byte dump: FE 34 FF 84 43 C8 0E C0 FF D2 00 CD FF 92 
+Accel Gs: X=-0.028 | Y=-0.008 | Z=1.059
+Raw 14-byte dump: FE 30 FF BC 43 9C 0E C0 FF E1 00 D5 FF 9E 
+Accel Gs: X=-0.028 | Y=-0.004 | Z=1.056
+Raw 14-byte dump: FE 00 FF 64 43 BC 0E 90 FF EC 00 DD FF 86 
+Accel Gs: X=-0.031 | Y=-0.010 | Z=1.058
+Raw 14-byte dump: FE 24 FF A8 43 A8 0E C0 FF D0 00 D6 FF AE 
+Accel Gs: X=-0.029 | Y=-0.005 | Z=1.057
+Raw 14-byte dump: FE 2C FF 4C 43 EC 0E B0 FF D7 00 AF FF 7E 
+Accel Gs: X=-0.029 | Y=-0.011 | Z=1.061
+Raw 14-byte dump: FE 48 FF 94 44 24 0E 90 FF EE 00 E4 FF 9D 
+Accel Gs: X=-0.027 | Y=-0.007 | Z=1.065
+Raw 14-byte dump: FE 04 FF 70 44 20 0E 90 FF BF 00 DA FF 97 
+Accel Gs: X=-0.031 | Y=-0.009 | Z=1.064
+Raw 14-byte dump: FE 20 FF D0 43 8C 0E 90 00 01 00 E4 FF 83 
+Accel Gs: X=-0.029 | Y=-0.003 | Z=1.055
+Raw 14-byte dump: FE 00 FF 7C 43 EC 0E 90 FF D5 00 EF FF 90 
+Accel Gs: X=-0.031 | Y=-0.008 | Z=1.061
+Raw 14-byte dump: FE 30 FF AC 43 9C 0E B0 FF D9 00 DA FF 94 
+Accel Gs: X=-0.028 | Y=-0.005 | Z=1.056
+Raw 14-byte dump: FE 48 FF 80 43 D4 0E C0 FF D3 00 E2 FF 86 
+Accel Gs: X=-0.027 | Y=-0.008 | Z=1.060
+Raw 14-byte dump: FE 28 FF 80 43 F0 0E 90 FF F0 00 DC FF 9F 
+Accel Gs: X=-0.029 | Y=-0.008 | Z=1.062
+Raw 14-byte dump: FE 28 FF 6C 43 FC 0E F0 FF EB 00 E9 FF 8E 
+Accel Gs: X=-0.029 | Y=-0.009 | Z=1.062
+Raw 14-byte dump: FE 68 FF A8 43 F4 0E 90 FF C1 00 EF FF 99 
+Accel Gs: X=-0.025 | Y=-0.005 | Z=1.062
+Raw 14-byte dump: FE 54 FF 80 43 F0 0E 90 FF CB 00 EF FF AE 
+Accel Gs: X=-0.026 | Y=-0.008 | Z=1.062
+Raw 14-byte dump: FE 34 FF A4 43 60 0E C0 FF EB 00 F2 FF A9 
+Accel Gs: X=-0.028 | Y=-0.006 | Z=1.053
+Raw 14-byte dump: FE 50 FF 7C 43 CC 0E C0 FF C3 00 EE FF 84 
+Accel Gs: X=-0.026 | Y=-0.008 | Z=1.059
+Raw 14-byte dump: FE 00 FF 48 43 C0 0E B0 FF F5 00 D8 FF 97 
+Accel Gs: X=-0.031 | Y=-0.011 | Z=1.059
+Raw 14-byte dump: FE 40 FF A8 44 28 0E B0 FF CC 00 D9 FF A1 
+Accel Gs: X=-0.027 | Y=-0.005 | Z=1.065
+Raw 14-byte dump: FE 24 FF 9C 44 24 0E D0 00 02 00 DC FF 94 
+Accel Gs: X=-0.029 | Y=-0.006 | Z=1.065
+Raw 14-byte dump: FE 38 FF 70 43 9C 0E D0 FF EF 00 DF FF 9A 
+Accel Gs: X=-0.028 | Y=-0.009 | Z=1.056
+Raw 14-byte dump: FE 40 FF 94 43 F8 0E C0 FF EA 00 EF FF A1 
+Accel Gs: X=-0.027 | Y=-0.007 | Z=1.062
+Raw 14-byte dump: FE 14 FF 8C 43 EC 0E D0 FF E5 00 DC FF 6B 
+Accel Gs: X=-0.030 | Y=-0.007 | Z=1.061
+Raw 14-byte dump: FE 08 FF A8 43 BC 0E 70 FF CA 00 EB FF 99 
+Accel Gs: X=-0.031 | Y=-0.005 | Z=1.058
+Raw 14-byte dump: FE 24 FF 80 43 D8 0E 70 FF BB 01 07 FF A3 
+Accel Gs: X=-0.029 | Y=-0.008 | Z=1.060
+Raw 14-byte dump: FE 60 FF 88 44 1C 0E C0 FF E5 00 E6 FF 7E 
+Accel Gs: X=-0.025 | Y=-0.007 | Z=1.064
+Raw 14-byte dump: FE 54 FF 80 43 CC 0E B0 FF EC 00 E1 FF B3 
+Accel Gs: X=-0.026 | Y=-0.008 | Z=1.059
+Raw 14-byte dump: FE 28 FF AC 43 54 0E 90 FF E9 00 E8 FF 87 
+Accel Gs: X=-0.029 | Y=-0.005 | Z=1.052
+Raw 14-byte dump: FE 10 FF 50 44 08 0E 90 FF D6 00 E9 FF 8E 
+Accel Gs: X=-0.030 | Y=-0.011 | Z=1.063
+Raw 14-byte dump: FD FC FF 60 43 B4 0E 80 FF DC 00 F1 FF 8B 
+Accel Gs: X=-0.031 | Y=-0.010 | Z=1.058
+Raw 14-byte dump: FE 10 FF 68 44 18 0E 90 FF D3 00 D5 FF A3 
+Accel Gs: X=-0.030 | Y=-0.009 | Z=1.064
+Raw 14-byte dump: FE 2C FF 6C 43 F0 0E C0 FF D3 00 DA FF 8F 
+Accel Gs: X=-0.029 | Y=-0.009 | Z=1.062
+Raw 14-byte dump: FE 0C FF 70 43 9C 0E C0 FF D4 00 E0 FF 83 
+Accel Gs: X=-0.031 | Y=-0.009 | Z=1.056
+Raw 14-byte dump: FE 44 FF C4 43 D0 0E C0 FF F3 00 E2 FF 79 
+Accel Gs: X=-0.027 | Y=-0.004 | Z=1.060
+Raw 14-byte dump: FE 48 FF B0 43 E8 0E 90 00 03 00 DB FF AA 
+Accel Gs: X=-0.027 | Y=-0.005 | Z=1.061
+Raw 14-byte dump: FE 60 FF 78 43 50 0E 90 FF EA 00 C6 FF 88 
+Accel Gs: X=-0.025 | Y=-0.008 | Z=1.052
+Raw 14-byte dump: FE 18 FF 90 43 90 0E C0 FF CC 00 DE FF 7E 
+Accel Gs: X=-0.030 | Y=-0.007 | Z=1.056
+Raw 14-byte dump: FE 0C FF B8 43 60 0E B0 FF D7 00 E7 FF 9C 
+Accel Gs: X=-0.031 | Y=-0.004 | Z=1.053
+Raw 14-byte dump: FE 1C FF 3C 44 20 0E 90 FF D2 00 D9 FF 9B 
+Accel Gs: X=-0.030 | Y=-0.012 | Z=1.064
+Raw 14-byte dump: FE 4C FF 74 44 04 0E 90 FF C1 00 F4 FF 96 
+Accel Gs: X=-0.027 | Y=-0.009 | Z=1.063
+Raw 14-byte dump: FE 5C FF 78 43 B0 0E D0 FF E6 00 F7 FF 90 
+Accel Gs: X=-0.026 | Y=-0.008 | Z=1.058
+Raw 14-byte dump: FE 34 FF 74 43 F0 0E 90 FF E1 00 BD FF A4 
+Accel Gs: X=-0.028 | Y=-0.009 | Z=1.062
+Raw 14-byte dump: FE 14 FF 94 43 C8 0E D0 FF D3 00 E0 FF 82 
+Accel Gs: X=-0.030 | Y=-0.007 | Z=1.059
+Raw 14-byte dump: FE 40 FF 68 43 90 0E 70 FF E3 01 14 FF 98 
+Accel Gs: X=-0.027 | Y=-0.009 | Z=1.056
+Raw 14-byte dump: FE 4C FF 94 43 BC 0E C0 FF E5 00 D5 FF A6 
+Accel Gs: X=-0.027 | Y=-0.007 | Z=1.058
+Raw 14-byte dump: FE 2C FF 80 44 98 0E 90 FF D1 00 CB FF B9 
+Accel Gs: X=-0.029 | Y=-0.008 | Z=1.072
+Raw 14-byte dump: FE 10 FF 88 43 F4 0E C0 FF F7 00 E3 FF 96 
+Accel Gs: X=-0.030 | Y=-0.007 | Z=1.062
+Raw 14-byte dump: FE 24 FF 80 43 BC 0E 70 FF D6 00 E4 FF A2 
+Accel Gs: X=-0.029 | Y=-0.008 | Z=1.058
+Raw 14-byte dump: FE 48 FF 9C 44 64 0E 90 FF C9 00 B0 FF 92 
+Accel Gs: X=-0.027 | Y=-0.006 | Z=1.069
+Raw 14-byte dump: FE 18 FF 88 43 D0 0E C0 FF EE 00 B6 FF 86 
+Accel Gs: X=-0.030 | Y=-0.007 | Z=1.060
+Raw 14-byte dump: FE 10 FF 84 43 78 0E 90 FF EF 00 D7 FF A8 
+Accel Gs: X=-0.030 | Y=-0.008 | Z=1.054
+Raw 14-byte dump: FE 34 FF 6C 43 C0 0E 50 FF E9 00 EC FF 91 
+Accel Gs: X=-0.028 | Y=-0.009 | Z=1.059
+Raw 14-byte dump: FE 50 FF 7C 43 CC 0E 90 FF DB 00 D4 FF AE 
+Accel Gs: X=-0.026 | Y=-0.008 | Z=1.059
+Raw 14-byte dump: FE 24 FF 88 44 18 0E 50 FF F6 00 D5 FF 7F 
+Accel Gs: X=-0.029 | Y=-0.007 | Z=1.064
+Raw 14-byte dump: FE 34 FF B0 44 0C 0E 70 FF D0 00 DD FF A2 
+Accel Gs: X=-0.028 | Y=-0.005 | Z=1.063
+Raw 14-byte dump: FE 14 FF 98 43 E8 0E 90 FF DE 00 DD FF 94 
+Accel Gs: X=-0.030 | Y=-0.006 | Z=1.061
+Raw 14-byte dump: FE 10 FF 60 43 CC 0E C0 FF E8 00 DF FF 6F 
+Accel Gs: X=-0.030 | Y=-0.010 | Z=1.059
+Raw 14-byte dump: FD F0 FF 48 44 20 0E 90 FF F0 00 CC FF AC 
+Accel Gs: X=-0.032 | Y=-0.011 | Z=1.064
+Raw 14-byte dump: FE 04 FF 50 43 C8 0E 40 FF F8 00 D8 FF A8 
+Accel Gs: X=-0.031 | Y=-0.011 | Z=1.059
+Raw 14-byte dump: FE 2C FF 5C 43 FC 0E 90 FF EA 00 E6 FF 90 
+Accel Gs: X=-0.029 | Y=-0.010 | Z=1.062
+Raw 14-byte dump: FE 24 FF 94 43 C0 0E 90 FF D3 00 D2 FF 94 
+Accel Gs: X=-0.029 | Y=-0.007 | Z=1.059
+Raw 14-byte dump: FE 00 FF 88 43 88 0E 80 FF CF 00 ED FF 8A 
+Accel Gs: X=-0.031 | Y=-0.007 | Z=1.055
+Raw 14-byte dump: FE 4C FF 98 44 3C 0E D0 FF D3 00 CD FF 99 
+Accel Gs: X=-0.027 | Y=-0.006 | Z=1.066
+Raw 14-byte dump: FE 2C FF 88 43 AC 0E 70 FF DB 00 CE FF 90 
+Accel Gs: X=-0.029 | Y=-0.007 | Z=1.057
+Raw 14-byte dump: FE 3C FF 90 44 44 0E 90 FF C9 00 ED FF 9D 
+Accel Gs: X=-0.028 | Y=-0.007 | Z=1.067
+Raw 14-byte dump: FE 20 FF 80 43 B4 0E 40 FF E8 00 D1 FF 96 
+Accel Gs: X=-0.029 | Y=-0.008 | Z=1.058
+Raw 14-byte dump: FE 4C FF 7C 43 CC 0E 90 FF F4 00 B9 FF 8A 
+Accel Gs: X=-0.027 | Y=-0.008 | Z=1.059
+Raw 14-byte dump: FE 58 FF 5C 44 00 0E 50 FF F2 00 DA FF 94 
+Accel Gs: X=-0.026 | Y=-0.010 | Z=1.062
+Raw 14-byte dump: FD F0 FF 9C 43 E8 0E 80 FF C1 00 BD FF A3 
+Accel Gs: X=-0.032 | Y=-0.006 | Z=1.061
+Raw 14-byte dump: FE 50 FF 98 43 D8 0E 50 FF F2 00 E3 FF A1 
+Accel Gs: X=-0.026 | Y=-0.006 | Z=1.060
+Raw 14-byte dump: FE 14 FF 84 44 24 0E D0 FF EE 00 BA FF 8C 
+Accel Gs: X=-0.030 | Y=-0.008 | Z=1.065
+Raw 14-byte dump: FE 34 FF 70 43 C8 0E 80 FF D4 00 C8 FF 99 
+Accel Gs: X=-0.028 | Y=-0.009 | Z=1.059
+Raw 14-byte dump: FE 3C FF 74 43 C4 0E 90 FF E6 00 F8 FF AC 
+Accel Gs: X=-0.028 | Y=-0.009 | Z=1.059
+Raw 14-byte dump: FE 4C FF 6C 43 E8 0E 90 FF E2 00 F9 FF 88 
+Accel Gs: X=-0.027 | Y=-0.009 | Z=1.061
+Raw 14-byte dump: FE 04 FF 4C 43 DC 0E 70 FF DC 00 E4 FF 8D 
+Accel Gs: X=-0.031 | Y=-0.011 | Z=1.060
+Raw 14-byte dump: FE 3C FF 70 44 58 0E B0 FF D1 00 E8 FF 8C 
+Accel Gs: X=-0.028 | Y=-0.009 | Z=1.068
+Raw 14-byte dump: FE 08 FF 28 43 AC 0E C0 FF E1 00 D8 FF 93 
+Accel Gs: X=-0.031 | Y=-0.013 | Z=1.057
+Raw 14-byte dump: FE 44 FF 84 43 A4 0E C0 FF EC 00 DB FF 96 
+Accel Gs: X=-0.027 | Y=-0.008 | Z=1.057
+Raw 14-byte dump: FE 44 FF 44 44 14 0E 50 FF DE 00 EB FF 90 
+Accel Gs: X=-0.027 | Y=-0.011 | Z=1.064
+Raw 14-byte dump: FE 44 FF 70 43 B4 0E C0 FF D4 00 DE FF 87 
+Accel Gs: X=-0.027 | Y=-0.009 | Z=1.058
+Raw 14-byte dump: FE 3C FF 28 43 C0 0E 90 FF E0 00 EE FF 97 
+Accel Gs: X=-0.028 | Y=-0.013 | Z=1.059
+Raw 14-byte dump: FE 24 FF 5C 43 CC 0E 90 FF DF 00 DB FF AA 
+Accel Gs: X=-0.029 | Y=-0.010 | Z=1.059
+Raw 14-byte dump: FE 50 FF C0 43 D0 0E 80 FF DD 00 E7 FF 96 
+Accel Gs: X=-0.026 | Y=-0.004 | Z=1.060
+Raw 14-byte dump: FE 1C FF 70 44 34 0E B0 FF E6 00 E2 FF 8F 
+Accel Gs: X=-0.030 | Y=-0.009 | Z=1.066
+Raw 14-byte dump: FE 44 FF A4 43 F8 0E 90 FF D8 00 D3 FF 97 
+Accel Gs: X=-0.027 | Y=-0.006 | Z=1.062
+Raw 14-byte dump: FE 50 FF 84 44 00 0E 90 FF DF 00 EE FF 6B 
+Accel Gs: X=-0.026 | Y=-0.008 | Z=1.062
+Raw 14-byte dump: FE 40 FF 94 44 0C 0E 50 FF D0 00 C1 FF 68 
+Accel Gs: X=-0.027 | Y=-0.007 | Z=1.063
+Raw 14-byte dump: FE 1C FF BC 44 18 0E 90 FF D8 00 F3 FF A8 
+Accel Gs: X=-0.030 | Y=-0.004 | Z=1.064
+Raw 14-byte dump: FE 30 FF C0 43 A8 0E B0 FF D3 00 BD FF 92 
+Accel Gs: X=-0.028 | Y=-0.004 | Z=1.057
+Raw 14-byte dump: FE 00 FF D0 43 98 0E C0 FF EC 00 E7 FF A3 
+Accel Gs: X=-0.031 | Y=-0.003 | Z=1.056
+Raw 14-byte dump: FE 50 FF 68 43 94 0E C0 FF C4 00 F6 FF 70 
+Accel Gs: X=-0.026 | Y=-0.009 | Z=1.056
+Raw 14-byte dump: FE 48 FF 54 44 00 0E 80 FF FC 01 0A FF 92 
+Accel Gs: X=-0.027 | Y=-0.010 | Z=1.062
+Raw 14-byte dump: FE 28 FF 74 43 C4 0E C0 FF D0 00 D1 FF 8F 
+Accel Gs: X=-0.029 | Y=-0.009 | Z=1.059
+Raw 14-byte dump: FE 38 FF 70 43 E8 0E 90 FF B9 00 D8 FF 98 
+Accel Gs: X=-0.028 | Y=-0.009 | Z=1.061
+Raw 14-byte dump: FE 4C FF 88 43 A0 0E B0 FF CD 00 B4 FF 87 
+Accel Gs: X=-0.027 | Y=-0.007 | Z=1.057
+Raw 14-byte dump: FE 38 FF 68 43 9C 0E 90 FF EF 00 CC FF 76 
+Accel Gs: X=-0.028 | Y=-0.009 | Z=1.056
+Raw 14-byte dump: FE 68 FF 64 43 98 0E 50 FF E3 00 CB FF 8C 
+Accel Gs: X=-0.025 | Y=-0.010 | Z=1.056
+Raw 14-byte dump: FE 54 FF 60 43 E0 0E 50 FF F1 00 D7 FF 7D 
+Accel Gs: X=-0.026 | Y=-0.010 | Z=1.061
+Raw 14-byte dump: FD FC FF 50 43 E0 0E B0 FF DF 00 FC FF 95 
+Accel Gs: X=-0.031 | Y=-0.011 | Z=1.061
+Raw 14-byte dump: FE 34 FF 6C 43 F4 0E C0 FF DA 00 EB FF A7 
+Accel Gs: X=-0.028 | Y=-0.009 | Z=1.062
+Raw 14-byte dump: FE 60 FF 98 43 E8 0E 50 FF DC 00 D5 FF 9E 
+Accel Gs: X=-0.025 | Y=-0.006 | Z=1.061
+Raw 14-byte dump: FE 04 FF 84 43 F0 0E 90 FF D8 00 D6 FF 90 
+Accel Gs: X=-0.031 | Y=-0.008 | Z=1.062
+Raw 14-byte dump: FD F4 FF 94 43 A8 0E C0 FF DF 01 05 FF 7F 
+Accel Gs: X=-0.032 | Y=-0.007 | Z=1.057
+Raw 14-byte dump: FE 2C FF 4C 43 B4 0E 90 FF E1 00 C6 FF A6 
+Accel Gs: X=-0.029 | Y=-0.011 | Z=1.058
+Raw 14-byte dump: FE 00 FF 88 44 20 0E C0 FF EE 00 C4 FF 82 
+Accel Gs: X=-0.031 | Y=-0.007 | Z=1.064
+Raw 14-byte dump: FE 34 FF 98 43 B0 0E C0 FF E3 00 FC FF 79 
+Accel Gs: X=-0.028 | Y=-0.006 | Z=1.058
+Raw 14-byte dump: FE 34 FF 58 43 84 0E 70 FF E8 00 F7 FF 9F 
+Accel Gs: X=-0.028 | Y=-0.010 | Z=1.055
+Raw 14-byte dump: FD F4 FF 68 43 94 0E 70 FF ED 00 D8 FF 95 
+Accel Gs: X=-0.032 | Y=-0.009 | Z=1.056
+Raw 14-byte dump: FE 20 FF 94 43 B4 0E C0 FF DB 00 C8 FF 83 
+Accel Gs: X=-0.029 | Y=-0.007 | Z=1.058
+Raw 14-byte dump: FE 34 FF DC 44 20 0E C0 FF E4 00 E4 FF B3 
+Accel Gs: X=-0.028 | Y=-0.002 | Z=1.064
+Raw 14-byte dump: FD EC FF 50 43 A4 0E 70 FF CB 00 EA FF 9D 
+Accel Gs: X=-0.032 | Y=-0.011 | Z=1.057
+Raw 14-byte dump: FD F8 FF 5C 43 90 0E C0 FF BC 00 E2 FF 79 
+Accel Gs: X=-0.032 | Y=-0.010 | Z=1.056
+Raw 14-byte dump: FE 50 FF A0 43 70 0E 90 FF B6 00 DB FF 9E 
+Accel Gs: X=-0.026 | Y=-0.006 | Z=1.054
+Raw 14-byte dump: FE 00 FF 54 44 3C 0E C0 FF D9 00 CE FF 89 
+Accel Gs: X=-0.031 | Y=-0.010 | Z=1.066
+Raw 14-byte dump: FE 3C FF 44 43 D4 0E C0 FF E2 00 D9 FF 99 
+Accel Gs: X=-0.028 | Y=-0.011 | Z=1.060
+Raw 14-byte dump: FE 04 FF 80 43 E8 0E C0 FF F5 00 E5 FF 8F 
+Accel Gs: X=-0.031 | Y=-0.008 | Z=1.061
+Raw 14-byte dump: FE 48 FF 78 43 F0 0E 90 FF E3 00 D3 FF 92 
+Accel Gs: X=-0.027 | Y=-0.008 | Z=1.062
+Raw 14-byte dump: FE 00 FF 18 43 F8 0E 70 FF EA 00 E8 FF 80 
+Accel Gs: X=-0.031 | Y=-0.014 | Z=1.062
+Raw 14-byte dump: FE 28 FF 44 43 9C 0E 50 FF C3 00 C4 FF 8D 
+Accel Gs: X=-0.029 | Y=-0.011 | Z=1.056
+Raw 14-byte dump: FE 20 FF 98 43 98 0E 50 FF DF 00 E0 FF 91 
+Accel Gs: X=-0.029 | Y=-0.006 | Z=1.056
+Raw 14-byte dump: FE 6C FF 78 44 04 0E 90 FF D2 00 EB FF 92 
+Accel Gs: X=-0.025 | Y=-0.008 | Z=1.063
+Raw 14-byte dump: FE 3C FF 8C 43 C0 0E 70 FF FA 00 E2 FF 91 
+Accel Gs: X=-0.028 | Y=-0.007 | Z=1.059
+Raw 14-byte dump: FE 30 FF 4C 43 A8 0E 70 00 0B 00 BC FF A6 
+Accel Gs: X=-0.028 | Y=-0.011 | Z=1.057
+Raw 14-byte dump: FE 24 FF 84 43 8C 0E D0 FF E1 00 D3 FF 96 
+Accel Gs: X=-0.029 | Y=-0.008 | Z=1.055
+Raw 14-byte dump: FE 14 FF 58 43 F4 0E 70 FF F4 00 D7 FF 7F 
+Accel Gs: X=-0.030 | Y=-0.010 | Z=1.062
+Raw 14-byte dump: FE 38 FF 80 43 E8 0E 70 FF F3 00 F7 FF 9D 
+Accel Gs: X=-0.028 | Y=-0.008 | Z=1.061
+Raw 14-byte dump: FD F0 FF 8C 43 88 0E 50 FF DE 00 D5 FF 87 
+Accel Gs: X=-0.032 | Y=-0.007 | Z=1.055
+Raw 14-byte dump: FE 04 FF 8C 43 DC 0E 90 FF D9 00 E9 FF 95 
+Accel Gs: X=-0.031 | Y=-0.007 | Z=1.060
+Raw 14-byte dump: FE 20 FF 78 43 E0 0E 90 FF EC 00 D7 FF 93 
+Accel Gs: X=-0.029 | Y=-0.008 | Z=1.061
+Raw 14-byte dump: FE 68 FF A0 43 D4 0E 90 FF CC 00 D9 FF 89 
+Accel Gs: X=-0.025 | Y=-0.006 | Z=1.060
+Raw 14-byte dump: FD FC FF 34 43 F4 0E 70 FF D9 00 E5 FF 79 
+Accel Gs: X=-0.031 | Y=-0.012 | Z=1.062
+Raw 14-byte dump: FE 3C FF 44 43 DC 0E 70 FF D5 00 F3 FF 9F 
+Accel Gs: X=-0.028 | Y=-0.011 | Z=1.060
+Raw 14-byte dump: FE 28 FF AC 43 C8 0E 90 FF E4 00 FC FF 97 
+Accel Gs: X=-0.029 | Y=-0.005 | Z=1.059
+Raw 14-byte dump: FE 3C FF B8 43 80 0E 70 FF D1 00 DA FF 90 
+Accel Gs: X=-0.028 | Y=-0.004 | Z=1.055
+Raw 14-byte dump: FE 3C FF 78 44 48 0E C0 FF F3 00 F6 FF A1 
+Accel Gs: X=-0.028 | Y=-0.008 | Z=1.067
+Raw 14-byte dump: FE 44 FF 84 43 7C 0E 50 FF DC 00 DE FF 73 
+Accel Gs: X=-0.027 | Y=-0.008 | Z=1.054
+Raw 14-byte dump: FE 0C FF 74 44 30 0E 90 FF E2 00 ED FF 70 
+Accel Gs: X=-0.031 | Y=-0.009 | Z=1.065
+Raw 14-byte dump: FE 44 FF 70 44 14 0E 90 FF D3 00 E2 FF 9A 
+Accel Gs: X=-0.027 | Y=-0.009 | Z=1.064
+Raw 14-byte dump: FE 58 FF 68 43 60 0E 50 FF FD 00 E9 FF 9F 
+Accel Gs: X=-0.026 | Y=-0.009 | Z=1.053
+Raw 14-byte dump: FE 34 FF A0 43 BC 0E 70 FF DB 01 08 FF A2 
+Accel Gs: X=-0.028 | Y=-0.006 | Z=1.058
+Raw 14-byte dump: FE 20 FF 78 43 3C 0E 50 FF D0 00 E1 FF 9D 
+Accel Gs: X=-0.029 | Y=-0.008 | Z=1.051
+Raw 14-byte dump: FE 4C FF 54 43 FC 0E 70 FF E1 00 E8 FF A5 
+Accel Gs: X=-0.027 | Y=-0.010 | Z=1.062
+Raw 14-byte dump: FE 24 FF 58 43 E0 0E 70 FF D2 00 FF FF 8D 
+Accel Gs: X=-0.029 | Y=-0.010 | Z=1.061
+Raw 14-byte dump: FE 18 FF 58 43 F8 0E 70 FF D2 00 CF FF 91 
+Accel Gs: X=-0.030 | Y=-0.010 | Z=1.062
+Raw 14-byte dump: FE 44 FF 80 43 DC 0E 50 FF E9 00 DC FF A1 
+Accel Gs: X=-0.027 | Y=-0.008 | Z=1.060
+Raw 14-byte dump: FD DC FF 80 44 40 0E 90 FF DE 00 F4 FF A2 
+Accel Gs: X=-0.033 | Y=-0.008 | Z=1.066
+Raw 14-byte dump: FD D8 FF 78 44 1C 0E 90 FF D1 00 DE FF 8F 
+Accel Gs: X=-0.034 | Y=-0.008 | Z=1.064
+Raw 14-byte dump: FE 1C FF 98 43 CC 0E 50 FF FA 00 CC FF 72 
+Accel Gs: X=-0.030 | Y=-0.006 | Z=1.059
+Raw 14-byte dump: FE 48 FF 98 43 FC 0E 90 FF D6 00 BD FF 98 
+Accel Gs: X=-0.027 | Y=-0.006 | Z=1.062
+Raw 14-byte dump: FE 24 FF 94 44 04 0E 90 FF CE 00 DA FF 8D 
+Accel Gs: X=-0.029 | Y=-0.007 | Z=1.063
+Raw 14-byte dump: FE 4C FF 70 44 08 0E C0 FF DF 00 D3 FF 86 
+Accel Gs: X=-0.027 | Y=-0.009 | Z=1.063
+Raw 14-byte dump: FE 5C FF 60 44 30 0E 70 FF D4 00 C6 FF A8 
+Accel Gs: X=-0.026 | Y=-0.010 | Z=1.065
+Raw 14-byte dump: FE 24 FF 4C 43 E4 0E 90 FF EF 00 C8 FF 8C 
+Accel Gs: X=-0.029 | Y=-0.011 | Z=1.061
+Raw 14-byte dump: FE 48 FF A0 44 04 0E C0 FF D1 00 F9 FF 9C 
+Accel Gs: X=-0.027 | Y=-0.006 | Z=1.063
+Raw 14-byte dump: FE 0C FF 70 43 E8 0E 70 FF B9 00 F5 FF 9D 
+Accel Gs: X=-0.031 | Y=-0.009 | Z=1.061
+Raw 14-byte dump: FE 0C FF 84 43 C0 0E 90 FF FC 00 BC FF 84 
+Accel Gs: X=-0.031 | Y=-0.008 | Z=1.059
+Raw 14-byte dump: FE 1C FF 58 43 C8 0E 50 FF E2 00 C0 FF 91 
+Accel Gs: X=-0.030 | Y=-0.010 | Z=1.059
+Raw 14-byte dump: FE 4C FF 4C 43 F4 0E 40 FF EA 00 F8 FF 8A 
+Accel Gs: X=-0.027 | Y=-0.011 | Z=1.062
+Raw 14-byte dump: FE 2C FF 74 43 AC 0E B0 FF F2 00 ED FF 91 
+Accel Gs: X=-0.029 | Y=-0.009 | Z=1.057
+Raw 14-byte dump: FE 38 FF 44 43 D4 0E 70 FF D5 00 C7 FF 7D 
+Accel Gs: X=-0.028 | Y=-0.011 | Z=1.060
+Raw 14-byte dump: FE 28 FF B4 43 AC 0E 50 FF E2 00 EF FF 94 
+Accel Gs: X=-0.029 | Y=-0.005 | Z=1.057
+Raw 14-byte dump: FE 38 FF 3C 43 E8 0E 90 FF E5 00 F1 FF 97 
+Accel Gs: X=-0.028 | Y=-0.012 | Z=1.061
+Raw 14-byte dump: FE 5C FF 68 43 D4 0E 90 FF D8 00 DD FF 8F 
+Accel Gs: X=-0.026 | Y=-0.009 | Z=1.060
+Raw 14-byte dump: FE 10 FF 98 44 08 0E C0 FF E3 00 D6 FF 8C 
+Accel Gs: X=-0.030 | Y=-0.006 | Z=1.063
+Raw 14-byte dump: FE 78 FF BC 43 B8 0E 50 FF E7 00 EF FF 9C 
+Accel Gs: X=-0.024 | Y=-0.004 | Z=1.058
+Raw 14-byte dump: FE 34 FF B0 44 0C 0E 90 FF D1 00 ED FF 8A 
+Accel Gs: X=-0.028 | Y=-0.005 | Z=1.063
+Raw 14-byte dump: FE 54 FF 84 44 18 0E C0 FF CC 00 DC FF A1 
+Accel Gs: X=-0.026 | Y=-0.008 | Z=1.064
+Raw 14-byte dump: FE 80 FF A8 43 68 0E F0 FF EF 00 F5 FF 90 
+Accel Gs: X=-0.023 | Y=-0.005 | Z=1.053
+Raw 14-byte dump: FE 34 FF 58 44 2C 0E 80 FF DB 00 C2 FF A3 
+Accel Gs: X=-0.028 | Y=-0.010 | Z=1.065
+Raw 14-byte dump: FE 24 FF 7C 43 D4 0E 90 FF D6 00 EE FF 98 
+Accel Gs: X=-0.029 | Y=-0.008 | Z=1.060
+Raw 14-byte dump: FE 34 FF A0 43 BC 0E C0 FF EC 00 F8 FF A5 
+Accel Gs: X=-0.028 | Y=-0.006 | Z=1.058
+Raw 14-byte dump: FE 24 FF B4 43 78 0E B0 FF E8 00 CA FF 91 
+Accel Gs: X=-0.029 | Y=-0.005 | Z=1.054
+Raw 14-byte dump: FE 28 FF 50 43 E0 0E 90 FF D1 00 CE FF 94 
+Accel Gs: X=-0.029 | Y=-0.011 | Z=1.061
+Raw 14-byte dump: FE 68 FF 44 43 D4 0E C0 FF EC 00 C8 FF 91 
+Accel Gs: X=-0.025 | Y=-0.011 | Z=1.060
+Raw 14-byte dump: FD E8 FF 8C 43 D0 0E 70 FF DF 00 F6 FF AA 
+Accel Gs: X=-0.033 | Y=-0.007 | Z=1.060
+Raw 14-byte dump: FE 1C FF 74 44 30 0E 70 FF EA 00 FB FF AA 
+Accel Gs: X=-0.030 | Y=-0.009 | Z=1.065
+Raw 14-byte dump: FD F4 FF 80 43 CC 0E C0 FF F4 00 C3 FF 7A 
+Accel Gs: X=-0.032 | Y=-0.008 | Z=1.059
+Raw 14-byte dump: FE 24 FF 6C 43 B4 0E 90 FF E0 00 D0 FF 88 
+Accel Gs: X=-0.029 | Y=-0.009 | Z=1.058
+Raw 14-byte dump: FE 4C FF 50 43 8C 0E 50 FF FA 00 E6 FF 96 
+Accel Gs: X=-0.027 | Y=-0.011 | Z=1.055
+Raw 14-byte dump: FE 34 FF A0 43 E0 0E C0 FF E5 00 E3 FF 9D 
+Accel Gs: X=-0.028 | Y=-0.006 | Z=1.061
+Raw 14-byte dump: FE 34 FF 84 43 88 0E B0 FF FB 00 F8 FF 80 
+Accel Gs: X=-0.028 | Y=-0.008 | Z=1.055
+Raw 14-byte dump: FE 30 FF 98 43 80 0E C0 FF D0 00 E4 FF 9F 
+Accel Gs: X=-0.028 | Y=-0.006 | Z=1.055
+Raw 14-byte dump: FE 2C FF AC 43 E8 0E 70 FF F1 00 D0 FF AB 
+Accel Gs: X=-0.029 | Y=-0.005 | Z=1.061
+Raw 14-byte dump: FD E8 FF 48 44 14 0E 90 FF F5 00 F1 FF 80 
+Accel Gs: X=-0.033 | Y=-0.011 | Z=1.064
+Raw 14-byte dump: FE 18 FF 7C 43 C8 0E 90 FF E4 00 C3 FF 7E 
+Accel Gs: X=-0.030 | Y=-0.008 | Z=1.059
+Raw 14-byte dump: FE 38 FF 80 43 CC 0E 90 FF CD 00 E0 FF 8B 
+Accel Gs: X=-0.028 | Y=-0.008 | Z=1.059
+Raw 14-byte dump: FE 20 FF 4C 43 BC 0E B0 FF CE 00 DD FF 92 
+Accel Gs: X=-0.029 | Y=-0.011 | Z=1.058
+Raw 14-byte dump: FD F8 FF 68 43 B0 0E 90 FF E2 00 F0 FF 88 
+Accel Gs: X=-0.032 | Y=-0.009 | Z=1.058
+Raw 14-byte dump: FE 38 FF 74 43 D0 0E B0 FF FC 00 F6 FF 9B 
+Accel Gs: X=-0.028 | Y=-0.009 | Z=1.060
+Raw 14-byte dump: FE 38 FF 90 43 F4 0E 90 FF C7 00 DA FF 9C 
+Accel Gs: X=-0.028 | Y=-0.007 | Z=1.062
+Raw 14-byte dump: FE 00 FF 74 44 10 0E 80 FF E2 00 E2 FF 7A 
+Accel Gs: X=-0.031 | Y=-0.009 | Z=1.063
+Raw 14-byte dump: FE 2C FF 6C 43 9C 0E D0 FF E3 00 D0 FF 98 
+Accel Gs: X=-0.029 | Y=-0.009 | Z=1.056
+Raw 14-byte dump: FE 10 FF 80 44 60 0E 90 FF E3 00 D9 FF 92 
+Accel Gs: X=-0.030 | Y=-0.008 | Z=1.068
+Raw 14-byte dump: FD E8 FF AC 44 3C 0E 90 FF E0 00 E7 FF 8B 
+Accel Gs: X=-0.033 | Y=-0.005 | Z=1.066
+Raw 14-byte dump: FE 4C FF CC 43 D8 0E 90 FF D2 00 E1 FF 7D 
+Accel Gs: X=-0.027 | Y=-0.003 | Z=1.060
+Raw 14-byte dump: FE 2C FF 34 43 F8 0E 90 FF D9 00 EC FF 6B 
+Accel Gs: X=-0.029 | Y=-0.012 | Z=1.062
+Raw 14-byte dump: FD E4 FF 44 44 04 0E 90 FF E8 00 E4 FF 9D 
+Accel Gs: X=-0.033 | Y=-0.011 | Z=1.063
+Raw 14-byte dump: FD EC FF 5C 44 10 0F 00 FF F7 00 E7 FF 7F 
+Accel Gs: X=-0.032 | Y=-0.010 | Z=1.063
+Raw 14-byte dump: FE 30 FF 88 44 18 0E C0 FF CB 00 C9 FF 7B 
+Accel Gs: X=-0.028 | Y=-0.007 | Z=1.064
+Raw 14-byte dump: FE 14 FF 7C 43 B8 0E 90 FF E1 00 B2 FF A0 
+Accel Gs: X=-0.030 | Y=-0.008 | Z=1.058
+Raw 14-byte dump: FE 5C FF A4 44 1C 0E 90 FF E0 00 C5 FF 83 
+Accel Gs: X=-0.026 | Y=-0.006 | Z=1.064
+Raw 14-byte dump: FE 0C FF 7C 43 F0 0E 80 FF CA 00 E6 FF 8B 
+Accel Gs: X=-0.031 | Y=-0.008 | Z=1.062
+Raw 14-byte dump: FE 30 FF 60 43 C8 0E B0 FF E5 00 EC FF AF 
+Accel Gs: X=-0.028 | Y=-0.010 | Z=1.059
+Raw 14-byte dump: FE 14 FF 90 43 70 0E 90 FF E2 00 CA FF 7A 
+Accel Gs: X=-0.030 | Y=-0.007 | Z=1.054
+Raw 14-byte dump: FE 14 FF 78 43 2C 0E 90 FF E1 00 C6 FF 8E 
+Accel Gs: X=-0.030 | Y=-0.008 | Z=1.050
+Raw 14-byte dump: FE 50 FF 54 44 1C 0E B0 FF D9 00 CF FF 83 
+Accel Gs: X=-0.026 | Y=-0.010 | Z=1.064
+Raw 14-byte dump: FE 1C FF C0 43 BC 0E C0 FF FC 00 E6 FF 9B 
+Accel Gs: X=-0.030 | Y=-0.004 | Z=1.058
+Raw 14-byte dump: FE 08 FF 7C 44 24 0E 90 FF E0 00 CC FF 92 
+Accel Gs: X=-0.031 | Y=-0.008 | Z=1.065
+Raw 14-byte dump: FE 04 FF 80 43 B0 0E C0 FF E5 00 D6 FF 7C 
+Accel Gs: X=-0.031 | Y=-0.008 | Z=1.058
+Raw 14-byte dump: FE 44 FF A8 43 D0 0E 70 FF E7 00 D6 FF 94 
+Accel Gs: X=-0.027 | Y=-0.005 | Z=1.060
+Raw 14-byte dump: FE 74 FF AC 43 D4 0E 90 FF E4 00 E3 FF 6A 
+Accel Gs: X=-0.024 | Y=-0.005 | Z=1.060
+Raw 14-byte dump: FE 2C FF 60 43 DC 0E C0 FF E2 00 E8 FF 7C 
+Accel Gs: X=-0.029 | Y=-0.010 | Z=1.060
+Raw 14-byte dump: FE 08 FF 84 43 D8 0E B0 FF EC 00 FD FF 92 
+Accel Gs: X=-0.031 | Y=-0.008 | Z=1.060
+Raw 14-byte dump: FD FC FF 50 43 84 0E B0 FF DD 00 F2 FF 8F 
+Accel Gs: X=-0.031 | Y=-0.011 | Z=1.055
+Raw 14-byte dump: FE 5C FF 9C 43 9C 0E B0 FF F3 00 DC FF 88 
+Accel Gs: X=-0.026 | Y=-0.006 | Z=1.056
+Raw 14-byte dump: FE 40 FF A4 43 F0 0E C0 FF F0 00 D0 FF A1 
+Accel Gs: X=-0.027 | Y=-0.006 | Z=1.062
+Raw 14-byte dump: FD FC FF 98 44 00 0E 90 FF F5 00 E5 FF 95 
+Accel Gs: X=-0.031 | Y=-0.006 | Z=1.062
+Raw 14-byte dump: FD F4 FF 78 43 D0 0E 90 FF D7 00 C6 FF AB 
+Accel Gs: X=-0.032 | Y=-0.008 | Z=1.060
+Raw 14-byte dump: FE 44 FF 80 44 3C 0E F0 FF E7 00 EE FF 96 
+Accel Gs: X=-0.027 | Y=-0.008 | Z=1.066
+Raw 14-byte dump: FE 10 FF B8 43 E8 0E F0 FF CB 00 E5 FF 7B 
+Accel Gs: X=-0.030 | Y=-0.004 | Z=1.061
+Raw 14-byte dump: FE 58 FF 90 44 68 0E C0 FF C3 00 C3 FF 8C 
+Accel Gs: X=-0.026 | Y=-0.007 | Z=1.069
+Raw 14-byte dump: FE 20 FF 98 43 78 0E 90 FF D5 00 C8 FF 8D 
+Accel Gs: X=-0.029 | Y=-0.006 | Z=1.054
+Raw 14-byte dump: FE 44 FF 84 44 40 0E 70 FF E8 00 E3 FF 87 
+Accel Gs: X=-0.027 | Y=-0.008 | Z=1.066
+Raw 14-byte dump: FE 44 FF 84 43 A8 0E B0 FF EE 00 D8 FF 78 
+Accel Gs: X=-0.027 | Y=-0.008 | Z=1.057
+Raw 14-byte dump: FE 00 FF 78 43 80 0E F0 FF CE 00 D5 FF 96 
+Accel Gs: X=-0.031 | Y=-0.008 | Z=1.055
+Raw 14-byte dump: FE 3C FF 7C 43 80 0E C0 FF D3 00 F3 FF 98 
+Accel Gs: X=-0.028 | Y=-0.008 | Z=1.055
+Raw 14-byte dump: FD FC FF 74 43 C8 0E C0 FF CF 00 EC FF 75 
+Accel Gs: X=-0.031 | Y=-0.009 | Z=1.059
+Raw 14-byte dump: FE 1C FF 84 44 10 0E 90 FF DD 00 D2 FF 94 
+Accel Gs: X=-0.030 | Y=-0.008 | Z=1.063
+Raw 14-byte dump: FE 0C FF 9C 44 00 0E C0 FF CB 00 E5 FF 9D 
+Accel Gs: X=-0.031 | Y=-0.006 | Z=1.062
+Raw 14-byte dump: FE 38 FF 80 43 F4 0E 90 FF CC 00 C0 FF 99 
+Accel Gs: X=-0.028 | Y=-0.008 | Z=1.062
+Raw 14-byte dump: FE 00 FF CC 44 1C 0E 50 FF C6 00 D1 FF 75 
+Accel Gs: X=-0.031 | Y=-0.003 | Z=1.064
+Raw 14-byte dump: FE 34 FF 6C 43 6C 0E C0 FF FB 00 D5 FF A9 
+Accel Gs: X=-0.028 | Y=-0.009 | Z=1.053
+Raw 14-byte dump: FE 48 FF 90 44 10 0E B0 FF E0 00 CC FF 7B 
+Accel Gs: X=-0.027 | Y=-0.007 | Z=1.063
+Raw 14-byte dump: FD F4 FF 50 44 10 0E F0 FF D6 00 E3 FF 7A 
+Accel Gs: X=-0.032 | Y=-0.011 | Z=1.063
+Raw 14-byte dump: FE 34 FF C0 43 B8 0E C0 FF F0 00 EB FF B2 
+Accel Gs: X=-0.028 | Y=-0.004 | Z=1.058
+Raw 14-byte dump: FE 44 FF 8C 43 EC 0E C0 FF ED 00 CB FF 8A 
+Accel Gs: X=-0.027 | Y=-0.007 | Z=1.061
+Raw 14-byte dump: FE 0C FF 2C 43 E0 0E C0 FF EA 00 D1 FF 8E 
+Accel Gs: X=-0.031 | Y=-0.013 | Z=1.061
+Raw 14-byte dump: FE 38 FF 88 43 64 0E 90 FF D2 01 06 FF 93 
+Accel Gs: X=-0.028 | Y=-0.007 | Z=1.053
+Raw 14-byte dump: FE 34 FF 80 43 50 0E 90 FF CE 00 E6 FF A0 
+Accel Gs: X=-0.028 | Y=-0.008 | Z=1.052
+Raw 14-byte dump: FE 44 FF 6C 43 D4 0E B0 FF E7 00 E8 FF 7C 
+Accel Gs: X=-0.027 | Y=-0.009 | Z=1.060
+Raw 14-byte dump: FE 30 FF 64 43 A8 0E B0 FF BE 00 EB FF A4 
+Accel Gs: X=-0.028 | Y=-0.010 | Z=1.057
+Raw 14-byte dump: FE 08 FF 84 43 B8 0E 90 FF E0 00 ED FF 90 
+Accel Gs: X=-0.031 | Y=-0.008 | Z=1.058
+Raw 14-byte dump: FE 28 FF BC 44 0C 0E B0 FF F5 00 EB FF 83 
+Accel Gs: X=-0.029 | Y=-0.004 | Z=1.063
+Raw 14-byte dump: FE 30 FF 9C 43 98 0E B0 FF E4 00 C1 FF A0 
+Accel Gs: X=-0.028 | Y=-0.006 | Z=1.056
+Raw 14-byte dump: FE 20 FF 50 44 34 0E 90 FF D3 00 A3 FF 96 
+Accel Gs: X=-0.029 | Y=-0.011 | Z=1.066
+Raw 14-byte dump: FE 30 FF A8 43 88 0E 70 FF E1 00 DF FF 81 
+Accel Gs: X=-0.028 | Y=-0.005 | Z=1.055
+Raw 14-byte dump: FE 10 FF 8C 43 70 0E 70 FF CA 00 C5 FF 8A 
+Accel Gs: X=-0.030 | Y=-0.007 | Z=1.054
+Raw 14-byte dump: FE 08 FF 78 44 40 0E 90 FF BC 00 C0 FF B0 
+Accel Gs: X=-0.031 | Y=-0.008 | Z=1.066
+Raw 14-byte dump: FE 18 FF 54 43 E8 0E 90 FF CE 00 FC FF 9C 
+Accel Gs: X=-0.030 | Y=-0.010 | Z=1.061
+Raw 14-byte dump: FE 4C FF 88 43 AC 0E B0 FF E1 00 CD FF 6A 
+Accel Gs: X=-0.027 | Y=-0.007 | Z=1.057
+Raw 14-byte dump: FE 3C FF 48 43 CC 0E 50 FF E0 00 F2 FF 9A 
+Accel Gs: X=-0.028 | Y=-0.011 | Z=1.059
+Raw 14-byte dump: FE 44 FF 44 43 A4 0E 90 FF CC 00 D3 FF 76 
+Accel Gs: X=-0.027 | Y=-0.011 | Z=1.057
+Raw 14-byte dump: FE 5C FF 98 43 E8 0E 90 FF D8 00 CD FF 8C 
+Accel Gs: X=-0.026 | Y=-0.006 | Z=1.061
+| Y=-0.011 | Z=1.061
+Raw 14-byte dump: FE 40 FF 90 44 24 0E 70 FF E0 00 F2 FF 92 
+Accel Gs: X=-0.027 | Y=-0.007 | Z=1.065
+Raw 14-byte dump: FE 28 FF 90 43 90 0E 20 FF E6 00 DA FF 89 
+Accel Gs: X=-0.029 | Y=-0.007 | Z=1.056
+Raw 14-byte dump: FE 24 FF 80 44 1C 0E 90 FF D7 00 D5 FF 79 
+Accel Gs: X=-0.029 | Y=-0.008 | Z=1.064
+Raw 14-byte dump: FE 48 FF A8 44 18 0E 50 FF F9 00 D3 FF 8D 
+Accel Gs: X=-0.027 | Y=-0.005 | Z=1.064
+Raw 14-byte dump: FE 1C FF 8C 43 48 0E 90 FF E6 00 E4 FF 8F 
+Accel Gs: X=-0.030 | Y=-0.007 | Z=1.051
+Raw 14-byte dump: FE 30 FF 78 43 E8 0E 90 FF B7 00 DF FF BA 
+Accel Gs: X=-0.028 | Y=-0.008 | Z=1.061
+Raw 14-byte dump: FE 24 FF A8 43 5C 0E 50 FF DC 00 E6 FF 7B 
+Accel Gs: X=-0.029 | Y=-0.005 | Z=1.052
+Raw 14-byte dump: FE 34 FF B0 44 04 0E 90 FF F6 00 D7 FF 8C 
+Accel Gs: X=-0.028 | Y=-0.005 | Z=1.063
+Raw 14-byte dump: FE 4C FF C0 44 2C 0E B0 FF DB 00 E1 FF 8D 
+Accel Gs: X=-0.027 | Y=-0.004 | Z=1.065
+Raw 14-byte dump: FE 08 FF 78 43 B8 0E 90 FF EF 00 EC FF 89 
+Accel Gs: X=-0.031 | Y=-0.008 | Z=1.058
+Raw 14-byte dump: FE 04 FF A0 43 88 0E 40 FF DA 00 C2 FF 88 
+Accel Gs: X=-0.031 | Y=-0.006 | Z=1.055
+Raw 14-byte dump: FE 40 FF D0 43 D0 0E 50 FF F2 00 D5 FF 77 
+Accel Gs: X=-0.027 | Y=-0.003 | Z=1.060
+Raw 14-byte dump: FE 4C FF 84 43 F0 0E 50 FF E6 00 ED FF 91 
+Accel Gs: X=-0.027 | Y=-0.008 | Z=1.062
+Raw 14-byte dump: FE 24 FF 80 43 B8 0E 50 FF C8 00 C8 FF 8F 
+Accel Gs: X=-0.029 | Y=-0.008 | Z=1.058
+Raw 14-byte dump: FE 2C FF 6C 44 44 0E 90 FF E6 00 CF FF 86 
+Accel Gs: X=-0.029 | Y=-0.009 | Z=1.067
+Raw 14-byte dump: FE 3C FF 90 43 D4 0E 40 FF E0 00 D8 FF 94 
+Accel Gs: X=-0.028 | Y=-0.007 | Z=1.060
+Raw 14-byte dump: FE 34 FF 40 43 B0 0E 90 00 15 01 04 FF A5 
+Accel Gs: X=-0.028 | Y=-0.012 | Z=1.058
+Raw 14-byte dump: FE 18 FF C0 43 B0 0E 70 FF F0 00 EB FF 9C 
+Accel Gs: X=-0.030 | Y=-0.004 | Z=1.058
+Raw 14-byte dump: FE 24 FF 40 44 38 0E 90 FF D0 00 E5 FF A1 
+Accel Gs: X=-0.029 | Y=-0.012 | Z=1.066
+Raw 14-byte dump: FE 2C FF B8 44 04 0E C0 FF ED 00 DF FF 97 
+Accel Gs: X=-0.029 | Y=-0.004 | Z=1.063
+Raw 14-byte dump: FE 28 FF 7C 43 A4 0E 70 FF F9 00 D1 FF 97 
+Accel Gs: X=-0.029 | Y=-0.008 | Z=1.057
+Raw 14-byte dump: FE 14 FF 94 43 90 0E 80 FF D1 00 D7 FF A5 
+Accel Gs: X=-0.030 | Y=-0.007 | Z=1.056
+Raw 14-byte dump: FE 08 FF 88 43 E0 0E B0 FF D8 00 E7 FF 97 
+Accel Gs: X=-0.031 | Y=-0.007 | Z=1.061
+Raw 14-byte dump: FE 54 FF 8C 43 F8 0E 50 FF D0 00 DA FF 8B 
+Accel Gs: X=-0.026 | Y=-0.007 | Z=1.062
+Raw 14-byte dump: FE 1C FF 44 44 08 0E 90 FF FE 00 F0 FF 9A 
+Accel Gs: X=-0.030 | Y=-0.011 | Z=1.063
+Raw 14-byte dump: FE 70 FF 7C 44 3C 0E 20 FF BB 00 F3 FF 8D 
+Accel Gs: X=-0.024 | Y=-0.008 | Z=1.066
+Raw 14-byte dump: FE 34 FF AC 43 CC 0E 20 FF D2 01 05 FF 8E 
+Accel Gs: X=-0.028 | Y=-0.005 | Z=1.059
+Raw 14-byte dump: FE 20 FF 90 43 B0 0E 70 FF D6 00 CB FF 81 
+Accel Gs: X=-0.029 | Y=-0.007 | Z=1.058
+Raw 14-byte dump: FE 40 FF B4 43 C0 0E 50 FF C5 00 BE FF 91 
+Accel Gs: X=-0.027 | Y=-0.005 | Z=1.059
+Raw 14-byte dump: FE 24 FF 9C 44 1C 0E 70 FF DB 00 FA FF 96 
+Accel Gs: X=-0.029 | Y=-0.006 | Z=1.064
+Raw 14-byte dump: FE 6C FF 64 43 D0 0E 50 FF DF 00 E0 FF 84 
+Accel Gs: X=-0.025 | Y=-0.010 | Z=1.060
+Raw 14-byte dump: FE 14 FF 54 43 B0 0E 70 FF F0 00 F3 FF 9B 
+Accel Gs: X=-0.030 | Y=-0.010 | Z=1.058
+Raw 14-byte dump: FE 20 FF 90 43 C4 0E 90 FF DB 00 CE FF 8A 
+Accel Gs: X=-0.029 | Y=-0.007 | Z=1.059
+Raw 14-byte dump: FE 68 FF 68 43 DC 0E 10 FF ED 00 D9 FF A4 
+Accel Gs: X=-0.025 | Y=-0.009 | Z=1.060
+Raw 14-byte dump: FE 2C FF 68 43 F4 0E 50 FF EB 00 B9 FF 91 
+Accel Gs: X=-0.029 | Y=-0.009 | Z=1.062
+Raw 14-byte dump: FE 40 FF 90 44 00 0E 70 FF D6 00 F0 FF AB 
+Accel Gs: X=-0.027 | Y=-0.007 | Z=1.062
+Raw 14-byte dump: FE 44 FF BC 43 94 0E 20 FF CE 00 CD FF 98 
+Accel Gs: X=-0.027 | Y=-0.004 | Z=1.056
+Raw 14-byte dump: FE 2C FF 9C 43 D0 0E 90 FF E4 00 D8 FF 82 
+Accel Gs: X=-0.029 | Y=-0.006 | Z=1.060
+Raw 14-byte dump: FE 6C FF 64 43 D4 0E 50 FF DB 00 DE FF 95 
+Accel Gs: X=-0.025 | Y=-0.010 | Z=1.060
+Raw 14-byte dump: FE 18 FF 94 44 0C 0E 70 FF EE 00 E5 FF 86 
+Accel Gs: X=-0.030 | Y=-0.007 | Z=1.063
+Raw 14-byte dump: FE 0C FF 7C 43 AC 0E 50 FF F7 00 D0 FF 7B 
+Accel Gs: X=-0.031 | Y=-0.008 | Z=1.057
+Raw 14-byte dump: FE 3C FF 98 44 00 0E 50 FF DD 00 E0 FF 91 
+Accel Gs: X=-0.028 | Y=-0.006 | Z=1.062
+Raw 14-byte dump: FE 38 FF 38 43 80 0E 90 FF E0 00 EE FF 7D 
+Accel Gs: X=-0.028 | Y=-0.012 | Z=1.055
+Raw 14-byte dump: FE 3C FF 7C 43 74 0E 70 FF E0 00 E2 FF A2 
+Accel Gs: X=-0.028 | Y=-0.008 | Z=1.054
+Raw 14-byte dump: FE 04 FF 5C 44 14 0E 70 FF E5 00 CF FF 7E 
+Accel Gs: X=-0.031 | Y=-0.010 | Z=1.064
+Raw 14-byte dump: FE 2C FF 9C 43 EC 0E 50 FF C5 00 DB FF A6 
+Accel Gs: X=-0.029 | Y=-0.006 | Z=1.061
+Raw 14-byte dump: FE 54 FF 6C 43 68 0E C0 00 01 00 D8 FF 85 
+Accel Gs: X=-0.026 | Y=-0.009 | Z=1.053
+Raw 14-byte dump: FD F4 FF 78 43 5C 0E 50 FF FC 00 D3 FF 8F 
+Accel Gs: X=-0.032 | Y=-0.008 | Z=1.052
+Raw 14-byte dump: FE 24 FF B4 43 D8 0E 40 FF EB 00 EB FF A1 
+Accel Gs: X=-0.029 | Y=-0.005 | Z=1.060
+Raw 14-byte dump: FE 48 FF A4 44 18 0E 50 FF E9 00 C1 FF 93 
+Accel Gs: X=-0.027 | Y=-0.006 | Z=1.064
+Raw 14-byte dump: FE 84 FF 84 44 2C 0E 50 FF D1 00 ED FF B5 
+Accel Gs: X=-0.023 | Y=-0.008 | Z=1.065
+Raw 14-byte dump: FD F4 FF DC 44 7C 0E 50 FF AA 00 F4 FF A6 
+Accel Gs: X=-0.032 | Y=-0.002 | Z=1.070
+Raw 14-byte dump: FE 18 FF B0 43 90 0E B0 FF F0 00 DD FF A1 
+Accel Gs: X=-0.030 | Y=-0.005 | Z=1.056
+Raw 14-byte dump: FE 3C FF 70 44 14 0E 40 FF E8 00 DF FF 7F 
+Accel Gs: X=-0.028 | Y=-0.009 | Z=1.064
+Raw 14-byte dump: FE 08 FF 90 43 F4 0E 50 FF E4 00 E7 FF 82 
+Accel Gs: X=-0.031 | Y=-0.007 | Z=1.062
+Raw 14-byte dump: FE 34 FF 90 43 70 0E 90 FF E1 00 EC FF 91 
+Accel Gs: X=-0.028 | Y=-0.007 | Z=1.054
+Raw 14-byte dump: FE 54 FF B0 43 B0 0E 70 FF C6 00 DC FF 91 
+Accel Gs: X=-0.026 | Y=-0.005 | Z=1.058
+Raw 14-byte dump: FE 0C FF 8C 44 08 0E 80 FF CE 00 D2 FF 82 
+Accel Gs: X=-0.031 | Y=-0.007 | Z=1.063
+Raw 14-byte dump: FE 5C FF 58 43 D0 0E 70 FF EB 00 DE FF 91 
+Accel Gs: X=-0.026 | Y=-0.010 | Z=1.060
+Raw 14-byte dump: FE 2C FF 68 43 D8 0E 90 FF D8 00 DC FF 96 
+Accel Gs: X=-0.029 | Y=-0.009 | Z=1.060
+Raw 14-byte dump: FE 00 FF 84 43 E0 0E B0 FF E1 00 F2 FF B6 
+Accel Gs: X=-0.031 | Y=-0.008 | Z=1.061
+Raw 14-byte dump: FE 24 FF 90 43 E0 0E 20 FF EB 00 E7 FF A3 
+Accel Gs: X=-0.029 | Y=-0.007 | Z=1.061
+Raw 14-byte dump: FE 2C FF 60 43 E0 0E 20 FF F0 00 E6 FF 89 
+Accel Gs: X=-0.029 | Y=-0.010 | Z=1.061
+Raw 14-byte dump: FE 84 FF 88 43 D0 0E 70 00 03 00 E3 FF A4 
+Accel Gs: X=-0.023 | Y=-0.007 | Z=1.060
+Raw 14-byte dump: FE 3C FF 6C 43 BC 0E 90 FF E0 00 F9 FF 90 
+Accel Gs: X=-0.028 | Y=-0.009 | Z=1.058
+Raw 14-byte dump: FE 04 FF 9C 43 B0 0E 70 FF FB 00 E3 FF A7 
+Accel Gs: X=-0.031 | Y=-0.006 | Z=1.058
+Raw 14-byte dump: FE 18 FF 78 43 D4 0E 70 FF E7 00 D0 FF 6D 
+Accel Gs: X=-0.030 | Y=-0.008 | Z=1.060
+Raw 14-byte dump: FE 34 FF B4 43 E8 0E 20 FF E5 00 F1 FF 9C 
+Accel Gs: X=-0.028 | Y=-0.005 | Z=1.061
+Raw 14-byte dump: FE 04 FF 6C 44 08 0E 70 00 01 00 EB FF 7A 
+Accel Gs: X=-0.031 | Y=-0.009 | Z=1.063
+Raw 14-byte dump: FE 1C FF D4 44 14 0E 50 FF E1 00 ED FF 91 
+Accel Gs: X=-0.030 | Y=-0.003 | Z=1.064
+Raw 14-byte dump: FE 1C FF 94 43 E0 0E 50 FF D6 00 BB FF 71 
+Accel Gs: X=-0.030 | Y=-0.007 | Z=1.061
+Raw 14-byte dump: FE 04 FF 90 43 BC 0E 50 FF F1 00 EB FF A4 
+Accel Gs: X=-0.031 | Y=-0.007 | Z=1.058
+Raw 14-byte dump: FE 40 FF 88 43 A0 0E 50 FF CD 00 E3 FF A3 
+Accel Gs: X=-0.027 | Y=-0.007 | Z=1.057
+Raw 14-byte dump: FE 20 FF 88 43 F4 0E 70 FF DD 00 DE FF 83 
+Accel Gs: X=-0.029 | Y=-0.007 | Z=1.062
+Raw 14-byte dump: FE 18 FF 94 43 74 0E 70 FF BE 00 D7 FF A6 
+Accel Gs: X=-0.030 | Y=-0.007 | Z=1.054
+Raw 14-byte dump: FE 30 FF 50 43 98 0E 50 FF E8 00 D2 FF 7A 
+Accel Gs: X=-0.028 | Y=-0.011 | Z=1.056
+Raw 14-byte dump: FE 08 FF 70 43 E0 0E 90 FF E1 00 C5 FF AB 
+Accel Gs: X=-0.031 | Y=-0.009 | Z=1.061
+Raw 14-byte dump: FE 50 FF 84 43 AC 0E 50 FF C3 00 BB FF 6D 
+Accel Gs: X=-0.026 | Y=-0.008 | Z=1.057
+Raw 14-byte dump: FE 38 FF 68 44 10 0E 70 FF CE 00 F2 FF A7 
+Accel Gs: X=-0.028 | Y=-0.009 | Z=1.063
+Raw 14-byte dump: FE 08 FF 64 44 04 0E 40 FF DD 00 DB FF A9 
+Accel Gs: X=-0.031 | Y=-0.010 | Z=1.063
+Raw 14-byte dump: FE 04 FF A8 43 F4 0E 90 FF CC 01 0E FF 92 
+Accel Gs: X=-0.031 | Y=-0.005 | Z=1.062
+Raw 14-byte dump: FE 18 FF 98 43 EC 0E 70 FF DF 00 E2 FF 9D 
+Accel Gs: X=-0.030 | Y=-0.006 | Z=1.061
+Raw 14-byte dump: FE 28 FF 68 43 80 0E C0 00 08 00 E7 FF 91 
+Accel Gs: X=-0.029 | Y=-0.009 | Z=1.055
+Raw 14-byte dump: FE 68 FF 70 43 80 0E 90 FF D5 00 DC FF AD 
+Accel Gs: X=-0.025 | Y=-0.009 | Z=1.055
+Raw 14-byte dump: FD EC FF 90 43 A8 0E 40 FF CB 00 DC FF 95 
+Accel Gs: X=-0.032 | Y=-0.007 | Z=1.057
+Raw 14-byte dump: FE 24 FF 78 43 A0 0E 70 FF CE 00 C7 FF 8F 
+Accel Gs: X=-0.029 | Y=-0.008 | Z=1.057
+Raw 14-byte dump: FE 08 FF 7C 43 C4 0E 50 FF E2 00 E5 FF 89 
+Accel Gs: X=-0.031 | Y=-0.008 | Z=1.059
+Raw 14-byte dump: FE 40 FF 90 43 DC 0E 50 FF DB 00 BD FF 95 
+Accel Gs: X=-0.027 | Y=-0.007 | Z=1.060
+Raw 14-byte dump: FE 24 FF 80 43 90 0E 50 00 07 00 EB FF 98 
+Accel Gs: X=-0.029 | Y=-0.008 | Z=1.056
+Raw 14-byte dump: FE 24 FF 84 43 98 0E 10 FF DF 01 00 FF 8B 
+Accel Gs: X=-0.029 | Y=-0.008 | Z=1.056
+Raw 14-byte dump: FE 28 FF B4 43 F8 0E 90 FF D4 00 C6 FF 86 
+Accel Gs: X=-0.029 | Y=-0.005 | Z=1.062
+Raw 14-byte dump: FE 58 FF C0 43 E0 0E 50 FF FA 00 DE FF 7A 
+Accel Gs: X=-0.026 | Y=-0.004 | Z=1.061
+Raw 14-byte dump: FE 40 FF 8C 43 FC 0E B0 FF DC 00 F2 FF 7B 
+Accel Gs: X=-0.027 | Y=-0.007 | Z=1.062
+Raw 14-byte dump: FD E8 FF 90 43 E0 0E 70 FF E2 00 D0 FF AB 
+Accel Gs: X=-0.033 | Y=-0.007 | Z=1.061
+Raw 14-byte dump: FE 60 FF A0 43 F8 0E 10 FF B8 00 E1 FF 91 
+Accel Gs: X=-0.025 | Y=-0.006 | Z=1.062
+Raw 14-byte dump: FE 3C FF 80 43 AC 0E 50 FF DD 00 F2 FF 90 
+Accel Gs: X=-0.028 | Y=-0.008 | Z=1.057
+Raw 14-byte dump: FE 48 FF 84 44 04 0E 00 FF F6 00 EC FF 78 
+Accel Gs: X=-0.027 | Y=-0.008 | Z=1.063
+Raw 14-byte dump: FD FC FF 84 43 B8 0E 50 FF CC 00 E8 FF 8A 
+Accel Gs: X=-0.031 | Y=-0.008 | Z=1.058
+Raw 14-byte dump: FE 20 FF 80 43 C0 0E 50 FF E7 01 07 FF 70 
+Accel Gs: X=-0.029 | Y=-0.008 | Z=1.059
+Raw 14-byte dump: FE 4C FF 70 43 D0 0E 40 FF CD 00 DA FF A6 
+Accel Gs: X=-0.027 | Y=-0.009 | Z=1.060
+Raw 14-byte dump: FD F0 FF 80 43 B4 0E 50 FF DE 00 CB FF 7A 
+Accel Gs: X=-0.032 | Y=-0.008 | Z=1.058
+Raw 14-byte dump: FE 3C FF 90 43 8C 0E 90 FF DE 00 D4 FF AB 
+Accel Gs: X=-0.028 | Y=-0.007 | Z=1.055
+Raw 14-byte dump: FE 30 FF 68 44 5C 0E 50 FF CE 01 0A FF 94 
+Accel Gs: X=-0.028 | Y=-0.009 | Z=1.068
+Raw 14-byte dump: FE 2C FF 9C 43 78 0E 50 00 0B 00 DF FF A7 
+Accel Gs: X=-0.029 | Y=-0.006 | Z=1.054
+Raw 14-byte dump: FE 40 FF 40 43 AC 0E 50 FF C8 00 E3 FF A3 
+Accel Gs: X=-0.027 | Y=-0.012 | Z=1.057
+Raw 14-byte dump: FE 50 FF 98 43 A0 0E 40 FF C5 00 D5 FF 97 
+Accel Gs: X=-0.026 | Y=-0.006 | Z=1.057
+Raw 14-byte dump: FE 34 FF 80 43 FC 0E 90 FF DE 00 D6 FF 86 
+Accel Gs: X=-0.028 | Y=-0.008 | Z=1.062
+Raw 14-byte dump: FE 44 FF 90 43 D4 0E 70 FF B4 00 CF FF 85 
+Accel Gs: X=-0.027 | Y=-0.007 | Z=1.060
+Raw 14-byte dump: FE 34 FF 94 43 F0 0E 80 FF CF 00 EB FF A0 
+Accel Gs: X=-0.028 | Y=-0.007 | Z=1.062
+Raw 14-byte dump: FE 1C FF A0 43 C0 0E 50 FF D8 00 C6 FF 8A 
+Accel Gs: X=-0.030 | Y=-0.006 | Z=1.059
+Raw 14-byte dump: FE 08 FF 8C 43 C8 0E 70 FF F1 00 C6 FF 7B 
+Accel Gs: X=-0.031 | Y=-0.007 | Z=1.059
+Raw 14-byte dump: FE 44 FF 84 43 68 0E 80 FF E8 00 DA FF 98 
+Accel Gs: X=-0.027 | Y=-0.008 | Z=1.053
+Raw 14-byte dump: FE 3C FF 94 43 F0 0E 70 FF E0 01 00 FF 98 
+Accel Gs: X=-0.028 | Y=-0.007 | Z=1.062
+Raw 14-byte dump: FE 6C FF 80 43 98 0E 50 FF DC 00 C8 FF 8B 
+Accel Gs: X=-0.025 | Y=-0.008 | Z=1.056
+Raw 14-byte dump: FD F0 FF B8 43 E0 0E 40 FF CD 00 F5 FF 9E 
+Accel Gs: X=-0.032 | Y=-0.004 | Z=1.061
+Raw 14-byte dump: FE 70 FF 84 43 E4 0E 10 FF F6 00 E8 FF 9D 
+Accel Gs: X=-0.024 | Y=-0.008 | Z=1.061
+Raw 14-byte dump: FE 24 FF 80 44 50 0E 70 FF E2 00 BF FF 85 
+Accel Gs: X=-0.029 | Y=-0.008 | Z=1.067
+Raw 14-byte dump: FE 44 FF A0 43 B8 0E 70 FF EB 00 C9 FF 78 
+Accel Gs: X=-0.027 | Y=-0.006 | Z=1.058
+Raw 14-byte dump: FE 24 FF 50 43 FC 0E 50 FF E5 00 C2 FF 92 
+Accel Gs: X=-0.029 | Y=-0.011 | Z=1.062
+Raw 14-byte dump: FE 44 FF 80 43 C4 0E 70 FF EC 00 C0 FF 74 
+Accel Gs: X=-0.027 | Y=-0.008 | Z=1.059
+Raw 14-byte dump: FD E8 FF 94 43 C0 0E 50 FF E7 00 CC FF 94 
+Accel Gs: X=-0.033 | Y=-0.007 | Z=1.059
+Raw 14-byte dump: FE 2C FF 7C 43 B0 0E 40 FF E5 01 0D FF 88 
+Accel Gs: X=-0.029 | Y=-0.008 | Z=1.058
+Raw 14-byte dump: FD E4 FF 90 43 8C 0E 50 FF E3 00 DE FF 9A 
+Accel Gs: X=-0.033 | Y=-0.007 | Z=1.055
+Raw 14-byte dump: FE 5C FF A8 43 DC 0E 90 FF DB 00 E4 FF 9E 
+Accel Gs: X=-0.026 | Y=-0.005 | Z=1.060
+Raw 14-byte dump: FE 4C FF 70 43 D8 0E 50 FF D3 00 DD FF 73 
+Accel Gs: X=-0.027 | Y=-0.009 | Z=1.060
+Raw 14-byte dump: FE 64 FF BC 43 80 0E 40 FF E4 00 DA FF 78 
+Accel Gs: X=-0.025 | Y=-0.004 | Z=1.055
+Raw 14-byte dump: FE 20 FF A4 43 AC 0E 80 FF DA 00 DA FF 7F 
+Accel Gs: X=-0.029 | Y=-0.006 | Z=1.057
+Raw 14-byte dump: FE 0C FF 94 43 A8 0E 50 FF D8 00 F5 FF 95 
+Accel Gs: X=-0.031 | Y=-0.007 | Z=1.057
+Raw 14-byte dump: FE 3C FF 60 44 08 0E 80 FF F1 00 DD FF A0 
+Accel Gs: X=-0.028 | Y=-0.010 | Z=1.063
+Raw 14-byte dump: FE 20 FF 58 44 18 0E 50 00 07 01 01 FF 89 
+Accel Gs: X=-0.029 | Y=-0.010 | Z=1.064
+Raw 14-byte dump: FE 68 FF E8 44 20 0E 50 FF DE 00 F3 FF BA 
+Accel Gs: X=-0.025 | Y=-0.001 | Z=1.064
+Raw 14-byte dump: FE 3C FF BC 43 B8 0E 80 FF EC 00 CA FF 7B 
+Accel Gs: X=-0.028 | Y=-0.004 | Z=1.058
+Raw 14-byte dump: FE 40 FF 78 43 70 0E 40 FF E1 01 08 FF 95 
+Accel Gs: X=-0.027 | Y=-0.008 | Z=1.054
+Raw 14-byte dump: FE 50 FF 8C 43 D4 0E 90 FF DB 00 DA FF A3 
+Accel Gs: X=-0.026 | Y=-0.007 | Z=1.060
+Raw 14-byte dump: FE 20 FF A4 43 F4 0E 40 FF C6 00 E4 FF 72 
+Accel Gs: X=-0.029 | Y=-0.006 | Z=1.062
+Raw 14-byte dump: FE 54 FF A8 43 E4 0E 70 FF DB 00 B1 FF 96 
+Accel Gs: X=-0.026 | Y=-0.005 | Z=1.061
+Raw 14-byte dump: FE 44 FF 78 43 C0 0E C0 FF F0 00 FE FF 9B 
+Accel Gs: X=-0.027 | Y=-0.008 | Z=1.059
+Raw 14-byte dump: FE 1C FF 78 44 28 0E 40 FF E0 00 AD FF 85 
+Accel Gs: X=-0.030 | Y=-0.008 | Z=1.065
+Raw 14-byte dump: FE 40 FF 78 43 D4 0E 40 00 01 00 E8 FF 8F 
+Accel Gs: X=-0.027 | Y=-0.008 | Z=1.060
+Raw 14-byte dump: FE 54 FF 68 44 04 0E 90 FF DE 00 EA FF 8F 
+Accel Gs: X=-0.026 | Y=-0.009 | Z=1.063
+Raw 14-byte dump: FE 0C FF 90 43 E0 0E 70 FF EE 00 DA FF 97 
+Accel Gs: X=-0.031 | Y=-0.007 | Z=1.061
+Raw 14-byte dump: FE 38 FF 8C 43 F4 0E 40 FF FB 00 F3 FF A2 
+Accel Gs: X=-0.028 | Y=-0.007 | Z=1.062
+Raw 14-byte dump: FE 58 FF 5C 44 08 0E 90 FF E5 00 ED FF 92 
+Accel Gs: X=-0.026 | Y=-0.010 | Z=1.063
+Raw 14-byte dump: FE 18 FF 5C 43 D0 0E 90 FF E5 00 C9 FF 9F 
+Accel Gs: X=-0.030 | Y=-0.010 | Z=1.060
+Raw 14-byte dump: FE 40 FF 90 43 B4 0E C0 00 0A 00 DC FF A8 
+Accel Gs: X=-0.027 | Y=-0.007 | Z=1.058
+Raw 14-byte dump: FE 44 FF 68 43 1C 0E 50 FF EE 00 B4 FF 8E 
+Accel Gs: X=-0.027 | Y=-0.009 | Z=1.049
+Raw 14-byte dump: FE 60 FF 5C 43 C0 0E 70 FF D8 00 D3 FF 93 
+Accel Gs: X=-0.025 | Y=-0.010 | Z=1.059
+Raw 14-byte dump: FE 30 FF 9C 43 EC 0E 20 FF CB 00 D4 FF 84 
+Accel Gs: X=-0.028 | Y=-0.006 | Z=1.061
+Raw 14-byte dump: FD F4 FF 84 43 94 0E 90 FF F3 00 DE FF 91 
+Accel Gs: X=-0.032 | Y=-0.008 | Z=1.056
+Raw 14-byte dump: FD F0 FF CC 44 D0 0E 40 FF E1 00 CB FF A0 
+Accel Gs: X=-0.032 | Y=-0.003 | Z=1.075
+Raw 14-byte dump: FE 4C FF 64 43 A4 0E 70 FF D8 00 C5 FF 95 
+Accel Gs: X=-0.027 | Y=-0.010 | Z=1.057
+Raw 14-byte dump: FE 20 FF 90 43 70 0E 70 FF C3 00 EB FF 8F 
+Accel Gs: X=-0.029 | Y=-0.007 | Z=1.054
+Raw 14-byte dump: FE 14 FF 60 43 F0 0E 20 FF FF 00 D3 FF 89 
+Accel Gs: X=-0.030 | Y=-0.010 | Z=1.062
+Raw 14-byte dump: FE 04 FF 90 43 90 0E 40 FF E7 01 02 FF A7 
+Accel Gs: X=-0.031 | Y=-0.007 | Z=1.056
+Raw 14-byte dump: FE 60 FF 4C 44 18 0E 90 FF E8 01 15 FF A7 
+Accel Gs: X=-0.025 | Y=-0.011 | Z=1.064
+Raw 14-byte dump: FD FC FF D8 44 38 0E 50 FF EC 00 DF FF B2 
+Accel Gs: X=-0.031 | Y=-0.002 | Z=1.066
+Raw 14-byte dump: FE 08 FF 7C 43 68 0E 80 FF D5 00 E2 FF 90 
+Accel Gs: X=-0.031 | Y=-0.008 | Z=1.053
+Raw 14-byte dump: FE 3C FF 94 43 EC 0E 50 FF C6 00 EC FF A3 
+Accel Gs: X=-0.028 | Y=-0.007 | Z=1.061
+Raw 14-byte dump: FE 34 FF 80 43 68 0E 40 FF F6 00 DC FF 62 
+Accel Gs: X=-0.028 | Y=-0.008 | Z=1.053
+Raw 14-byte dump: FE 0C FF 84 43 94 0E 90 FF EC 00 F1 FF 97 
+Accel Gs: X=-0.031 | Y=-0.008 | Z=1.056
+Raw 14-byte dump: FE 40 FF 7C 43 D8 0E 50 FF C8 00 C9 FF 9A 
+Accel Gs: X=-0.027 | Y=-0.008 | Z=1.060
+Raw 14-byte dump: FE 40 FF 84 44 24 0E B0 FF E1 00 CF FF 99 
+Accel Gs: X=-0.027 | Y=-0.008 | Z=1.065
+Raw 14-byte dump: FE 38 FF 60 43 B8 0E 90 FF ED 00 DF FF 7D 
+Accel Gs: X=-0.028 | Y=-0.010 | Z=1.058
+Raw 14-byte dump: FE 38 FF A8 43 C0 0E 50 FF C4 00 CA FF B1 
+Accel Gs: X=-0.028 | Y=-0.005 | Z=1.059
+Raw 14-byte dump: FE 2C FF 78 44 30 0E 90 FF D6 00 CC FF A2 
+Accel Gs: X=-0.029 | Y=-0.008 | Z=1.065
+Raw 14-byte dump: FE 10 FF 94 43 CC 0E 40 FF E4 00 DF FF A4 
+Accel Gs: X=-0.030 | Y=-0.007 | Z=1.059
+Raw 14-byte dump: FD FC FF 6C 43 88 0E 50 FF F8 00 D3 FF 90 
+Accel Gs: X=-0.031 | Y=-0.009 | Z=1.055
+Raw 14-byte dump: FE 1C FF 78 43 3C 0E 70 FF CD 00 F5 FF 92 
+Accel Gs: X=-0.030 | Y=-0.008 | Z=1.051
+Raw 14-byte dump: FE 28 FF 98 44 48 0E 70 FF EC 00 E2 FF 82 
+Accel Gs: X=-0.029 | Y=-0.006 | Z=1.067
+Raw 14-byte dump: FE 10 FF 94 43 F0 0E 70 FF C4 00 D9 FF 84 
+Accel Gs: X=-0.030 | Y=-0.007 | Z=1.062
+Raw 14-byte dump: FE 68 FF 68 43 C4 0E 50 FF F5 00 E0 FF 8F 
+Accel Gs: X=-0.025 | Y=-0.009 | Z=1.059
+Raw 14-byte dump: FE 20 FF 50 43 CC 0E 20 FF D4 00 E6 FF 91 
+Accel Gs: X=-0.029 | Y=-0.011 | Z=1.059
+Raw 14-byte dump: FE 38 FF 94 44 04 0E 20 FF F2 00 EF FF 94 
+Accel Gs: X=-0.028 | Y=-0.007 | Z=1.063
+Raw 14-byte dump: FE 5C FF 5C 44 10 0E 90 FF CC 00 EF FF 93 
+Accel Gs: X=-0.026 | Y=-0.010 | Z=1.063
+Raw 14-byte dump: FE 40 FF C0 44 24 0E 40 FF EA 00 E9 FF A2 
+Accel Gs: X=-0.027 | Y=-0.004 | Z=1.065
+Raw 14-byte dump: FE 0C FF 40 44 28 0E 50 FF EF 00 CA FF 95 
+Accel Gs: X=-0.031 | Y=-0.012 | Z=1.065
+Raw 14-byte dump: FE 48 FF C4 43 50 0E 50 FF FD 00 EB FF 91 
+Accel Gs: X=-0.027 | Y=-0.004 | Z=1.052
+Raw 14-byte dump: FE 3C FF 58 43 B0 0E 50 FF D2 00 DF FF 7D 
+Accel Gs: X=-0.028 | Y=-0.010 | Z=1.058
+Raw 14-byte dump: FE 3C FF A0 43 F8 0E 70 FF D3 00 EA FF 91 
+Accel Gs: X=-0.028 | Y=-0.006 | Z=1.062
+Raw 14-byte dump: FE 2C FF B0 43 A4 0E 70 FF EA 00 D0 FF 8F 
+Accel Gs: X=-0.029 | Y=-0.005 | Z=1.057
+Raw 14-byte dump: FE 20 FF 74 44 24 0E 90 FF E6 00 E4 FF 8A 
+Accel Gs: X=-0.029 | Y=-0.009 | Z=1.065
+Raw 14-byte dump: FE 2C FF 98 43 F0 0E 50 FF DD 00 DB FF A6 
+Accel Gs: X=-0.029 | Y=-0.006 | Z=1.062
+Raw 14-byte dump: FE 4C FF 94 43 9C 0E 50 FF D7 00 DF FF 95 
+Accel Gs: X=-0.027 | Y=-0.007 | Z=1.056
+Raw 14-byte dump: FD F8 FF 58 43 74 0E 90 FF DA 00 D2 FF A9 
+Accel Gs: X=-0.032 | Y=-0.010 | Z=1.054
+Raw 14-byte dump: FE 28 FF 98 43 F4 0E B0 FF F4 00 F3 FF 90 
+Accel Gs: X=-0.029 | Y=-0.006 | Z=1.062
+Raw 14-byte dump: FE 48 FF 40 43 B8 0E 90 FF CF 00 E9 FF 7B 
+Accel Gs: X=-0.027 | Y=-0.012 | Z=1.058
+Raw 14-byte dump: FE 8C FF 80 43 B0 0E 90 00 0B 00 FA FF 9A 
+Accel Gs: X=-0.023 | Y=-0.008 | Z=1.058
+Raw 14-byte dump: FE 14 FF 74 43 BC 0E 70 FF E2 00 E9 FF 80 
+Accel Gs: X=-0.030 | Y=-0.009 | Z=1.058
+Raw 14-byte dump: FE 48 FF A0 43 AC 0E 50 FF F5 00 DA FF 8A 
+Accel Gs: X=-0.027 | Y=-0.006 | Z=1.057
+Raw 14-byte dump: FE 4C FF 8C 43 A0 0E 70 FF D2 00 E9 FF 99 
+Accel Gs: X=-0.027 | Y=-0.007 | Z=1.057
+Raw 14-byte dump: FE 3C FF 8C 44 1C 0E 90 FF C5 00 C1 FF 70 
+Accel Gs: X=-0.028 | Y=-0.007 | Z=1.064
+Raw 14-byte dump: FD E4 FF 7C 43 D4 0E B0 FF CF 01 0D FF A6 
+Accel Gs: X=-0.033 | Y=-0.008 | Z=1.060
+Raw 14-byte dump: FE 2C FF 9C 44 0C 0E B0 FF F1 00 D0 FF 94 
+Accel Gs: X=-0.029 | Y=-0.006 | Z=1.063
+Raw 14-byte dump: FE 50 FF 68 44 0C 0E 90 FF F4 00 EA FF 83 
+Accel Gs: X=-0.026 | Y=-0.009 | Z=1.063
+Raw 14-byte dump: FE 24 FF 80 43 64 0E 80 FF DE 00 E9 FF 9D 
+Accel Gs: X=-0.029 | Y=-0.008 | Z=1.053
+Raw 14-byte dump: FE 54 FF 98 43 BC 0E B0 FF D7 00 C4 FF AC 
+Accel Gs: X=-0.026 | Y=-0.006 | Z=1.058
+Raw 14-byte dump: FD F4 FF A4 43 D4 0E 40 FF CC 00 CA FF AA 
+Accel Gs: X=-0.032 | Y=-0.006 | Z=1.060
+Raw 14-byte dump: FE 58 FF A0 43 DC 0E 40 FF DB 00 F6 FF AB 
+Accel Gs: X=-0.026 | Y=-0.006 | Z=1.060
+Raw 14-byte dump: FD E4 FF 80 44 34 0E 50 FF E8 00 D7 FF 98 
+Accel Gs: X=-0.033 | Y=-0.008 | Z=1.066
+Raw 14-byte dump: FE 60 FF 80 43 80 0E 90 FF FA 00 ED FF 78 
+Accel Gs: X=-0.025 | Y=-0.008 | Z=1.055
+Raw 14-byte dump: FE 40 FF B0 44 08 0E 90 FF E0 00 CC FF 8E 
+Accel Gs: X=-0.027 | Y=-0.005 | Z=1.063
+Raw 14-byte dump: FE 24 FF 9C 43 98 0E 90 FF EC 00 D9 FF 8F 
+Accel Gs: X=-0.029 | Y=-0.006 | Z=1.056
+Raw 14-byte dump: FE 44 FF A4 43 84 0E 90 FF D6 00 C1 FF A7 
+Accel Gs: X=-0.027 | Y=-0.006 | Z=1.055
+Raw 14-byte dump: FE 4C FF 98 43 D8 0E 50 FF DA 00 FA FF 9B 
+Accel Gs: X=-0.027 | Y=-0.006 | Z=1.060
+Raw 14-byte dump: FE 40 FF A0 44 20 0E B0 FF FC 00 D7 FF 8A 
+Accel Gs: X=-0.027 | Y=-0.006 | Z=1.064
+Raw 14-byte dump: FE 50 FF 78 44 30 0E 70 FF CB 00 D0 FF 83 
+Accel Gs: X=-0.026 | Y=-0.008 | Z=1.065
+Raw 14-byte dump: FE 2C FF 48 43 88 0E 90 FF FC 00 D2 FF 83 
+Accel Gs: X=-0.029 | Y=-0.011 | Z=1.055
+Raw 14-byte dump: FE 34 FF 90 44 0C 0E 80 FF E4 00 C0 FF 75 
+Accel Gs: X=-0.028 | Y=-0.007 | Z=1.063
+Raw 14-byte dump: FE 64 FF 60 43 C4 0E 70 FF DE 00 DB FF A7 
+Accel Gs: X=-0.025 | Y=-0.010 | Z=1.059
+Raw 14-byte dump: FE 44 FF 90 43 BC 0E 50 FF D0 00 CF FF 84 
+Accel Gs: X=-0.027 | Y=-0.007 | Z=1.058
+Raw 14-byte dump: FE 80 FF 8C 43 48 0E 40 FF E1 00 D5 FF 82 
+Accel Gs: X=-0.023 | Y=-0.007 | Z=1.051
+Raw 14-byte dump: FE 5C FF 7C 44 28 0E 70 FF BC 00 D6 FF 8C 
+Accel Gs: X=-0.026 | Y=-0.008 | Z=1.065
+Raw 14-byte dump: FE 70 FF 98 44 3C 0E C0 FF D8 00 C0 FF 8A 
+Accel Gs: X=-0.024 | Y=-0.006 | Z=1.066
+Raw 14-byte dump: FD F0 FF 68 44 60 0E 70 FF D6 00 F3 FF 9F 
+Accel Gs: X=-0.032 | Y=-0.009 | Z=1.068
+Raw 14-byte dump: FE 0C FF 9C 44 18 0E 80 FF E2 00 D4 FF BB 
+Accel Gs: X=-0.031 | Y=-0.006 | Z=1.064
+Raw 14-byte dump: FD F8 FF 74 43 98 0E 90 FF E6 00 E6 FF B4 
+Accel Gs: X=-0.032 | Y=-0.009 | Z=1.056
+Raw 14-byte dump: FE 14 FF 40 43 F8 0E 70 FF E5 00 BD FF 81 
+Accel Gs: X=-0.030 | Y=-0.012 | Z=1.062
+Raw 14-byte dump: FE 08 FF 58 43 F4 0E 90 FF DC 00 E3 FF 9C 
+Accel Gs: X=-0.031 | Y=-0.010 | Z=1.062
+Raw 14-byte dump: FE 3C FF 94 44 2C 0E 80 FF D6 00 D7 FF A3 
+Accel Gs: X=-0.028 | Y=-0.007 | Z=1.065
+Raw 14-byte dump: FE 4C FF 78 44 2C 0E 70 FF E4 00 D9 FF 8F 
+Accel Gs: X=-0.027 | Y=-0.008 | Z=1.065
+Raw 14-byte dump: FE 58 FF 7C 43 EC 0E 50 FF F5 00 E9 FF 8E 
+Accel Gs: X=-0.026 | Y=-0.008 | Z=1.061
+Raw 14-byte dump: FE 1C FF 78 44 70 0E 90 FF D3 00 D4 FF 7B 
+Accel Gs: X=-0.030 | Y=-0.008 | Z=1.069
+Raw 14-byte dump: FE 60 FF A0 43 B0 0E C0 FF EC 00 D4 FF 94 
+Accel Gs: X=-0.025 | Y=-0.006 | Z=1.058
+Raw 14-byte dump: FD F8 FF 84 43 E0 0E 70 FF EE 00 F3 FF A6 
+Accel Gs: X=-0.032 | Y=-0.008 | Z=1.061
+Raw 14-byte dump: FE 64 FF 80 44 14 0E 20 FF E2 00 D4 FF 93 
+Accel Gs: X=-0.025 | Y=-0.008 | Z=1.064
+Raw 14-byte dump: FE 94 FF 74 44 18 0E 50 FF E4 00 FA FF 9D 
+Accel Gs: X=-0.022 | Y=-0.009 | Z=1.064
+Raw 14-byte dump: FE 68 FF B8 43 90 0E 50 FF E3 00 C7 FF 7C 
+Accel Gs: X=-0.025 | Y=-0.004 | Z=1.056
+Raw 14-byte dump: FE 50 FF 84 43 90 0E 50 FF D7 00 EB FF 97 
+Accel Gs: X=-0.026 | Y=-0.008 | Z=1.056
+Raw 14-byte dump: FE 30 FF 8C 43 78 0E 70 FF D2 00 D2 FF 74 
+Accel Gs: X=-0.028 | Y=-0.007 | Z=1.054
+Raw 14-byte dump: FE 3C FF B8 43 C0 0E 90 FF CB 00 D8 FF 84 
+Accel Gs: X=-0.028 | Y=-0.004 | Z=1.059
+Raw 14-byte dump: FE 08 FF 7C 43 64 0E 70 FF F3 00 F1 FF 94 
+Accel Gs: X=-0.031 | Y=-0.008 | Z=1.053
+Raw 14-byte dump: FE 28 FF A0 43 B8 0E 70 FF DE 00 E7 FF 7E 
+Accel Gs: X=-0.029 | Y=-0.006 | Z=1.058
+Raw 14-byte dump: FE 18 FF 68 43 48 0E 40 FF FA 00 EA FF A2 
+Accel Gs: X=-0.030 | Y=-0.009 | Z=1.051
+Raw 14-byte dump: FE 20 FF 50 43 50 0E 90 FF FB 00 BF FF 8C 
+Accel Gs: X=-0.029 | Y=-0.011 | Z=1.052
+Raw 14-byte dump: FE 24 FF 44 43 EC 0E 80 FF D9 00 E4 FF 7E 
+Accel Gs: X=-0.029 | Y=-0.011 | Z=1.061
+Raw 14-byte dump: FE 3C FF 80 43 94 0E 80 FF E9 00 ED FF 87 
+Accel Gs: X=-0.028 | Y=-0.008 | Z=1.056
+Raw 14-byte dump: FE 18 FF 80 43 C8 0E 50 FF CE 00 DB FF 88 
+Accel Gs: X=-0.030 | Y=-0.008 | Z=1.059
+Raw 14-byte dump: FE 08 FF 60 43 84 0E C0 FF E2 00 D2 FF 8A 
+Accel Gs: X=-0.031 | Y=-0.010 | Z=1.055
+Raw 14-byte dump: FE 54 FF 78 43 84 0E 90 FF F0 00 C7 FF 81 
+Accel Gs: X=-0.026 | Y=-0.008 | Z=1.055
+Raw 14-byte dump: FE 34 FF 78 43 E8 0E C0 FF D2 00 CA FF A7 
+Accel Gs: X=-0.028 | Y=-0.008 | Z=1.061
+Raw 14-byte dump: FD FC FF 30 43 D0 0E B0 FF F3 00 F0 FF 87 
+Accel Gs: X=-0.031 | Y=-0.013 | Z=1.060
+Raw 14-byte dump: FE 5C FF A0 44 08 0E 90 FF DF 00 E1 FF 80 
+Accel Gs: X=-0.026 | Y=-0.006 | Z=1.063
+Raw 14-byte dump: FE 00 FF 5C 43 E8 0E 50 FF E8 00 C4 FF 96 
+Accel Gs: X=-0.031 | Y=-0.010 | Z=1.061
+Raw 14-byte dump: FE 28 FF 48 43 B8 0E B0 FF E5 00 DA FF 8E 
+Accel Gs: X=-0.029 | Y=-0.011 | Z=1.058
+Raw 14-byte dump: FE 28 FF A0 43 E0 0E 90 FF DA 00 E6 FF 89 
+Accel Gs: X=-0.029 | Y=-0.006 | Z=1.061
+Raw 14-byte dump: FE 5C FF A0 43 7C 0E 90 FF E4 00 EE FF 84 
+Accel Gs: X=-0.026 | Y=-0.006 | Z=1.054
+Raw 14-byte dump: FE 0C FF 84 44 04 0E 90 FF EF 00 E8 FF B3 
+Accel Gs: X=-0.031 | Y=-0.008 | Z=1.063
+Raw 14-byte dump: FE 50 FF AC 43 DC 0E 50 FF DA 00 D9 FF 7B 
+Accel Gs: X=-0.026 | Y=-0.005 | Z=1.060
+Raw 14-byte dump: FE 54 FF 8C 44 20 0E B0 FF E0 00 D4 FF 92 
+Accel Gs: X=-0.026 | Y=-0.007 | Z=1.064
+Raw 14-byte dump: FE 58 FF 74 43 BC 0E 80 FF EE 00 DD FF 7E 
+Accel Gs: X=-0.026 | Y=-0.009 | Z=1.058
+Raw 14-byte dump: FE 48 FF 88 43 E4 0E 40 FF DC 00 D8 FF 95 
+Accel Gs: X=-0.027 | Y=-0.007 | Z=1.061
+Raw 14-byte dump: FE 0C FF A0 44 1C 0E B0 FF CB 00 C8 FF 8C 
+Accel Gs: X=-0.031 | Y=-0.006 | Z=1.064
+Raw 14-byte dump: FE 20 FF AC 44 24 0E 70 FF E3 00 F3 FF A2 
+AccelRaw 14-byte dump: FE E0 00 00 00 00 0E F0 00 00 00 C7 FF 87 
+Accel Gs: X=-0.018 | Y=0.000 | Z=0.000
+Raw 14-byte dump: FF 2C 00 00 00 00 0E B0 00 00 01 02 FF B5 
+Accel Gs: X=-0.013 | Y=0.000 | Z=0.000
+Raw 14-byte dump: FC 24 00 00 00 00 0E F0 00 00 F5 BC F1 59 
+Accel Gs: X=-0.060 | Y=0.000 | Z=0.000
+Raw 14-byte dump: 00 88 00 00 00 00 0E D0 00 00 01 77 FF 99 
+Accel Gs: X=0.008 | Y=0.000 | Z=0.000
+Raw 14-byte dump: FE 50 00 00 00 00 0E C0 00 00 00 D3 00 11 
+Accel Gs: X=-0.026 | Y=0.000 | Z=0.000
+Raw 14-byte dump: FE E0 00 00 00 00 0E C0 00 00 00 EE 04 C6 
+Accel Gs: X=-0.018 | Y=0.000 | Z=0.000
+Raw 14-byte dump: FE C8 00 00 00 00 0E C0 00 00 00 CF FF 9C 
+Accel Gs: X=-0.019 | Y=0.000 | Z=0.000
+Raw 14-byte dump: FE EC 00 00 00 00 0E D0 00 00 00 9E FF 7C 
+Accel Gs: X=-0.017 | Y=0.000 | Z=0.000
+Raw 14-byte dump: FF 10 00 00 00 00 0E F0 00 00 00 C2 FF 8F 
+Accel Gs: X=-0.015 | Y=0.000 | Z=0.000
+Raw 14-byte dump: FE E0 00 00 00 00 0E C0 00 00 00 B7 FF 66 
+Accel Gs: X=-0.018 | Y=0.000 | Z=0.000
+Raw 14-byte dump: FE F8 00 00 00 00 0F 00 00 00 00 BB FF 98 
+Accel Gs: X=-0.016 | Y=0.000 | Z=0.000
+Raw 14-byte dump: FF 1C 00 00 00 00 0E C0 00 00 00 C0 FF 83 
+Accel Gs: X=-0.014 | Y=0.000 | Z=0.000
+Raw 14-byte dump: FF 04 00 00 00 00 0E F0 00 00 00 A2 FF 86 
+Accel Gs: X=-0.015 | Y=0.000 | Z=0.000
+Raw 14-byte dump: FF 34 00 00 00 00 0F 30 00 00 00 CF FF 80 
+Accel Gs: X=-0.012 | Y=0.000 | Z=0.000
+Raw 14-byte dump: FF 40 00 00 00 00 0E F0 00 00 00 B3 FF 8B 
+Accel Gs: X=-0.012 | Y=0.000 | Z=0.000
+Raw 14-byte dump: FF 1C 00 00 00 00 0E 90 00 00 00 A7 FF 8A 
+Accel Gs: X=-0.014 | Y=0.000 | Z=0.000
+Raw 14-byte dump: FE F8 00 00 00 00 0E 90 00 00 00 AB FF 86 
+Accel Gs: X=-0.016 | Y=0.000 | Z=0.000
+Raw 14-byte dump: FE EC 00 00 00 00 0E 90 00 00 00 B6 FF 8C 
+Accel Gs: X=-0.017 | Y=0.000 | Z=0.000
+Raw 14-byte dump: FD D0 00 00 00 00 0E F0 00 00 04 6C FF CF 
+Accel Gs: X=-0.034 | Y=0.000 | Z=0.000
+Raw 14-byte dump: F9 64 00 00 00 00 0E F0 00 00 FD 12 F5 EF 
+Accel Gs: X=-0.103 | Y=0.000 | Z=0.000
+[1;31mE (21493) i2c.master: I2C hardware NACK detected[0m
+[1;31mE (21493) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (21493) i2c.master: s_i2c_synchronous_transaction(924): I2C transaction failed[0m
+[1;31mE (21493) i2c.master: i2c_master_transmit_receive(1220): I2C transaction failed[0m
+[1;31mE (21503) MPU: Burst read failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (22503) i2c.master: I2C hardware NACK detected[0m
+[1;31mE (22503) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (22503) i2c.master: s_i2c_synchronous_transaction(924): I2C transaction failed[0m
+[1;31mE (22503) i2c.master: i2c_master_transmit_receive(1220): I2C transaction failed[0m
+[1;31mE (22513) MPU: Burst read failed: ESP_ERR_INVALID_STATE[0m
+Raw 14-byte dump: 02 AC 00 00 00 00 0E C0 00 00 FA 24 2C 24 
+Accel Gs: X=0.042 | Y=0.000 | Z=0.000
+Raw 14-byte dump: FD 84 00 00 00 00 0E B0 00 00 00 AB FF AF 
+Accel Gs: X=-0.039 | Y=0.000 | Z=0.000
+Raw 14-byte dump: 05 F0 00 00 00 00 0E 20 00 00 FC 19 00 4D 
+Accel Gs: X=0.093 | Y=0.000 | Z=0.000
+Raw 14-byte dump: FF 64 00 00 00 00 0E C0 00 00 07 AE FD 7D 
+Accel Gs: X=-0.010 | Y=0.000 | Z=0.000
+Raw 14-byte dump: FD 20 00 00 00 00 0E D0 00 00 FA 8D 08 CC 
+Accel Gs: X=-0.045 | Y=0.000 | Z=0.000
+Raw 14-byte dump: FF 3C 00 00 00 00 0E D0 00 00 F6 6B 05 F3 
+Accel Gs: X=-0.012 | Y=0.000 | Z=0.000
+[1;31mE (29513) i2c.master: I2C hardware NACK detected[0m
+[1;31mE (29513) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (29513) i2c.master: s_i2c_synchronous_transaction(924): I2C transaction failed[0m
+[1;31mE (29513) i2c.master: i2c_master_transmit_receive(1220): I2C transaction failed[0m
+[1;31mE (29523) MPU: Burst read failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (30523) i2c.master: I2C hardware NACK detected[0m
+[1;31mE (30523) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (30523) i2c.master: s_i2c_synchronous_transaction(924): I2C transaction failed[0m
+[1;31mE (30523) i2c.master: i2c_master_transmit_receive(1220): I2C transaction failed[0m
+[1;31mE (30533) MPU: Burst read failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (31533) i2c.master: I2C hardware NACK detected[0m
+[1;31mE (31533) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (31533) i2c.master: s_i2c_synchronous_transaction(924): I2C transaction failed[0m
+[1;31mE (31533) i2c.master: i2c_master_transmit_receive(1220): I2C transaction failed[0m
+[1;31mE (31543) MPU: Burst read failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (32543) i2c.master: I2C hardware NACK detected[0m
+[1;31mE (32543) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (32543) i2c.master: s_i2c_synchronous_transaction(924): I2C transaction failed[0m
+[1;31mE (32543) i2c.master: i2c_master_transmit_receive(1220): I2C transaction failed[0m
+[1;31mE (32553) MPU: Burst read failed: ESP_ERR_INVALID_STATE[0m
+Raw 14-byte dump: F9 68 01 E4 44 D8 0E 40 01 74 FF 56 FE 47 
+Accel Gs: X=-0.103 | Y=0.030 | Z=1.076
+Raw 14-byte dump: F6 F0 FB 88 48 B4 0E B0 03 81 CE D5 D2 7A 
+Accel Gs: X=-0.142 | Y=-0.070 | Z=1.136
+Raw 14-byte dump: F6 D4 10 10 50 18 0E C0 0C CF 08 46 FF D4 
+Accel Gs: X=-0.143 | Y=0.251 | Z=1.251
+Raw 14-byte dump: FE B8 3F 24 03 1C 0E C0 1B A2 00 EA 00 34 
+Accel Gs: X=-0.020 | Y=0.987 | Z=0.049
+Raw 14-byte dump: FE B0 3F 8C 00 E8 0E C0 FD AB 00 FA FF EF 
+Accel Gs: X=-0.021 | Y=0.993 | Z=0.014
+Raw 14-byte dump: FF 04 40 24 04 4C 0F 30 EF 33 01 14 FF 5D 
+Accel Gs: X=-0.015 | Y=1.002 | Z=0.067
+Raw 14-byte dump: FF 20 3F 4C 01 40 0E C0 02 27 00 BC FF 73 
+Accel Gs: X=-0.014 | Y=0.989 | Z=0.020
+Raw 14-byte dump: 22 E4 14 1C 2E 6C 0E C0 EF 9D D2 AD 17 47 
+Accel Gs: X=0.545 | Y=0.314 | Z=0.725
+Raw 14-byte dump: 3E 78 01 88 FE 00 0E D0 00 12 02 E1 00 01 
+Accel Gs: X=0.976 | Y=0.024 | Z=-0.031
+Raw 14-byte dump: 3F 28 FD 58 01 00 0F 30 02 93 FE 29 00 6E 
+Accel Gs: X=0.987 | Y=-0.042 | Z=0.016
+Raw 14-byte dump: FD F0 00 20 43 6C 0F 00 FB D2 00 0A EF D6 
+Accel Gs: X=-0.032 | Y=0.002 | Z=1.053
+Raw 14-byte dump: FD A0 00 B0 43 F4 0F 00 FE 5D 00 2F 00 04 
+Accel Gs: X=-0.037 | Y=0.011 | Z=1.062
+Raw 14-byte dump: FD C4 FF C8 43 B8 0F 30 FF DC 00 B0 FF 7F 
+Accel Gs: X=-0.035 | Y=-0.003 | Z=1.058
+Raw 14-byte dump: FE 00 FF B8 44 68 0E F0 00 4D 00 C1 FF 80 
+Accel Gs: X=-0.031 | Y=-0.004 | Z=1.069
+Raw 14-byte dump: FD A0 FF FC 44 2C 0F 20 FF B7 01 2C FD 1D 
+Accel Gs: X=-0.037 | Y=-0.000 | Z=1.065
+Raw 14-byte dump: FD CC FF EC 43 E8 0F 40 FF E0 00 D6 FF 61 
+Accel Gs: X=-0.034 | Y=-0.001 | Z=1.061
+Raw 14-byte dump: FE 60 FF A4 44 10 0E F0 FF E9 00 E0 06 10 
+Accel Gs: X=-0.025 | Y=-0.006 | Z=1.063
+Raw 14-byte dump: FD 70 00 A8 44 B0 0F 00 06 42 04 9F 14 02 
+Accel Gs: X=-0.040 | Y=0.010 | Z=1.073
+Raw 14-byte dump: FE A8 FF CC 44 34 0F 20 FF D8 00 BF FF 8C 
+Accel Gs: X=-0.021 | Y=-0.003 | Z=1.066
+Raw 14-byte dump: FE D4 FF A0 43 F0 0F 00 FF BC 00 C4 FF 6D 
+Accel Gs: X=-0.018 | Y=-0.006 | Z=1.062
+Raw 14-byte dump: FE C4 FF 38 44 60 0F 20 FF E6 00 E8 FF 6D 
+Accel Gs: X=-0.019 | Y=-0.012 | Z=1.068
+Raw 14-byte dump: FF 2C FF 68 43 FC 0F 00 FF D6 00 E5 FF A5 
+Accel Gs: X=-0.013 | Y=-0.009 | Z=1.062
+Raw 14-byte dump: FE AC FF 6C 43 F8 0F 20 FF F0 00 EC FF 9B 
+Accel Gs: X=-0.021 | Y=-0.009 | Z=1.062
+Raw 14-byte dump: FE F0 FF 9C 43 F4 0E F0 FF DB 00 C8 FF 97 
+Accel Gs: X=-0.017 | Y=-0.006 | Z=1.062
+Raw 14-byte dump: FF 18 FF 70 44 14 0E D0 FF CE 01 06 FF 86 
+Accel Gs: X=-0.014 | Y=-0.009 | Z=1.064
+Raw 14-byte dump: FE C0 FF 84 44 48 0F 00 FF E2 00 DC FF B2 
+Accel Gs: X=-0.020 | Y=-0.008 | Z=1.067
+Raw 14-byte dump: FE E0 FF 7C 43 B8 0F 00 FF EB 00 E1 FF 94 
+Accel Gs: X=-0.018 | Y=-0.008 | Z=1.058
+Raw 14-byte dump: FF 40 FF B0 43 E0 0F 00 FF E1 00 E9 FF 98 
+Accel Gs: X=-0.012 | Y=-0.005 | Z=1.061
+Raw 14-byte dump: FE EC FF 3C 43 F4 0F 20 FF D4 00 D0 FF A9 
+Accel Gs: X=-0.017 | Y=-0.012 | Z=1.062
+Raw 14-byte dump: FF 24 FF B0 44 64 0F 00 FF E2 00 F9 FF 9F 
+Accel Gs: X=-0.013 | Y=-0.005 | Z=1.069
+Raw 14-byte dump: FF 14 FF B4 44 10 0E D0 FF CF 00 E6 FF 91 
+Accel Gs: X=-0.014 | Y=-0.005 | Z=1.063
+Raw 14-byte dump: FF 0C FF B4 43 D4 0E C0 FF CE 00 E3 FF 85 
+Accel Gs: X=-0.015 | Y=-0.005 | Z=1.060
+Raw 14-byte dump: FD FC FF AC 44 9C 0F 30 FE E9 00 59 FF 9B 
+Accel Gs: X=-0.031 | Y=-0.005 | Z=1.072
+Raw 14-byte dump: FE EC FF 88 43 C8 0E F0 FF DB 00 FF FF 97 
+Accel Gs: X=-0.017 | Y=-0.007 | Z=1.059
+Raw 14-byte dump: FF 24 FF 74 44 28 0E C0 FF EA 00 F1 FF 90 
+Accel Gs: X=-0.013 | Y=-0.009 | Z=1.065
+Raw 14-byte dump: FE E8 FF D8 43 EC 0E F0 FF DE 00 D4 FF 82 
+Accel Gs: X=-0.017 | Y=-0.002 | Z=1.061
+Raw 14-byte dump: FF 08 FF 9C 43 E0 0E F0 FF F7 01 00 FF 6E 
+Accel Gs: X=-0.015 | Y=-0.006 | Z=1.061
+Raw 14-byte dump: FF 04 FF 98 43 E0 0E F0 FF C5 00 E6 FF 8D 
+Accel Gs: X=-0.015 | Y=-0.006 | Z=1.061
+Raw 14-byte dump: FE F8 FF A4 44 14 0E C0 FF D6 00 C8 FF 9B 
+Accel Gs: X=-0.016 | Y=-0.006 | Z=1.064
+Raw 14-byte dump: FE FC FF B0 43 FC 0E C0 FF E5 00 DF FF 7B 
+Accel Gs: X=-0.016 | Y=-0.005 | Z=1.062
+Raw 14-byte dump: FF 34 FF 84 44 10 0E C0 00 06 00 D3 FF 90 
+Accel Gs: X=-0.012 | Y=-0.008 | Z=1.063
+Raw 14-byte dump: FE D0 FF 78 43 D4 0E F0 FF D6 00 EC FF 83 
+Accel Gs: X=-0.019 | Y=-0.008 | Z=1.060
+Raw 14-byte dump: FF 00 FF A8 43 A0 0E C0 FF E1 00 E0 FF 9D 
+Accel Gs: X=-0.016 | Y=-0.005 | Z=1.057
+Raw 14-byte dump: FF 10 FF C4 43 A4 0E F0 FF F3 00 E3 FF 83 
+Accel Gs: X=-0.015 | Y=-0.004 | Z=1.057
+Raw 14-byte dump: FF 0C FF A0 43 F8 0E C0 FF D9 00 DC FF 8C 
+Accel Gs: X=-0.015 | Y=-0.006 | Z=1.062
+Raw 14-byte dump: FE D8 FF A0 43 E4 0E C0 FF C8 00 F0 FF 8C 
+Accel Gs: X=-0.018 | Y=-0.006 | Z=1.061
+Raw 14-byte dump: FE F4 FF 8C 44 00 0E C0 FF D6 00 F6 FF AA 
+Accel Gs: X=-0.016 | Y=-0.007 | Z=1.062
+Raw 14-byte dump: FE E4 FF 98 43 F4 0E 90 FF D0 00 E5 FF 78 
+Accel Gs: X=-0.017 | Y=-0.006 | Z=1.062
+Raw 14-byte dump: FE F0 FF A8 43 8C 0E F0 FF C9 00 EE FF 93 
+Accel Gs: X=-0.017 | Y=-0.005 | Z=1.055
+Raw 14-byte dump: FF 0C FF BC 43 A8 0E 70 FF E7 00 D2 FF 87 
+Accel Gs: X=-0.015 | Y=-0.004 | Z=1.057
+Raw 14-byte dump: FE FC FF BC 43 FC 0E C0 FF EA 00 D3 FF 9A 
+Accel Gs: X=-0.016 | Y=-0.004 | Z=1.062
+Raw 14-byte dump: FF 04 FF 88 43 1C 0E F0 FF EA 00 E0 FF B1 
+Accel Gs: X=-0.015 | Y=-0.007 | Z=1.049
+Raw 14-byte dump: FF 2C FF 44 44 30 0E D0 FF FC 01 01 FF 94 
+Accel Gs: X=-0.013 | Y=-0.011 | Z=1.065
+Raw 14-byte dump: FF 00 FF B8 43 F0 0E D0 FF BE 00 F5 FF 93 
+Accel Gs: X=-0.016 | Y=-0.004 | Z=1.062
+Raw 14-byte dump: FF 58 FF 38 43 D0 0F 20 FF D3 00 E5 FF 8E 
+Accel Gs: X=-0.010 | Y=-0.012 | Z=1.060
+Raw 14-byte dump: FE F4 FF 7C 44 08 0E F0 FF DB 00 CE FF 8B 
+Accel Gs: X=-0.016 | Y=-0.008 | Z=1.063
+Raw 14-byte dump: FF 40 FF 6C 44 34 0E C0 FF D6 00 D0 FF 76 
+Accel Gs: X=-0.012 | Y=-0.009 | Z=1.066
+Raw 14-byte dump: FF 00 FF 68 44 18 0E D0 FF EB 00 FC FF 8D 
+Accel Gs: X=-0.016 | Y=-0.009 | Z=1.064
+Raw 14-byte dump: FF 04 FF 8C 44 04 0E C0 FF BF 00 DF FF 94 
+Accel Gs: X=-0.015 | Y=-0.007 | Z=1.063
+Raw 14-byte dump: FF 20 FF 74 44 6C 0E C0 FF EA 00 D8 FF 83 
+Accel Gs: X=-0.014 | Y=-0.009 | Z=1.069
+Raw 14-byte dump: FF 44 FF 90 43 A8 0E 50 FF D0 00 DC FF 7A 
+Accel Gs: X=-0.011 | Y=-0.007 | Z=1.057
+Raw 14-byte dump: FF 34 FF 6C 43 4C 0E 90 FF D6 00 F0 FF 8D 
+Accel Gs: X=-0.012 | Y=-0.009 | Z=1.052
+Raw 14-byte dump: FE BC FF 3C 44 58 0E F0 FF D1 00 E9 FF 7F 
+Accel Gs: X=-0.020 | Y=-0.012 | Z=1.068
+Raw 14-byte dump: FF 08 FF A8 43 D8 0E 70 FF DF 00 EA FF A2 
+Accel Gs: X=-0.015 | Y=-0.005 | Z=1.060
+Raw 14-byte dump: FF 20 FF 8C 43 D8 0E B0 FF D2 00 D6 FF 91 
+Accel Gs: X=-0.014 | Y=-0.007 | Z=1.060
+Raw 14-byte dump: FF 20 FF 8C 43 AC 0E 90 FF BC 00 FB FF 79 
+Accel Gs: X=-0.014 | Y=-0.007 | Z=1.057
+Raw 14-byte dump: FE F0 FF 70 43 EC 0E C0 FF E4 00 CA FF A6 
+Accel Gs: X=-0.017 | Y=-0.009 | Z=1.061
+Raw 14-byte dump: 00 24 35 74 24 78 0E B0 0A 85 FE 65 FE F6 
+Accel Gs: X=0.002 | Y=0.835 | Z=0.570
+Raw 14-byte dump: FE C4 3F E0 03 08 0E 90 00 94 00 CD FF D6 
+Accel Gs: X=-0.019 | Y=0.998 | Z=0.047
+Raw 14-byte dump: FE B4 3F 80 07 F4 0E C0 FE CD 00 D0 FF EC 
+Accel Gs: X=-0.020 | Y=0.992 | Z=0.124
+Raw 14-byte dump: 3B A4 00 B4 14 E4 0E C0 00 61 B7 EC FF 1A 
+Accel Gs: X=0.932 | Y=0.011 | Z=0.326
+Raw 14-byte dump: 3B 74 FE FC F1 58 0E D0 FF 97 FC E8 FE D7 
+Accel Gs: X=0.929 | Y=-0.016 | Z=-0.229
+Raw 14-byte dump: 3C A8 FF D8 EB 60 0E C0 00 32 21 23 01 54 
+Accel Gs: X=0.948 | Y=-0.002 | Z=-0.322
+Raw 14-byte dump: F9 1C 05 64 42 B0 0E D0 01 12 55 6B FC B1 
+Accel Gs: X=-0.108 | Y=0.084 | Z=1.042
+Raw 14-byte dump: C9 1C 01 50 27 DC 0E B0 02 D4 03 10 FD 7A 
+Accel Gs: X=-0.858 | Y=0.021 | Z=0.623
+Raw 14-byte dump: 0E F0 FB B4 3E 44 0E D0 13 81 0F B0 0A 5F 
+Accel Gs: X=0.233 | Y=-0.067 | Z=0.973
+Raw 14-byte dump: FA 6C 00 BC 44 58 0E 90 01 0C 0D 20 F6 A5 
+Accel Gs: X=-0.087 | Y=0.011 | Z=1.068
+Raw 14-byte dump: F6 8C 01 A0 43 70 0E F0 00 72 09 B6 FD EE 
+Accel Gs: X=-0.148 | Y=0.025 | Z=1.054
+Raw 14-byte dump: 01 60 3D E4 0A 88 0E 80 4E 45 E8 D9 1A 20 
+Accel Gs: X=0.021 | Y=0.967 | Z=0.165
+Raw 14-byte dump: FE 88 3F B0 FF E4 0E C0 FB 8A 01 05 FF EC 
+Accel Gs: X=-0.023 | Y=0.995 | Z=-0.002
+Raw 14-byte dump: FE 8C 3E 6C 08 14 0E F0 FF CB 00 E4 FF 9E 
+Accel Gs: X=-0.023 | Y=0.975 | Z=0.126
+Raw 14-byte dump: FE 7C 3D 80 11 CC 0E C0 FE 27 01 06 FF E1 
+Accel Gs: X=-0.024 | Y=0.961 | Z=0.278
+Raw 14-byte dump: FE F0 3F 38 03 CC 0E C0 01 8F 00 F3 FF 76 
+Accel Gs: X=-0.017 | Y=0.988 | Z=0.059
+Raw 14-byte dump: FB 70 00 10 43 CC 0E C0 FF D2 00 E3 FF 89 
+Accel Gs: X=-0.071 | Y=0.001 | Z=1.059
+Raw 14-byte dump: FA A0 01 40 43 C0 0F 00 FF B3 00 CC FF 91 
+Accel Gs: X=-0.084 | Y=0.020 | Z=1.059
+Raw 14-byte dump: FB 0C 00 D0 43 F0 0E F0 FF B7 00 BE FF 5E 
+Accel Gs: X=-0.077 | Y=0.013 | Z=1.062
+Raw 14-byte dump: FB 00 00 BC 44 20 0E D0 FF DE 00 F1 FF 94 
+Accel Gs: X=-0.078 | Y=0.011 | Z=1.064
+Raw 14-byte dump: FB 34 00 C4 43 8C 0E F0 FF C7 00 DA FF 7A 
+Accel Gs: X=-0.075 | Y=0.012 | Z=1.055
+Raw 14-byte dump: FB 50 00 B0 44 14 0E F0 FF A9 00 9E FF 73 
+Accel Gs: X=-0.073 | Y=0.011 | Z=1.064
+Raw 14-byte dump: FB 34 00 50 43 C4 0E 90 00 09 01 03 FF 8F 
+Accel Gs: X=-0.075 | Y=0.005 | Z=1.059
+Raw 14-byte dump: FB 40 00 48 43 B8 0E C0 FF CF 00 D2 FF 72 
+Accel Gs: X=-0.074 | Y=0.004 | Z=1.058
+Raw 14-byte dump: FB 3C 00 64 43 9C 0E C0 FF DD 00 DE FF 72 
+Accel Gs: X=-0.074 | Y=0.006 | Z=1.056
+Raw 14-byte dump: FB 20 00 48 43 E8 0E C0 FF DF 00 D9 FF 89 
+Accel Gs: X=-0.076 | Y=0.004 | Z=1.061
+Raw 14-byte dump: FB 78 00 7C 43 F4 0E 90 FF F0 00 D4 FF 89 
+Accel Gs: X=-0.071 | Y=0.008 | Z=1.062
+Raw 14-byte dump: FB C8 00 48 43 AC 0E C0 FF E3 00 CE FF 86 
+Accel Gs: X=-0.066 | Y=0.004 | Z=1.057
+Raw 14-byte dump: FB 58 00 78 44 10 0E B0 FF D2 00 CD FF B1 
+Accel Gs: X=-0.073 | Y=0.007 | Z=1.063
+Raw 14-byte dump: FB 5C 00 7C 43 F8 0E D0 FF DF 00 E1 FF 8A 
+Accel Gs: X=-0.073 | Y=0.008 | Z=1.062
+Raw 14-byte dump: FB 2C 00 50 44 2C 0E D0 FF E9 00 D0 FF 83 
+Accel Gs: X=-0.075 | Y=0.005 | Z=1.065
+Raw 14-byte dump: FB 24 00 74 43 74 0E C0 FF E9 00 D2 FF 80 
+Accel Gs: X=-0.076 | Y=0.007 | Z=1.054
+Raw 14-byte dump: FB 64 00 5C 44 08 0E F0 FF EC 00 F1 FF 94 
+Accel Gs: X=-0.072 | Y=0.006 | Z=1.063
+Raw 14-byte dump: FB 50 00 40 44 CC 0E C0 FF D5 00 DB FF 7A 
+Accel Gs: X=-0.073 | Y=0.004 | Z=1.075
+Raw 14-byte dump: FB 60 00 38 43 B4 0E B0 FF F6 00 F5 FF 90 
+Accel Gs: X=-0.072 | Y=0.003 | Z=1.058
+Raw 14-byte dump: FB 44 00 6C 44 0C 0E C0 FF C2 00 EE FF 85 
+Accel Gs: X=-0.074 | Y=0.007 | Z=1.063
+Raw 14-byte dump: FB 50 00 68 44 18 0E 90 FF CF 00 C8 FF 94 
+Accel Gs: X=-0.073 | Y=0.006 | Z=1.064
+Raw 14-byte dump: FB 40 00 68 43 D4 0E 90 FF E5 00 DE FF 82 
+Accel Gs: X=-0.074 | Y=0.006 | Z=1.060
+Raw 14-byte dump: FB 4C 00 38 43 84 0E 90 FF F4 01 07 FF 85 
+Accel Gs: X=-0.073 | Y=0.003 | Z=1.055
+Raw 14-byte dump: FB 7C 00 6C 43 AC 0E C0 FF DB 00 D0 FF 8D 
+Accel Gs: X=-0.071 | Y=0.007 | Z=1.057
+Raw 14-byte dump: FB 70 00 50 43 E4 0E 90 FF EA 00 E2 FF 76 
+Accel Gs: X=-0.071 | Y=0.005 | Z=1.061
+Raw 14-byte dump: FB 68 00 50 43 F4 0E 70 FF C7 00 BE FF 8B 
+Accel Gs: X=-0.072 | Y=0.005 | Z=1.062
+Raw 14-byte dump: FB 74 00 30 43 8C 0E 70 FF ED 00 D5 FF 87 
+Accel Gs: X=-0.071 | Y=0.003 | Z=1.055
+Raw 14-byte dump: FB 4C 00 40 44 34 0E 90 FF F5 01 05 FF 79 
+Accel Gs: X=-0.073 | Y=0.004 | Z=1.066
+Raw 14-byte dump: FB 78 00 4C 43 94 0E B0 FF E3 00 C3 FF 9A 
+Accel Gs: X=-0.071 | Y=0.005 | Z=1.056
+Raw 14-byte dump: FB 3C 00 8C 43 D8 0E B0 FF D1 00 DA FF 6B 
+Accel Gs: X=-0.074 | Y=0.009 | Z=1.060
+Raw 14-byte dump: FB 90 00 80 43 C0 0E 90 FF D0 00 D1 FF 7C 
+Accel Gs: X=-0.069 | Y=0.008 | Z=1.059
+Raw 14-byte dump: FB 88 00 D4 44 2C 0E C0 FF E8 00 E5 FF 93 
+Accel Gs: X=-0.070 | Y=0.013 | Z=1.065
+Raw 14-byte dump: FB 50 00 48 43 F8 0E 80 00 0B 01 08 FF 80 
+Accel Gs: X=-0.073 | Y=0.004 | Z=1.062
+Raw 14-byte dump: FB 94 00 4C 43 88 0E B0 FF B3 00 F5 FF 8F 
+Accel Gs: X=-0.069 | Y=0.005 | Z=1.055
+Raw 14-byte dump: FB 60 00 20 43 90 0E C0 FF DC 00 B5 FF 6D 
+Accel Gs: X=-0.072 | Y=0.002 | Z=1.056
+Raw 14-byte dump: FB 50 00 18 44 18 0E C0 FF DC 00 C8 FF 6B 
+Accel Gs: X=-0.073 | Y=0.001 | Z=1.064
+Raw 14-byte dump: FB 50 00 5C 43 E0 0E C0 FF DA 00 F4 FF 94 
+Accel Gs: X=-0.073 | Y=0.006 | Z=1.061
+Raw 14-byte dump: FB 74 00 4C 43 B8 0E 70 FF F5 00 DA FF 6A 
+Accel Gs: X=-0.071 | Y=0.005 | Z=1.058
+Raw 14-byte dump: FB 08 FF D8 44 34 0E C0 FF ED 00 D9 FF 87 
+Accel Gs: X=-0.078 | Y=-0.002 | Z=1.066
+Raw 14-byte dump: FB 7C 00 5C 43 D8 0E 90 FF CE 00 FE FF 85 
+Accel Gs: X=-0.071 | Y=0.006 | Z=1.060
+Raw 14-byte dump: FB B0 00 74 44 2C 0E 90 FF CF 00 D3 FF 8D 
+Accel Gs: X=-0.067 | Y=0.007 | Z=1.065
+Raw 14-byte dump: FB 8C 00 28 43 F0 0E B0 FF EA 00 E4 FF 8E 
+Accel Gs: X=-0.070 | Y=0.002 | Z=1.062

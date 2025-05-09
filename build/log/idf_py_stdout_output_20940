@@ -1,0 +1,706 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May  8 2025 19:18:56[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (40) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (67) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b134h ( 45364) map[0m
+[0;32mI (106) esp_image: segment 1: paddr=0001b15c vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (106) esp_image: segment 2: paddr=0001b180 vaddr=3ffb0000 size=02314h (  8980) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=0001d49c vaddr=40080000 size=02b7ch ( 11132) load[0m
+[0;32mI (122) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=168a8h ( 92328) map[0m
+[0;32mI (156) esp_image: segment 5: paddr=000368d0 vaddr=40082b7c size=0a5f0h ( 42480) load[0m
+[0;32mI (179) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (180) boot: Disabling RNG early entropy source...[0m
+[0;32mI (190) cpu_start: Multicore app[0m
+[0;32mI (198) cpu_start: Pro cpu start user code[0m
+[0;32mI (198) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (198) app_init: Application information:[0m
+[0;32mI (198) app_init: Project name:     MPU[0m
+[0;32mI (202) app_init: App version:      1[0m
+[0;32mI (205) app_init: Compile time:     May  8 2025 19:18:12[0m
+[0;32mI (210) app_init: ELF file SHA256:  827015bc8...[0m
+[0;32mI (215) app_init: ESP-IDF:          v5.4.1-dirty[0m
+[0;32mI (219) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (223) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (227) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (231) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (237) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (242) heap_init: At 3FFB2BF8 len 0002D408 (181 KiB): DRAM[0m
+[0;32mI (247) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (253) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (258) heap_init: At 4008D16C len 00012E94 (75 KiB): IRAM[0m
+[0;32mI (265) spi_flash: detected chip: generic[0m
+[0;32mI (267) spi_flash: flash io: dio[0m
+[0;33mW (270) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (283) main_task: Started on CPU0[0m
+[0;32mI (293) main_task: Calling app_main()[0m
+[0;32mI (293) MPU: Initializing I2C Master....[0m
+[0;32mI (293) MPU: Initializing I2C Slave(MPU)....[0m
+[0;32mI (393) MPU: Waking up I2C Slave(MPU)....[0m
+[0;32mI (493) MPU: Raw bytes: FD 90 | 00 00 | 00 00[0m
+[0;32mI (493) MPU: Accel (g): X=-0.038, Y=0.000, Z=0.000[0m
+[0;32mI (1493) MPU: Raw bytes: FD 4C | 00 00 | 00 00[0m
+[0;32mI (1493) MPU: Accel (g): X=-0.042, Y=0.000, Z=0.000[0m
+[0;32mI (2493) MPU: Raw bytes: FD 24 | 00 00 | 00 00[0m
+[0;32mI (2493) MPU: Accel (g): X=-0.045, Y=0.000, Z=0.000[0m
+[0;32mI (3493) MPU: Raw bytes: FD 88 | 00 00 | 00 00[0m
+[0;32mI (3493) MPU: Accel (g): X=-0.039, Y=0.000, Z=0.000[0m
+[0;32mI (4493) MPU: Raw bytes: FD 60 | 00 00 | 00 00[0m
+[0;32mI (4493) MPU: Accel (g): X=-0.041, Y=0.000, Z=0.000[0m
+[0;32mI (5493) MPU: Raw bytes: 0C B8 | 00 00 | 00 00[0m
+[0;32mI (5493) MPU: Accel (g): X=0.199, Y=0.000, Z=0.000[0m
+[0;32mI (6493) MPU: Raw bytes: 3D 44 | 00 00 | 00 00[0m
+[0;32mI (6493) MPU: Accel (g): X=0.957, Y=0.000, Z=0.000[0m
+[0;32mI (7493) MPU: Raw bytes: 3A 30 | 00 00 | 00 00[0m
+[0;32mI (7493) MPU: Accel (g): X=0.909, Y=0.000, Z=0.000[0m
+[0;32mI (8493) MPU: Raw bytes: 04 00 | 00 00 | 00 00[0m
+[0;32mI (8493) MPU: Accel (g): X=0.062, Y=0.000, Z=0.000[0m
+[0;32mI (9493) MPU: Raw bytes: BC 8C | 00 00 | 00 00[0m
+[0;32mI (9493) MPU: Accel (g): X=-1.054, Y=0.000, Z=0.000[0m
+[0;32mI (10493) MPU: Raw bytes: 3A 70 | 00 00 | 00 00[0m
+[0;32mI (10493) MPU: Accel (g): X=0.913, Y=0.000, Z=0.000[0m
+[0;32mI (11493) MPU: Raw bytes: FD DC | 00 00 | 00 00[0m
+[0;32mI (11493) MPU: Accel (g): X=-0.033, Y=0.000, Z=0.000[0m
+[0;32mI (12493) MPU: Raw bytes: FB EC | 00 00 | 00 00[0m
+[0;32mI (12493) MPU: Accel (g): X=-0.064, Y=0.000, Z=0.000[0m
+[0;32mI (13493) MPU: Raw bytes: FB 94 | 00 00 | 00 00[0m
+[0;32mI (13493) MPU: Accel (g): X=-0.069, Y=0.000, Z=0.000[0m
+[0;32mI (14493) MPU: Raw bytes: F9 D8 | 00 00 | 00 00[0m
+[0;32mI (14493) MPU: Accel (g): X=-0.096, Y=0.000, Z=0.000[0m
+[0;32mI (15493) MPU: Raw bytes: FC 68 | 00 00 | 00 00[0m
+[0;32mI (15493) MPU: Accel (g): X=-0.056, Y=0.000, Z=0.000[0m
+[0;32mI (16493) MPU: Raw bytes: FC 84 | 00 00 | 00 00[0m
+[0;32mI (16493) MPU: Accel (g): X=-0.054, Y=0.000, Z=0.000[0m
+[0;32mI (17493) MPU: Raw bytes: FC 28 | 00 00 | 00 00[0m
+[0;32mI (17493) MPU: Accel (g): X=-0.060, Y=0.000, Z=0.000[0m
+[0;32mI (18493) MPU: Raw bytes: FC 90 | 00 00 | 00 00[0m
+[0;32mI (18493) MPU: Accel (g): X=-0.054, Y=0.000, Z=0.000[0m
+[0;32mI (19493) MPU: Raw bytes: FC 88 | 00 00 | 00 00[0m
+[0;32mI (19493) MPU: Accel (g): X=-0.054, Y=0.000, Z=0.000[0m
+[0;32mI (20493) MPU: Raw bytes: FC 5C | 00 00 | 00 00[0m
+[0;32mI (20493) MPU: Accel (g): X=-0.057, Y=0.000, Z=0.000[0m
+[0;32mI (21493) MPU: Raw bytes: FC B4 | 00 00 | 00 00[0m
+[0;32mI (21493) MPU: Accel (g): X=-0.052, Y=0.000, Z=0.000[0m
+[0;32mI (22493) MPU: Raw bytes: FC 5C | 00 00 | 00 00[0m
+[0;32mI (22493) MPU: Accel (g): X=-0.057, Y=0.000, Z=0.000[0m
+[0;32mI (23493) MPU: Raw bytes: FC 6C | 00 00 | 00 00[0m
+[0;32mI (23493) MPU: Accel (g): X=-0.056, Y=0.000, Z=0.000[0m
+[0;32mI (24493) MPU: Raw bytes: FC 68 | 00 00 | 00 00[0m
+[0;32mI (24493) MPU: Accel (g): X=-0.056, Y=0.000, Z=0.000[0m
+[0;32mI (25493) MPU: Raw bytes: FC C8 | 00 00 | 00 00[0m
+[0;32mI (25493) MPU: Accel (g): X=-0.050, Y=0.000, Z=0.000[0m
+[0;32mI (26493) MPU: Raw bytes: FC 58 | 00 00 | 00 00[0m
+[0;32mI (26493) MPU: Accel (g): X=-0.057, Y=0.000, Z=0.000[0m
+[0;32mI (27493) MPU: Raw bytes: FC 84 | 00 00 | 00 00[0m
+[0;32mI (27493) MPU: Accel (g): X=-0.054, Y=0.000, Z=0.000[0m
+[0;32mI (28493) MPU: Raw bytes: FC 6C | 00 00 | 00 00[0m
+[0;32mI (28493) MPU: Accel (g): X=-0.056, Y=0.000, Z=0.000[0m
+[0;32mI (29493) MPU: Raw bytes: FC 64 | 00 00 | 00 00[0m
+[0;32mI (29493) MPU: Accel (g): X=-0.056, Y=0.000, Z=0.000[0m
+[0;32mI (30493) MPU: Raw bytes: FC 88 | 00 00 | 00 00[0m
+[0;32mI (30493) MPU: Accel (g): X=-0.054, Y=0.000, Z=0.000[0m
+[0;32mI (31493) MPU: Raw bytes: FC 8C | 00 00 | 00 00[0m
+[0;32mI (31493) MPU: Accel (g): X=-0.054, Y=0.000, Z=0.000[0m
+[0;32mI (32493) MPU: Raw bytes: FC C0 | 00 00 | 00 00[0m
+[0;32mI (32493) MPU: Accel (g): X=-0.051, Y=0.000, Z=0.000[0m
+[0;32mI (33493) MPU: Raw bytes: FC 44 | 00 00 | 00 00[0m
+[0;32mI (33493) MPU: Accel (g): X=-0.058, Y=0.000, Z=0.000[0m
+[0;32mI (34493) MPU: Raw bytes: FC 3C | 00 00 | 00 00[0m
+[0;32mI (34493) MPU: Accel (g): X=-0.059, Y=0.000, Z=0.000[0m
+[0;32mI (35493) MPU: Raw bytes: FC 94 | 00 00 | 00 00[0m
+[0;32mI (35493) MPU: Accel (g): X=-0.053, Y=0.000, Z=0.000[0m
+[0;32mI (36493) MPU: Raw bytes: FC 7C | 00 00 | 00 00[0m
+[0;32mI (36493) MPU: Accel (g): X=-0.055, Y=0.000, Z=0.000[0m
+[0;32mI (37493) MPU: Raw bytes: FC 94 | 00 00 | 00 00[0m
+[0;32mI (37493) MPU: Accel (g): X=-0.053, Y=0.000, Z=0.000[0m
+[0;32mI (38493) MPU: Raw bytes: FC 84 | 00 00 | 00 00[0m
+[0;32mI (38493) MPU: Accel (g): X=-0.054, Y=0.000, Z=0.000[0m
+[0;32mI (39493) MPU: Raw bytes: FC BC | 00 00 | 00 00[0m
+[0;32mI (39493) MPU: Accel (g): X=-0.051, Y=0.000, Z=0.000[0m
+[0;32mI (40493) MPU: Raw bytes: FC B8 | 00 00 | 00 00[0m
+[0;32mI (40493) MPU: Accel (g): X=-0.051, Y=0.000, Z=0.000[0m
+[0;32mI (41493) MPU: Raw bytes: FC 6C | 00 00 | 00 00[0m
+[0;32mI (41493) MPU: Accel (g): X=-0.056, Y=0.000, Z=0.000[0m
+[0;32mI (42493) MPU: Raw bytes: FC 98 | 00 00 | 00 00[0m
+[0;32mI (42493) MPU: Accel (g): X=-0.053, Y=0.000, Z=0.000[0m
+[0;32mI (43493) MPU: Raw bytes: FC 7C | 00 00 | 00 00[0m
+[0;32mI (43493) MPU: Accel (g): X=-0.055, Y=0.000, Z=0.000[0m
+[0;32mI (44493) MPU: Raw bytes: FC 6C | 00 00 | 00 00[0m
+[0;32mI (44493) MPU: Accel (g): X=-0.056, Y=0.000, Z=0.000[0m
+[0;32mI (45493) MPU: Raw bytes: FC 40 | 00 00 | 00 00[0m
+[0;32mI (45493) MPU: Accel (g): X=-0.059, Y=0.000, Z=0.000[0m
+[0;32mI (46493) MPU: Raw bytes: FC A0 | 00 00 | 00 00[0m
+[0;32mI (46493) MPU: Accel (g): X=-0.053, Y=0.000, Z=0.000[0m
+[0;32mI (47493) MPU: Raw bytes: FC 70 | 00 00 | 00 00[0m
+[0;32mI (47493) MPU: Accel (g): X=-0.056, Y=0.000, Z=0.000[0m
+[0;32mI (48493) MPU: Raw bytes: FC 50 | 00 00 | 00 00[0m
+[0;32mI (48493) MPU: Accel (g): X=-0.058, Y=0.000, Z=0.000[0m
+[0;32mI (49493) MPU: Raw bytes: FC 34 | 00 00 | 00 00[0m
+[0;32mI (49493) MPU: Accel (g): X=-0.059, Y=0.000, Z=0.000[0m
+[0;32mI (50493) MPU: Raw bytes: FC 6C | 00 00 | 00 00[0m
+[0;32mI (50493) MPU: Accel (g): X=-0.056, Y=0.000, Z=0.000[0m
+[0;32mI (51493) MPU: Raw bytes: FC 8C | 00 00 | 00 00[0m
+[0;32mI (51493) MPU: Accel (g): X=-0.054, Y=0.000, Z=0.000[0m
+[0;32mI (52493) MPU: Raw bytes: FC 64 | 00 00 | 00 00[0m
+[0;32mI (52493) MPU: Accel (g): X=-0.056, Y=0.000, Z=0.000[0m
+[0;32mI (53493) MPU: Raw bytes: FC 54 | 00 00 | 00 00[0m
+[0;32mI (53493) MPU: Accel (g): X=-0.057, Y=0.000, Z=0.000[0m
+[0;32mI (54493) MPU: Raw bytes: FC 80 | 00 00 | 00 00[0m
+[0;32mI (54493) MPU: Accel (g): X=-0.055, Y=0.000, Z=0.000[0m
+[0;32mI (55493) MPU: Raw bytes: FC 9C | 00 00 | 00 00[0m
+[0;32mI (55493) MPU: Accel (g): X=-0.053, Y=0.000, Z=0.000[0m
+[0;32mI (56493) MPU: Raw bytes: FC 3C | 00 00 | 00 00[0m
+[0;32mI (56493) MPU: Accel (g): X=-0.059, Y=0.000, Z=0.000[0m
+[0;32mI (57493) MPU: Raw bytes: FC 40 | 00 00 | 00 00[0m
+[0;32mI (57493) MPU: Accel (g): X=-0.059, Y=0.000, Z=0.000[0m
+[0;32mI (58493) MPU: Raw bytes: FC 74 | 00 00 | 00 00[0m
+[0;32mI (58493) MPU: Accel (g): X=-0.055, Y=0.000, Z=0.000[0m
+[0;32mI (59493) MPU: Raw bytes: FC 78 | 00 00 | 00 00[0m
+[0;32mI (59493) MPU: Accel (g): X=-0.055, Y=0.000, Z=0.000[0m
+[0;32mI (60493) MPU: Raw bytes: FC 70 | 00 00 | 00 00[0m
+[0;32mI (60493) MPU: Accel (g): X=-0.056, Y=0.000, Z=0.000[0m
+[0;32mI (61493) MPU: Raw bytes: FC 78 | 00 00 | 00 00[0m
+[0;32mI (61493) MPU: Accel (g): X=-0.055, Y=0.000, Z=0.000[0m
+[0;32mI (62493) MPU: Raw bytes: FC 80 | 00 00 | 00 00[0m
+[0;32mI (62493) MPU: Accel (g): X=-0.055, Y=0.000, Z=0.000[0m
+[0;32mI (63493) MPU: Raw bytes: FC 98 | 00 00 | 00 00[0m
+[0;32mI (63493) MPU: Accel (g): X=-0.053, Y=0.000, Z=0.000[0m
+[0;32mI (64493) MPU: Raw bytes: FC 38 | 00 00 | 00 00[0m
+[0;32mI (64493) MPU: Accel (g): X=-0.059, Y=0.000, Z=0.000[0m
+[0;32mI (65493) MPU: Raw bytes: FC 7C | 00 00 | 00 00[0m
+[0;32mI (65493) MPU: Accel (g): X=-0.055, Y=0.000, Z=0.000[0m
+[0;32mI (66493) MPU: Raw bytes: FC 98 | 00 00 | 00 00[0m
+[0;32mI (66493) MPU: Accel (g): X=-0.053, Y=0.000, Z=0.000[0m
+[0;32mI (67493) MPU: Raw bytes: FC 68 | 00 00 | 00 00[0m
+[0;32mI (67493) MPU: Accel (g): X=-0.056, Y=0.000, Z=0.000[0m
+[0;32mI (68493) MPU: Raw bytes: FC B0 | 00 00 | 00 00[0m
+[0;32mI (68493) MPU: Accel (g): X=-0.052, Y=0.000, Z=0.000[0m
+[0;32mI (69493) MPU: Raw bytes: FC 60 | 00 00 | 00 00[0m
+[0;32mI (69493) MPU: Accel (g): X=-0.057, Y=0.000, Z=0.000[0m
+[0;32mI (70493) MPU: Raw bytes: FC 78 | 00 00 | 00 00[0m
+[0;32mI (70493) MPU: Accel (g): X=-0.055, Y=0.000, Z=0.000[0m
+[0;32mI (71493) MPU: Raw bytes: FC 80 | 00 00 | 00 00[0m
+[0;32mI (71493) MPU: Accel (g): X=-0.055, Y=0.000, Z=0.000[0m
+[0;32mI (72493) MPU: Raw bytes: FC AC | 00 00 | 00 00[0m
+[0;32mI (72493) MPU: Accel (g): X=-0.052, Y=0.000, Z=0.000[0m
+[0;32mI (73493) MPU: Raw bytes: FC 24 | 00 00 | 00 00[0m
+[0;32mI (73493) MPU: Accel (g): X=-0.060, Y=0.000, Z=0.000[0m
+[0;32mI (74493) MPU: Raw bytes: FC 8C | 00 00 | 00 00[0m
+[0;32mI (74493) MPU: Accel (g): X=-0.054, Y=0.000, Z=0.000[0m
+[0;32mI (75493) MPU: Raw bytes: FC 1C | 00 00 | 00 00[0m
+[0;32mI (75493) MPU: Accel (g): X=-0.061, Y=0.000, Z=0.000[0m
+[0;32mI (76493) MPU: Raw bytes: FC 7C | 00 00 | 00 00[0m
+[0;32mI (76493) MPU: Accel (g): X=-0.055, Y=0.000, Z=0.000[0m
+[0;32mI (77493) MPU: Raw bytes: FC 78 | 00 00 | 00 00[0m
+[0;32mI (77493) MPU: Accel (g): X=-0.055, Y=0.000, Z=0.000[0m
+[0;32mI (78493) MPU: Raw bytes: FC 7C | 00 00 | 00 00[0m
+[0;32mI (78493) MPU: Accel (g): X=-0.055, Y=0.000, Z=0.000[0m
+[0;32mI (79493) MPU: Raw bytes: FC 80 | 00 00 | 00 00[0m
+[0;32mI (79493) MPU: Accel (g): X=-0.055, Y=0.000, Z=0.000[0m
+[0;32mI (80493) MPU: Raw bytes: FC 58 | 00 00 | 00 00[0m
+[0;32mI (80493) MPU: Accel (g): X=-0.057, Y=0.000, Z=0.000[0m
+[0;32mI (81493) MPU: Raw bytes: FC 98 | 00 00 | 00 00[0m
+[0;32mI (81493) MPU: Accel (g): X=-0.053, Y=0.000, Z=0.000[0m
+[0;32mI (82493) MPU: Raw bytes: FC 74 | 00 00 | 00 00[0m
+[0;32mI (82493) MPU: Accel (g): X=-0.055, Y=0.000, Z=0.000[0m
+[0;32mI (83493) MPU: Raw bytes: FC 54 | 00 00 | 00 00[0m
+[0;32mI (83493) MPU: Accel (g): X=-0.057, Y=0.000, Z=0.000[0m
+[0;32mI (84493) MPU: Raw bytes: FC 84 | 00 00 | 00 00[0m
+[0;32mI (84493) MPU: Accel (g): X=-0.054, Y=0.000, Z=0.000[0m
+[0;32mI (85493) MPU: Raw bytes: FC 8C | 00 00 | 00 00[0m
+[0;32mI (85493) MPU: Accel (g): X=-0.054, Y=0.000, Z=0.000[0m
+[0;32mI (86493) MPU: Raw bytes: FC 74 | 00 00 | 00 00[0m
+[0;32mI (86493) MPU: Accel (g): X=-0.055, Y=0.000, Z=0.000[0m
+[0;32mI (87493) MPU: Raw bytes: FC 3C | 00 00 | 00 00[0m
+[0;32mI (87493) MPU: Accel (g): X=-0.059, Y=0.000, Z=0.000[0m
+[0;32mI (88493) MPU: Raw bytes: FC 4C | 00 00 | 00 00[0m
+[0;32mI (88493) MPU: Accel (g): X=-0.058, Y=0.000, Z=0.000[0m
+[0;32mI (89493) MPU: Raw bytes: FC A0 | 00 00 | 00 00[0m
+[0;32mI (89493) MPU: Accel (g): X=-0.053, Y=0.000, Z=0.000[0m
+[0;32mI (90493) MPU: Raw bytes: FC 84 | 00 00 | 00 00[0m
+[0;32mI (90493) MPU: Accel (g): X=-0.054, Y=0.000, Z=0.000[0m
+[0;32mI (91493) MPU: Raw bytes: FC 5C | 00 00 | 00 00[0m
+[0;32mI (91493) MPU: Accel (g): X=-0.057, Y=0.000, Z=0.000[0m
+[0;32mI (92493) MPU: Raw bytes: FC 64 | 00 00 | 00 00[0m
+[0;32mI (92493) MPU: Accel (g): X=-0.056, Y=0.000, Z=0.000[0m
+[0;32mI (93493) MPU: Raw bytes: FC 94 | 00 00 | 00 00[0m
+[0;32mI (93493) MPU: Accel (g): X=-0.053, Y=0.000, Z=0.000[0m
+[0;32mI (94493) MPU: Raw bytes: FC 60 | 00 00 | 00 00[0m
+[0;32mI (94493) MPU: Accel (g): X=-0.057, Y=0.000, Z=0.000[0m
+[0;32mI (95493) MPU: Raw bytes: FC 7C | 00 00 | 00 00[0m
+[0;32mI (95493) MPU: Accel (g): X=-0.055, Y=0.000, Z=0.000[0m
+[0;32mI (96493) MPU: Raw bytes: FC 48 | 00 00 | 00 00[0m
+[0;32mI (96493) MPU: Accel (g): X=-0.058, Y=0.000, Z=0.000[0m
+[0;32mI (97493) MPU: Raw bytes: FC 70 | 00 00 | 00 00[0m
+[0;32mI (97493) MPU: Accel (g): X=-0.056, Y=0.000, Z=0.000[0m
+[0;32mI (98493) MPU: Raw bytes: FC 7C | 00 00 | 00 00[0m
+[0;32mI (98493) MPU: Accel (g): X=-0.055, Y=0.000, Z=0.000[0m
+[0;32mI (99493) MPU: Raw bytes: FD 04 | 00 00 | 00 00[0m
+[0;32mI (99493) MPU: Accel (g): X=-0.047, Y=0.000, Z=0.000[0m
+[0;32mI (100493) MPU: Raw bytes: FC 60 | 00 00 | 00 00[0m
+[0;32mI (100493) MPU: Accel (g): X=-0.057, Y=0.000, Z=0.000[0m
+[0;32mI (101493) MPU: Raw bytes: FC 74 | 00 00 | 00 00[0m
+[0;32mI (101493) MPU: Accel (g): X=-0.055, Y=0.000, Z=0.000[0m
+[0;32mI (102493) MPU: Raw bytes: FC 78 | 00 00 | 00 00[0m
+[0;32mI (102493) MPU: Accel (g): X=-0.055, Y=0.000, Z=0.000[0m
+[0;32mI (103493) MPU: Raw bytes: FC 54 | 00 00 | 00 00[0m
+[0;32mI (103493) MPU: Accel (g): X=-0.057, Y=0.000, Z=0.000[0m
+[0;32mI (104493) MPU: Raw bytes: FC 78 | 00 00 | 00 00[0m
+[0;32mI (104493) MPU: Accel (g): X=-0.055, Y=0.000, Z=0.000[0m
+[0;32mI (105493) MPU: Raw bytes: FC 74 | 00 00 | 00 00[0m
+[0;32mI (105493) MPU: Accel (g): X=-0.055, Y=0.000, Z=0.000[0m
+[0;32mI (106493) MPU: Raw bytes: FC 20 | 00 00 | 00 00[0m
+[0;32mI (106493) MPU: Accel (g): X=-0.061, Y=0.000, Z=0.000[0m
+[0;32mI (107493) MPU: Raw bytes: FC 4C | 00 00 | 00 00[0m
+[0;32mI (107493) MPU: Accel (g): X=-0.058, Y=0.000, Z=0.000[0m
+[0;32mI (108493) MPU: Raw bytes: FC 68 | 00 00 | 00 00[0m
+[0;32mI (108493) MPU: Accel (g): X=-0.056, Y=0.000, Z=0.000[0m
+[0;32mI (109493) MPU: Raw bytes: FC 5C | 00 00 | 00 00[0m
+[0;32mI (109493) MPU: Accel (g): X=-0.057, Y=0.000, Z=0.000[0m
+[0;32mI (110493) MPU: Raw bytes: FC 3C | 00 00 | 00 00[0m
+[0;32mI (110493) MPU: Accel (g): X=-0.059, Y=0.000, Z=0.000[0m
+[0;32mI (111493) MPU: Raw bytes: FC B8 | 00 00 | 00 00[0m
+[0;32mI (111493) MPU: Accel (g): X=-0.051, Y=0.000, Z=0.000[0m
+[0;32mI (112493) MPU: Raw bytes: FC 80 | 00 00 | 00 00[0m
+[0;32mI (112493) MPU: Accel (g): X=-0.055, Y=0.000, Z=0.000[0m
+[0;32mI (113493) MPU: Raw bytes: FC 54 | 00 00 | 00 00[0m
+[0;32mI (113493) MPU: Accel (g): X=-0.057, Y=0.000, Z=0.000[0m
+[0;32mI (114493) MPU: Raw bytes: FC 6C | 00 00 | 00 00[0m
+[0;32mI (114493) MPU: Accel (g): X=-0.056, Y=0.000, Z=0.000[0m
+[0;32mI (115493) MPU: Raw bytes: FC 5C | 00 00 | 00 00[0m
+[0;32mI (115493) MPU: Accel (g): X=-0.057, Y=0.000, Z=0.000[0m
+[0;32mI (116493) MPU: Raw bytes: FC 68 | 00 00 | 00 00[0m
+[0;32mI (116493) MPU: Accel (g): X=-0.056, Y=0.000, Z=0.000[0m
+[0;32mI (117493) MPU: Raw bytes: FC 70 | 00 00 | 00 00[0m
+[0;32mI (117493) MPU: Accel (g): X=-0.056, Y=0.000, Z=0.000[0m
+[0;32mI (118493) MPU: Raw bytes: FC 64 | 00 00 | 00 00[0m
+[0;32mI (118493) MPU: Accel (g): X=-0.056, Y=0.000, Z=0.000[0m
+[0;32mI (119493) MPU: Raw bytes: FC 98 | 00 00 | 00 00[0m
+[0;32mI (119493) MPU: Accel (g): X=-0.053, Y=0.000, Z=0.000[0m
+[0;32mI (120493) MPU: Raw bytes: FC 08 | 00 00 | 00 00[0m
+[0;32mI (120493) MPU: Accel (g): X=-0.062, Y=0.000, Z=0.000[0m
+[0;32mI (121493) MPU: Raw bytes: FC 54 | 00 00 | 00 00[0m
+[0;32mI (121493) MPU: Accel (g): X=-0.057, Y=0.000, Z=0.000[0m
+[0;32mI (122493) MPU: Raw bytes: FC BC | 00 00 | 00 00[0m
+[0;32mI (122493) MPU: Accel (g): X=-0.051, Y=0.000, Z=0.000[0m
+[0;32mI (123493) MPU: Raw bytes: FC 70 | 00 00 | 00 00[0m
+[0;32mI (123493) MPU: Accel (g): X=-0.056, Y=0.000, Z=0.000[0m
+[0;32mI (124493) MPU: Raw bytes: FC 68 | 00 00 | 00 00[0m
+[0;32mI (124493) MPU: Accel (g): X=-0.056, Y=0.000, Z=0.000[0m
+[0;32mI (125493) MPU: Raw bytes: FC 60 | 00 00 | 00 00[0m
+[0;32mI (125493) MPU: Accel (g): X=-0.057, Y=0.000, Z=0.000[0m
+[0;32mI (126493) MPU: Raw bytes: FC 38 | 00 00 | 00 00[0m
+[0;32mI (126493) MPU: Accel (g): X=-0.059, Y=0.000, Z=0.000[0m
+[0;32mI (127493) MPU: Raw bytes: FC 4C | 00 00 | 00 00[0m
+[0;32mI (127493) MPU: Accel (g): X=-0.058, Y=0.000, Z=0.000[0m
+[0;32mI (128493) MPU: Raw bytes: FC 6C | 00 00 | 00 00[0m
+[0;32mI (128493) MPU: Accel (g): X=-0.056, Y=0.000, Z=0.000[0m
+[0;32mI (129493) MPU: Raw bytes: FC 40 | 00 00 | 00 00[0m
+[0;32mI (129493) MPU: Accel (g): X=-0.059, Y=0.000, Z=0.000[0m
+[0;32mI (130493) MPU: Raw bytes: FC 58 | 00 00 | 00 00[0m
+[0;32mI (130493) MPU: Accel (g): X=-0.057, Y=0.000, Z=0.000[0m
+[0;32mI (131493) MPU: Raw bytes: FC 6C | 00 00 | 00 00[0m
+[0;32mI (131493) MPU: Accel (g): X=-0.056, Y=0.000, Z=0.000[0m
+[0;32mI (132493) MPU: Raw bytes: FC BC | 00 00 | 00 00[0m
+[0;32mI (132493) MPU: Accel (g): X=-0.051, Y=0.000, Z=0.000[0m
+[0;32mI (133493) MPU: Raw bytes: FC 58 | 00 00 | 00 00[0m
+[0;32mI (133493) MPU: Accel (g): X=-0.057, Y=0.000, Z=0.000[0m
+[0;32mI (134493) MPU: Raw bytes: FC 90 | 00 00 | 00 00[0m
+[0;32mI (134493) MPU: Accel (g): X=-0.054, Y=0.000, Z=0.000[0m
+[0;32mI (135493) MPU: Raw bytes: FC 80 | 00 00 | 00 00[0m
+[0;32mI (135493) MPU: Accel (g): X=-0.055, Y=0.000, Z=0.000[0m
+[0;32mI (136493) MPU: Raw bytes: FC 68 | 00 00 | 00 00[0m
+[0;32mI (136493) MPU: Accel (g): X=-0.056, Y=0.000, Z=0.000[0m
+[0;32mI (137493) MPU: Raw bytes: FC B0 | 00 00 | 00 00[0m
+[0;32mI (137493) MPU: Accel (g): X=-0.052, Y=0.000, Z=0.000[0m
+[0;32mI (138493) MPU: Raw bytes: FC 90 | 00 00 | 00 00[0m
+[0;32mI (138493) MPU: Accel (g): X=-0.054, Y=0.000, Z=0.000[0m
+[0;32mI (139493) MPU: Raw bytes: FC 6C | 00 00 | 00 00[0m
+[0;32mI (139493) MPU: Accel (g): X=-0.056, Y=0.000, Z=0.000[0m
+[0;32mI (140493) MPU: Raw bytes: FC 24 | 00 00 | 00 00[0m
+[0;32mI (140493) MPU: Accel (g): X=-0.060, Y=0.000, Z=0.000[0m
+[0;32mI (141493) MPU: Raw bytes: FC 90 | 00 00 | 00 00[0m
+[0;32mI (141493) MPU: Accel (g): X=-0.054, Y=0.000, Z=0.000[0m
+[0;32mI (142493) MPU: Raw bytes: FC 64 | 00 00 | 00 00[0m
+[0;32mI (142493) MPU: Accel (g): X=-0.056, Y=0.000, Z=0.000[0m
+[0;32mI (143493) MPU: Raw bytes: FC 58 | 00 00 | 00 00[0m
+[0;32mI (143493) MPU: Accel (g): X=-0.057, Y=0.000, Z=0.000[0m
+[0;32mI (144493) MPU: Raw bytes: FC B8 | 00 00 | 00 00[0m
+[0;32mI (144493) MPU: Accel (g): X=-0.051, Y=0.000, Z=0.000[0m
+[0;32mI (145493) MPU: Raw bytes: FC 54 | 00 00 | 00 00[0m
+[0;32mI (145493) MPU: Accel (g): X=-0.057, Y=0.000, Z=0.000[0m
+[0;32mI (146493) MPU: Raw bytes: FC 90 | 00 00 | 00 00[0m
+[0;32mI (146493) MPU: Accel (g): X=-0.054, Y=0.000, Z=0.000[0m
+[0;32mI (147493) MPU: Raw bytes: FC 84 | 00 00 | 00 00[0m
+[0;32mI (147493) MPU: Accel (g): X=-0.054, Y=0.000, Z=0.000[0m
+[0;32mI (148493) MPU: Raw bytes: FC 80 | 00 00 | 00 00[0m
+[0;32mI (148493) MPU: Accel (g): X=-0.055, Y=0.000, Z=0.000[0m
+[0;32mI (149493) MPU: Raw bytes: FC 5C | 00 00 | 00 00[0m
+[0;32mI (149493) MPU: Accel (g): X=-0.057, Y=0.000, Z=0.000[0m
+[0;32mI (150493) MPU: Raw bytes: FC 74 | 00 00 | 00 00[0m
+[0;32mI (150493) MPU: Accel (g): X=-0.055, Y=0.000, Z=0.000[0m
+[0;32mI (151493) MPU: Raw bytes: FC 78 | 00 00 | 00 00[0m
+[0;32mI (151493) MPU: Accel (g): X=-0.055, Y=0.000, Z=0.000[0m
+[0;32mI (152493) MPU: Raw bytes: FC 6C | 00 00 | 00 00[0m
+[0;32mI (152493) MPU: Accel (g): X=-0.056, Y=0.000, Z=0.000[0m
+[0;32mI (153493) MPU: Raw bytes: FC 50 | 00 00 | 00 00[0m
+[0;32mI (153493) MPU: Accel (g): X=-0.058, Y=0.000, Z=0.000[0m
+[0;32mI (154493) MPU: Raw bytes: FC 78 | 00 00 | 00 00[0m
+[0;32mI (154493) MPU: Accel (g): X=-0.055, Y=0.000, Z=0.000[0m
+[0;32mI (155493) MPU: Raw bytes: FC 5C | 00 00 | 00 00[0m
+[0;32mI (155493) MPU: Accel (g): X=-0.057, Y=0.000, Z=0.000[0m
+[0;32mI (156493) MPU: Raw bytes: FC 54 | 00 00 | 00 00[0m
+[0;32mI (156493) MPU: Accel (g): X=-0.057, Y=0.000, Z=0.000[0m
+[0;32mI (157493) MPU: Raw bytes: FC 4C | 00 00 | 00 00[0m
+[0;32mI (157493) MPU: Accel (g): X=-0.058, Y=0.000, Z=0.000[0m
+[0;32mI (158493) MPU: Raw bytes: FC 34 | 00 00 | 00 00[0m
+[0;32mI (158493) MPU: Accel (g): X=-0.059, Y=0.000, Z=0.000[0m
+[0;32mI (159493) MPU: Raw bytes: FC 98 | 00 00 | 00 00[0m
+[0;32mI (159493) MPU: Accel (g): X=-0.053, Y=0.000, Z=0.000[0m
+[0;32mI (160493) MPU: Raw bytes: FC 78 | 00 00 | 00 00[0m
+[0;32mI (160493) MPU: Accel (g): X=-0.055, Y=0.000, Z=0.000[0m
+[0;32mI (161493) MPU: Raw bytes: FC 78 | 00 00 | 00 00[0m
+[0;32mI (161493) MPU: Accel (g): X=-0.055, Y=0.000, Z=0.000[0m
+[0;32mI (162493) MPU: Raw bytes: FC 8C | 00 00 | 00 00[0m
+[0;32mI (162493) MPU: Accel (g): X=-0.054, Y=0.000, Z=0.000[0m
+[0;32mI (163493) MPU: Raw bytes: FC 88 | 00 00 | 00 00[0m
+[0;32mI (163493) MPU: Accel (g): X=-0.054, Y=0.000, Z=0.000[0m
+[0;32mI (164493) MPU: Raw bytes: FC 74 | 00 00 | 00 00[0m
+[0;32mI (164493) MPU: Accel (g): X=-0.055, Y=0.000, Z=0.000[0m
+[0;32mI (165493) MPU: Raw bytes: FC 9C | 00 00 | 00 00[0m
+[0;32mI (165493) MPU: Accel (g): X=-0.053, Y=0.000, Z=0.000[0m
+[0;32mI (166493) MPU: Raw bytes: FC 50 | 00 00 | 00 00[0m
+[0;32mI (166493) MPU: Accel (g): X=-0.058, Y=0.000, Z=0.000[0m
+[0;32mI (167493) MPU: Raw bytes: FC 7C | 00 00 | 00 00[0m
+[0;32mI (167493) MPU: Accel (g): X=-0.055, Y=0.000, Z=0.000[0m
+[0;32mI (168493) MPU: Raw bytes: FC 50 | 00 00 | 00 00[0m
+[0;32mI (168493) MPU: Accel (g): X=-0.058, Y=0.000, Z=0.000[0m
+[0;32mI (169493) MPU: Raw bytes: FC 64 | 00 00 | 00 00[0m
+[0;32mI (169493) MPU: Accel (g): X=-0.056, Y=0.000, Z=0.000[0m
+[0;32mI (170493) MPU: Raw bytes: FC 64 | 00 00 | 00 00[0m
+[0;32mI (170493) MPU: Accel (g): X=-0.056, Y=0.000, Z=0.000[0m
+[0;32mI (171493) MPU: Raw bytes: FC 80 | 00 00 | 00 00[0m
+[0;32mI (171493) MPU: Accel (g): X=-0.055, Y=0.000, Z=0.000[0m
+[0;32mI (172493) MPU: Raw bytes: FC 6C | 00 00 | 00 00[0m
+[0;32mI (172493) MPU: Accel (g): X=-0.056, Y=0.000, Z=0.000[0m
+[0;32mI (173493) MPU: Raw bytes: FC 6C | 00 00 | 00 00[0m
+[0;32mI (173493) MPU: Accel (g): X=-0.056, Y=0.000, Z=0.000[0m
+[0;32mI (174493) MPU: Raw bytes: FC 94 | 00 00 | 00 00[0m
+[0;32mI (174493) MPU: Accel (g): X=-0.053, Y=0.000, Z=0.000[0m
+[0;32mI (175493) MPU: Raw bytes: FC 6C | 00 00 | 00 00[0m
+[0;32mI (175493) MPU: Accel (g): X=-0.056, Y=0.000, Z=0.000[0m
+[0;32mI (176493) MPU: Raw bytes: FC 84 | 00 00 | 00 00[0m
+[0;32mI (176493) MPU: Accel (g): X=-0.054, Y=0.000, Z=0.000[0m
+[0;32mI (177493) MPU: Raw bytes: FD 00 | 00 00 | 00 00[0m
+[0;32mI (177493) MPU: Accel (g): X=-0.047, Y=0.000, Z=0.000[0m
+[0;32mI (178493) MPU: Raw bytes: FC 44 | 00 00 | 00 00[0m
+[0;32mI (178493) MPU: Accel (g): X=-0.058, Y=0.000, Z=0.000[0m
+[0;32mI (179493) MPU: Raw bytes: FC 24 | 00 00 | 00 00[0m
+[0;32mI (179493) MPU: Accel (g): X=-0.060, Y=0.000, Z=0.000[0m
+[0;32mI (180493) MPU: Raw bytes: FC 50 | 00 00 | 00 00[0m
+[0;32mI (180493) MPU: Accel (g): X=-0.058, Y=0.000, Z=0.000[0m
+[0;32mI (181493) MPU: Raw bytes: FC 78 | 00 00 | 00 00[0m
+[0;32mI (181493) MPU: Accel (g): X=-0.055, Y=0.000, Z=0.000[0m
+[0;32mI (182493) MPU: Raw bytes: FC 28 | 00 00 | 00 00[0m
+[0;32mI (182493) MPU: Accel (g): X=-0.060, Y=0.000, Z=0.000[0m
+[0;32mI (183493) MPU: Raw bytes: FB F0 | 00 00 | 00 00[0m
+[0;32mI (183493) MPU: Accel (g): X=-0.063, Y=0.000, Z=0.000[0m
+[0;32mI (184493) MPU: Raw bytes: FC 08 | 00 00 | 00 00[0m
+[0;32mI (184493) MPU: Accel (g): X=-0.062, Y=0.000, Z=0.000[0m
+[0;32mI (185493) MPU: Raw bytes: FC 1C | 00 00 | 00 00[0m
+[0;32mI (185493) MPU: Accel (g): X=-0.061, Y=0.000, Z=0.000[0m
+[0;32mI (186493) MPU: Raw bytes: FC 24 | 00 00 | 00 00[0m
+[0;32mI (186493) MPU: Accel (g): X=-0.060, Y=0.000, Z=0.000[0m
+[0;32mI (187493) MPU: Raw bytes: FB E4 | 00 00 | 00 00[0m
+[0;32mI (187493) MPU: Accel (g): X=-0.064, Y=0.000, Z=0.000[0m
+[0;32mI (188493) MPU: Raw bytes: FB D8 | 00 00 | 00 00[0m
+[0;32mI (188493) MPU: Accel (g): X=-0.065, Y=0.000, Z=0.000[0m
+[0;32mI (189493) MPU: Raw bytes: FB B8 | 00 00 | 00 00[0m
+[0;32mI (189493) MPU: Accel (g): X=-0.067, Y=0.000, Z=0.000[0m
+[0;32mI (190493) MPU: Raw bytes: FB FC | 00 00 | 00 00[0m
+[0;32mI (190493) MPU: Accel (g): X=-0.063, Y=0.000, Z=0.000[0m
+[0;32mI (191493) MPU: Raw bytes: FB 9C | 00 00 | 00 00[0m
+[0;32mI (191493) MPU: Accel (g): X=-0.069, Y=0.000, Z=0.000[0m
+[0;32mI (192493) MPU: Raw bytes: FC D0 | 00 00 | 00 00[0m
+[0;32mI (192493) MPU: Accel (g): X=-0.050, Y=0.000, Z=0.000[0m
+[0;32mI (193493) MPU: Raw bytes: FC 1C | 00 00 | 00 00[0m
+[0;32mI (193493) MPU: Accel (g): X=-0.061, Y=0.000, Z=0.000[0m
+[0;32mI (194493) MPU: Raw bytes: FC 2C | 00 00 | 00 00[0m
+[0;32mI (194493) MPU: Accel (g): X=-0.060, Y=0.000, Z=0.000[0m
+[0;32mI (195493) MPU: Raw bytes: FB E8 | 00 00 | 00 00[0m
+[0;32mI (195493) MPU: Accel (g): X=-0.064, Y=0.000, Z=0.000[0m
+[0;32mI (196493) MPU: Raw bytes: FC 00 | 00 00 | 00 00[0m
+[0;32mI (196493) MPU: Accel (g): X=-0.062, Y=0.000, Z=0.000[0m
+[0;32mI (197493) MPU: Raw bytes: FC 40 | 00 00 | 00 00[0m
+[0;32mI (197493) MPU: Accel (g): X=-0.059, Y=0.000, Z=0.000[0m
+[0;32mI (198493) MPU: Raw bytes: FC 14 | 00 00 | 00 00[0m
+[0;32mI (198493) MPU: Accel (g): X=-0.061, Y=0.000, Z=0.000[0m
+[0;32mI (199493) MPU: Raw bytes: FC 5C | 00 00 | 00 00[0m
+[0;32mI (199493) MPU: Accel (g): X=-0.057, Y=0.000, Z=0.000[0m
+[0;32mI (200493) MPU: Raw bytes: FB F0 | 00 00 | 00 00[0m
+[0;32mI (200493) MPU: Accel (g): X=-0.063, Y=0.000, Z=0.000[0m
+[0;32mI (201493) MPU: Raw bytes: FB EC | 00 00 | 00 00[0m
+[0;32mI (201493) MPU: Accel (g): X=-0.064, Y=0.000, Z=0.000[0m
+[0;32mI (202493) MPU: Raw bytes: FC 00 | 00 00 | 00 00[0m
+[0;32mI (202493) MPU: Accel (g): X=-0.062, Y=0.000, Z=0.000[0m
+[0;32mI (203493) MPU: Raw bytes: FB FC | 00 00 | 00 00[0m
+[0;32mI (203493) MPU: Accel (g): X=-0.063, Y=0.000, Z=0.000[0m
+[0;32mI (204493) MPU: Raw bytes: FC 34 | 00 00 | 00 00[0m
+[0;32mI (204493) MPU: Accel (g): X=-0.059, Y=0.000, Z=0.000[0m
+[0;32mI (205493) MPU: Raw bytes: FB E8 | 00 00 | 00 00[0m
+[0;32mI (205493) MPU: Accel (g): X=-0.064, Y=0.000, Z=0.000[0m
+[0;32mI (206493) MPU: Raw bytes: FC 04 | 00 00 | 00 00[0m
+[0;32mI (206493) MPU: Accel (g): X=-0.062, Y=0.000, Z=0.000[0m
+[0;32mI (207493) MPU: Raw bytes: FC 28 | 00 00 | 00 00[0m
+[0;32mI (207493) MPU: Accel (g): X=-0.060, Y=0.000, Z=0.000[0m
+[0;32mI (208493) MPU: Raw bytes: FC 10 | 00 00 | 00 00[0m
+[0;32mI (208493) MPU: Accel (g): X=-0.062, Y=0.000, Z=0.000[0m
+[0;32mI (209493) MPU: Raw bytes: FC 18 | 00 00 | 00 00[0m
+[0;32mI (209493) MPU: Accel (g): X=-0.061, Y=0.000, Z=0.000[0m
+[0;32mI (210493) MPU: Raw bytes: FB F0 | 00 00 | 00 00[0m
+[0;32mI (210493) MPU: Accel (g): X=-0.063, Y=0.000, Z=0.000[0m
+[0;32mI (211493) MPU: Raw bytes: FC 48 | 00 00 | 00 00[0m
+[0;32mI (211493) MPU: Accel (g): X=-0.058, Y=0.000, Z=0.000[0m
+[0;32mI (212493) MPU: Raw bytes: FC 30 | 00 00 | 00 00[0m
+[0;32mI (212493) MPU: Accel (g): X=-0.060, Y=0.000, Z=0.000[0m
+[0;32mI (213493) MPU: Raw bytes: FB E8 | 00 00 | 00 00[0m
+[0;32mI (213493) MPU: Accel (g): X=-0.064, Y=0.000, Z=0.000[0m
+[0;32mI (214493) MPU: Raw bytes: FC 18 | 00 00 | 00 00[0m
+[0;32mI (214493) MPU: Accel (g): X=-0.061, Y=0.000, Z=0.000[0m
+[0;32mI (215493) MPU: Raw bytes: FC 1C | 00 00 | 00 00[0m
+[0;32mI (215493) MPU: Accel (g): X=-0.061, Y=0.000, Z=0.000[0m
+[0;32mI (216493) MPU: Raw bytes: FC 1C | 00 00 | 00 00[0m
+[0;32mI (216493) MPU: Accel (g): X=-0.061, Y=0.000, Z=0.000[0m
+[0;32mI (217493) MPU: Raw bytes: FB EC | 00 00 | 00 00[0m
+[0;32mI (217493) MPU: Accel (g): X=-0.064, Y=0.000, Z=0.000[0m
+[0;32mI (218493) MPU: Raw bytes: FB E0 | 00 00 | 00 00[0m
+[0;32mI (218493) MPU: Accel (g): X=-0.064, Y=0.000, Z=0.000[0m
+[0;32mI (219493) MPU: Raw bytes: FE B0 | 00 00 | 00 00[0m
+[0;32mI (219493) MPU: Accel (g): X=-0.021, Y=0.000, Z=0.000[0m
+[0;32mI (220493) MPU: Raw bytes: FD 48 | 00 00 | 00 00[0m
+[0;32mI (220493) MPU: Accel (g): X=-0.042, Y=0.000, Z=0.000[0m
+[0;32mI (221493) MPU: Raw bytes: FD 7C | 00 00 | 00 00[0m
+[0;32mI (221493) MPU: Accel (g): X=-0.039, Y=0.000, Z=0.000[0m
+[0;32mI (222493) MPU: Raw bytes: FD 70 | 00 00 | 00 00[0m
+[0;32mI (222493) MPU: Accel (g): X=-0.040, Y=0.000, Z=0.000[0m
+[0;32mI (223493) MPU: Raw bytes: FD 34 | 00 00 | 00 00[0m
+[0;32mI (223493) MPU: Accel (g): X=-0.044, Y=0.000, Z=0.000[0m
+[0;32mI (224493) MPU: Raw bytes: FD 6C | 00 00 | 00 00[0m
+[0;32mI (224493) MPU: Accel (g): X=-0.040, Y=0.000, Z=0.000[0m
+[0;32mI (225493) MPU: Raw bytes: FD 88 | 00 00 | 00 00[0m
+[0;32mI (225493) MPU: Accel (g): X=-0.039, Y=0.000, Z=0.000[0m
+[0;32mI (226493) MPU: Raw bytes: FD 64 | 00 00 | 00 00[0m
+[0;32mI (226493) MPU: Accel (g): X=-0.041, Y=0.000, Z=0.000[0m
+[0;32mI (227493) MPU: Raw bytes: FD 84 | 00 00 | 00 00[0m
+[0;32mI (227493) MPU: Accel (g): X=-0.039, Y=0.000, Z=0.000[0m
+[0;32mI (228493) MPU: Raw bytes: FD 64 | 00 00 | 00 00[0m
+[0;32mI (228493) MPU: Accel (g): X=-0.041, Y=0.000, Z=0.000[0m
+[0;32mI (229493) MPU: Raw bytes: FD 68 | 00 00 | 00 00[0m
+[0;32mI (229493) MPU: Accel (g): X=-0.041, Y=0.000, Z=0.000[0m
+[0;32mI (230493) MPU: Raw bytes: FD 68 | 00 00 | 00 00[0m
+[0;32mI (230493) MPU: Accel (g): X=-0.041, Y=0.000, Z=0.000[0m
+[0;32mI (231493) MPU: Raw bytes: FD 70 | 00 00 | 00 00[0m
+[0;32mI (231493) MPU: Accel (g): X=-0.040, Y=0.000, Z=0.000[0m
+[0;32mI (232493) MPU: Raw bytes: FD 24 | 00 00 | 00 00[0m
+[0;32mI (232493) MPU: Accel (g): X=-0.045, Y=0.000, Z=0.000[0m
+[0;32mI (233493) MPU: Raw bytes: FD 70 | 00 00 | 00 00[0m
+[0;32mI (233493) MPU: Accel (g): X=-0.040, Y=0.000, Z=0.000[0m
+[0;32mI (234493) MPU: Raw bytes: FD 64 | 00 00 | 00 00[0m
+[0;32mI (234493) MPU: Accel (g): X=-0.041, Y=0.000, Z=0.000[0m
+[0;32mI (235493) MPU: Raw bytes: FD 74 | 00 00 | 00 00[0m
+[0;32mI (235493) MPU: Accel (g): X=-0.040, Y=0.000, Z=0.000[0m
+[0;32mI (236493) MPU: Raw bytes: FD 44 | 00 00 | 00 00[0m
+[0;32mI (236493) MPU: Accel (g): X=-0.043, Y=0.000, Z=0.000[0m
+[0;32mI (237493) MPU: Raw bytes: FD 38 | 00 00 | 00 00[0m
+[0;32mI (237493) MPU: Accel (g): X=-0.043, Y=0.000, Z=0.000[0m
+[0;32mI (238493) MPU: Raw bytes: FD A0 | 00 00 | 00 00[0m
+[0;32mI (238493) MPU: Accel (g): X=-0.037, Y=0.000, Z=0.000[0m
+[0;32mI (239493) MPU: Raw bytes: FD 74 | 00 00 | 00 00[0m
+[0;32mI (239493) MPU: Accel (g): X=-0.040, Y=0.000, Z=0.000[0m
+[0;32mI (240493) MPU: Raw bytes: FD 48 | 00 00 | 00 00[0m
+[0;32mI (240493) MPU: Accel (g): X=-0.042, Y=0.000, Z=0.000[0m
+[0;32mI (241493) MPU: Raw bytes: FD 3C | 00 00 | 00 00[0m
+[0;32mI (241493) MPU: Accel (g): X=-0.043, Y=0.000, Z=0.000[0m
+[0;32mI (242493) MPU: Raw bytes: FD 58 | 00 00 | 00 00[0m
+[0;32mI (242493) MPU: Accel (g): X=-0.042, Y=0.000, Z=0.000[0m
+[0;32mI (243493) MPU: Raw bytes: FD 5C | 00 00 | 00 00[0m
+[0;32mI (243493) MPU: Accel (g): X=-0.041, Y=0.000, Z=0.000[0m
+[0;32mI (244493) MPU: Raw bytes: FD 1C | 00 00 | 00 00[0m
+[0;32mI (244493) MPU: Accel (g): X=-0.045, Y=0.000, Z=0.000[0m
+[0;32mI (245493) MPU: Raw bytes: FE 64 | 00 00 | 00 00[0m
+[0;32mI (245493) MPU: Accel (g): X=-0.025, Y=0.000, Z=0.000[0m
+[0;32mI (246493) MPU: Raw bytes: FD 68 | 00 00 | 00 00[0m
+[0;32mI (246493) MPU: Accel (g): X=-0.041, Y=0.000, Z=0.000[0m
+[0;32mI (247493) MPU: Raw bytes: FD 24 | 00 00 | 00 00[0m
+[0;32mI (247493) MPU: Accel (g): X=-0.045, Y=0.000, Z=0.000[0m
+[0;32mI (248493) MPU: Raw bytes: FD 88 | 00 00 | 00 00[0m
+[0;32mI (248493) MPU: Accel (g): X=-0.039, Y=0.000, Z=0.000[0m
+[0;32mI (249493) MPU: Raw bytes: FD 48 | 00 00 | 00 00[0m
+[0;32mI (249493) MPU: Accel (g): X=-0.042, Y=0.000, Z=0.000[0m
+[0;32mI (250493) MPU: Raw bytes: FD 7C | 00 00 | 00 00[0m
+[0;32mI (250493) MPU: Accel (g): X=-0.039, Y=0.000, Z=0.000[0m
+[0;32mI (251493) MPU: Raw bytes: FC E0 | 00 00 | 00 00[0m
+[0;32mI (251493) MPU: Accel (g): X=-0.049, Y=0.000, Z=0.000[0m
+[0;32mI (252493) MPU: Raw bytes: FD 90 | 00 00 | 00 00[0m
+[0;32mI (252493) MPU: Accel (g): X=-0.038, Y=0.000, Z=0.000[0m
+[0;32mI (253493) MPU: Raw bytes: FD A4 | 00 00 | 00 00[0m
+[0;32mI (253493) MPU: Accel (g): X=-0.037, Y=0.000, Z=0.000[0m
+[0;32mI (254493) MPU: Raw bytes: FD 58 | 00 00 | 00 00[0m
+[0;32mI (254493) MPU: Accel (g): X=-0.042, Y=0.000, Z=0.000[0m
+[0;32mI (255493) MPU: Raw bytes: FD 64 | 00 00 | 00 00[0m
+[0;32mI (255493) MPU: Accel (g): X=-0.041, Y=0.000, Z=0.000[0m
+[0;32mI (256493) MPU: Raw bytes: FD 6C | 00 00 | 00 00[0m
+[0;32mI (256493) MPU: Accel (g): X=-0.040, Y=0.000, Z=0.000[0m
+[0;32mI (257493) MPU: Raw bytes: FD 60 | 00 00 | 00 00[0m
+[0;32mI (257493) MPU: Accel (g): X=-0.041, Y=0.000, Z=0.000[0m
+[0;32mI (258493) MPU: Raw bytes: FD 40 | 00 00 | 00 00[0m
+[0;32mI (258493) MPU: Accel (g): X=-0.043, Y=0.000, Z=0.000[0m
+[0;32mI (259493) MPU: Raw bytes: FD 64 | 00 00 | 00 00[0m
+[0;32mI (259493) MPU: Accel (g): X=-0.041, Y=0.000, Z=0.000[0m
+[0;32mI (260493) MPU: Raw bytes: FD 0C | 00 00 | 00 00[0m
+[0;32mI (260493) MPU: Accel (g): X=-0.046, Y=0.000, Z=0.000[0m
+[0;32mI (261493) MPU: Raw bytes: FD 84 | 00 00 | 00 00[0m
+[0;32mI (261493) MPU: Accel (g): X=-0.039, Y=0.000, Z=0.000[0m
+[0;32mI (262493) MPU: Raw bytes: FD 64 | 00 00 | 00 00[0m
+[0;32mI (262493) MPU: Accel (g): X=-0.041, Y=0.000, Z=0.000[0m
+[0;32mI (263493) MPU: Raw bytes: FD 54 | 00 00 | 00 00[0m
+[0;32mI (263493) MPU: Accel (g): X=-0.042, Y=0.000, Z=0.000[0m
+[0;32mI (264493) MPU: Raw bytes: FD 58 | 00 00 | 00 00[0m
+[0;32mI (264493) MPU: Accel (g): X=-0.042, Y=0.000, Z=0.000[0m
+[0;32mI (265493) MPU: Raw bytes: FD 4C | 00 00 | 00 00[0m
+[0;32mI (265493) MPU: Accel (g): X=-0.042, Y=0.000, Z=0.000[0m
+[0;32mI (266493) MPU: Raw bytes: FD 98 | 00 00 | 00 00[0m
+[0;32mI (266493) MPU: Accel (g): X=-0.038, Y=0.000, Z=0.000[0m
+[0;32mI (267493) MPU: Raw bytes: FD 54 | 00 00 | 00 00[0m
+[0;32mI (267493) MPU: Accel (g): X=-0.042, Y=0.000, Z=0.000[0m
+[0;32mI (268493) MPU: Raw bytes: FD 2C | 00 00 | 00 00[0m
+[0;32mI (268493) MPU: Accel (g): X=-0.044, Y=0.000, Z=0.000[0m
+[0;32mI (269493) MPU: Raw bytes: FD 74 | 00 00 | 00 00[0m
+[0;32mI (269493) MPU: Accel (g): X=-0.040, Y=0.000, Z=0.000[0m
+[0;32mI (270493) MPU: Raw bytes: FD 98 | 00 00 | 00 00[0m
+[0;32mI (270493) MPU: Accel (g): X=-0.038, Y=0.000, Z=0.000[0m
+[0;32mI (271493) MPU: Raw bytes: FD 08 | 00 00 | 00 00[0m
+[0;32mI (271493) MPU: Accel (g): X=-0.046, Y=0.000, Z=0.000[0m
+[0;32mI (272493) MPU: Raw bytes: FD 80 | 00 00 | 00 00[0m
+[0;32mI (272493) MPU: Accel (g): X=-0.039, Y=0.000, Z=0.000[0m
+[0;32mI (273493) MPU: Raw bytes: FD 4C | 00 00 | 00 00[0m
+[0;32mI (273493) MPU: Accel (g): X=-0.042, Y=0.000, Z=0.000[0m
+[0;32mI (274493) MPU: Raw bytes: FD 78 | 00 00 | 00 00[0m
+[0;32mI (274493) MPU: Accel (g): X=-0.040, Y=0.000, Z=0.000[0m
+[0;32mI (275493) MPU: Raw bytes: FD 7C | 00 00 | 00 00[0m
+[0;32mI (275493) MPU: Accel (g): X=-0.039, Y=0.000, Z=0.000[0m
+[0;32mI (276493) MPU: Raw bytes: FD 60 | 00 00 | 00 00[0m
+[0;32mI (276493) MPU: Accel (g): X=-0.041, Y=0.000, Z=0.000[0m
+[0;32mI (277493) MPU: Raw bytes: FD 4C | 00 00 | 00 00[0m
+[0;32mI (277493) MPU: Accel (g): X=-0.042, Y=0.000, Z=0.000[0m
+[0;32mI (278493) MPU: Raw bytes: FD 50 | 00 00 | 00 00[0m
+[0;32mI (278493) MPU: Accel (g): X=-0.042, Y=0.000, Z=0.000[0m
+[0;32mI (279493) MPU: Raw bytes: FD 28 | 00 00 | 00 00[0m
+[0;32mI (279493) MPU: Accel (g): X=-0.044, Y=0.000, Z=0.000[0m
+[0;32mI (280493) MPU: Raw bytes: FD 54 | 00 00 | 00 00[0m
+[0;32mI (280493) MPU: Accel (g): X=-0.042, Y=0.000, Z=0.000[0m
+[0;32mI (281493) MPU: Raw bytes: FD 38 | 00 00 | 00 00[0m
+[0;32mI (281493) MPU: Accel (g): X=-0.043, Y=0.000, Z=0.000[0m
+[0;32mI (282493) MPU: Raw bytes: FD 58 | 00 00 | 00 00[0m
+[0;32mI (282493) MPU: Accel (g): X=-0.042, Y=0.000, Z=0.000[0m
+[0;32mI (283493) MPU: Raw bytes: FD 5C | 00 00 | 00 00[0m
+[0;32mI (283493) MPU: Accel (g): X=-0.041, Y=0.000, Z=0.000[0m
+[0;32mI (284493) MPU: Raw bytes: FD 5C | 00 00 | 00 00[0m
+[0;32mI (284493) MPU: Accel (g): X=-0.041, Y=0.000, Z=0.000[0m
+[0;32mI (285493) MPU: Raw bytes: FD 48 | 00 00 | 00 00[0m
+[0;32mI (285493) MPU: Accel (g): X=-0.042, Y=0.000, Z=0.000[0m
+[0;32mI (286493) MPU: Raw bytes: FD 34 | 00 00 | 00 00[0m
+[0;32mI (286493) MPU: Accel (g): X=-0.044, Y=0.000, Z=0.000[0m
+[0;32mI (287493) MPU: Raw bytes: FD 60 | 00 00 | 00 00[0m
+[0;32mI (287493) MPU: Accel (g): X=-0.041, Y=0.000, Z=0.000[0m
+[0;32mI (288493) MPU: Raw bytes: FD 74 | 00 00 | 00 00[0m
+[0;32mI (288493) MPU: Accel (g): X=-0.040, Y=0.000, Z=0.000[0m
+[0;32mI (289493) MPU: Raw bytes: FD 7C | 00 00 | 00 00[0m
+[0;32mI (289493) MPU: Accel (g): X=-0.039, Y=0.000, Z=0.000[0m
+[0;32mI (290493) MPU: Raw bytes: FD 50 | 00 00 | 00 00[0m
+[0;32mI (290493) MPU: Accel (g): X=-0.042, Y=0.000, Z=0.000[0m
+[0;32mI (291493) MPU: Raw bytes: FD 30 | 00 00 | 00 00[0m
+[0;32mI (291493) MPU: Accel (g): X=-0.044, Y=0.000, Z=0.000[0m
+[0;32mI (292493) MPU: Raw bytes: FD 44 | 00 00 | 00 00[0m
+[0;32mI (292493) MPU: Accel (g): X=-0.043, Y=0.000, Z=0.000[0m
+[0;32mI (293493) MPU: Raw bytes: FD 14 | 00 00 | 00 00[0m
+[0;32mI (293493) MPU: Accel (g): X=-0.046, Y=0.000, Z=0.000[0m
+[0;32mI (294493) MPU: Raw bytes: FD 58 | 00 00 | 00 00[0m
+[0;32mI (294493) MPU: Accel (g): X=-0.042, Y=0.000, Z=0.000[0m
+[0;32mI (295493) MPU: Raw bytes: FD 58 | 00 00 | 00 00[0m
+[0;32mI (295493) MPU: Accel (g): X=-0.042, Y=0.000, Z=0.000[0m
+[0;32mI (296493) MPU: Raw bytes: FD 1C | 00 00 | 00 00[0m
+[0;32mI (296493) MPU: Accel (g): X=-0.045, Y=0.000, Z=0.000[0m
+[0;32mI (297493) MPU: Raw bytes: FD 2C | 00 00 | 00 00[0m
+[0;32mI (297493) MPU: Accel (g): X=-0.044, Y=0.000, Z=0.000[0m
+[0;32mI (298493) MPU: Raw bytes: FD 38 | 00 00 | 00 00[0m
+[0;32mI (298493) MPU: Accel (g): X=-0.043, Y=0.000, Z=0.000[0m
+[0;32mI (299493) MPU: Raw bytes: FD 44 | 00 00 | 00 00[0m
+[0;32mI (299493) MPU: Accel (g): X=-0.043, Y=0.000, Z=0.000[0m
+[0;32mI (300493) MPU: Raw bytes: FD 20 | 00 00 | 00 00[0m
+[0;32mI (300493) MPU: Accel (g): X=-0.045, Y=0.000, Z=0.000[0m
+[0;32mI (301493) MPU: Raw bytes: FD 38 | 00 00 | 00 00[0m
+[0;32mI (301493) MPU: Accel (g): X=-0.043, Y=0.000, Z=0.000[0m
+[0;32mI (302493) MPU: Raw bytes: FD 30 | 00 00 | 00 00[0m
+[0;32mI (302493) MPU: Accel (g): X=-0.044, Y=0.000, Z=0.000[0m
+[0;32mI (303493) MPU: Raw bytes: FD 64 | 00 00 | 00 00[0m
+[0;32mI (303493) MPU: Accel (g): X=-0.041, Y=0.000, Z=0.000[0m
+[0;32mI (304493) MPU: Raw bytes: FD 54 | 00 00 | 00 00[0m
+[0;32mI (304493) MPU: Accel (g): X=-0.042, Y=0.000, Z=0.000[0m
+[0;32mI (305493) MPU: Raw bytes: FD 94 | 00 00 | 00 00[0m
+[0;32mI (305493) MPU: Accel (g): X=-0.038, Y=0.000, Z=0.000[0m
+[0;32mI (306493) MPU: Raw bytes: FD 64 | 00 00 | 00 00[0m
+[0;32mI (306493) MPU: Accel (g): X=-0.041, Y=0.000, Z=0.000[0m
+[0;32mI (307493) MPU: Raw bytes: FD 28 | 00 00 | 00 00[0m
+[0;32mI (307493) MPU: Accel (g): X=-0.044, Y=0.000, Z=0.000[0m
+[0;32mI (308493) MPU: Raw bytes: FD 34 | 00 00 | 00 00[0m
+[0;32mI (308493) MPU: Accel (g): X=-0.044, Y=0.000, Z=0.000[0m
+[0;32mI (309493) MPU: Raw bytes: FA 24 | 00 00 | 00 00[0m
+[0;32mI (309493) MPU: Accel (g): X=-0.092, Y=0.000, Z=0.000[0m
+[0;32mI (310493) MPU: Raw bytes: FC 08 | 00 00 | 00 00[0m
+[0;32mI (310493) MPU: Accel (g): X=-0.062, Y=0.000, Z=0.000[0m
+[0;32mI (311493) MPU: Raw bytes: FD 9C | 00 00 | 00 00[0m
+[0;32mI (311493) MPU: Accel (g): X=-0.037, Y=0.000, Z=0.000[0m
+[0;32mI (312493) MPU: Raw bytes: 0A 3C | 00 00 | 00 00[0m
+[0;32mI (312493) MPU: Accel (g): X=0.160, Y=0.000, Z=0.000[0m
+[0;32mI (313493) MPU: Raw bytes: 2C C0 | 00 00 | 00 00[0m
+[0;32mI (313493) MPU: Accel (g): X=0.699, Y=0.000, Z=0.000[0m
+[0;32mI (314493) MPU: Raw bytes: 2C 78 | 00 00 | 00 00[0m
+[0;32mI (314493) MPU: Accel (g): X=0.695, Y=0.000, Z=0.000[0m
+[0;32mI (315493) MPU: Raw bytes: 3D E4 | 00 00 | 00 00[0m
+[0;32mI (315493) MPU: Accel (g): X=0.967, Y=0.000, Z=0.000[0m
+[0;32mI (316493) MPU: Raw bytes: 2F 44 | 00 00 | 00 00[0m
+[0;32mI (316493) MPU: Accel (g): X=0.739, Y=0.000, Z=0.000[0m
+[0;32mI (317493) MPU: Raw bytes: FD 44 | 00 00 | 00 00[0m
+[0;32mI (317493) MPU: Accel (g): X=-0.043, Y=0.000, Z=0.000[0m
+[0;32mI (318493) MPU: Raw bytes: FD 6C | 00 00 | 00 00[0m
+[0;32mI (318493) MPU: Accel (g): X=-0.040, Y=0.000, Z=0.000[0m
+[0;32mI (319493) MPU: Raw bytes: FC 40 | 00 00 | 00 00[0m
+[0;32mI (319493) MPU: Accel (g): X=-0.059, Y=0.000, Z=0.000[0m
+[0;32mI (320493) MPU: Raw bytes: FB 78 | 00 00 | 00 00[0m
+[0;32mI (320493) MPU: Accel (g): X=-0.071, Y=0.000, Z=0.000[0m
+[0;32mI (321493) MPU: Raw bytes: FE 08 | 00 00 | 00 00[0m
+[0;32mI (321493) MPU: Accel (g): X=-0.031, Y=0.000, Z=0.000[0m
+[0;32mI (322493) MPU: Raw bytes: FE 7C | 00 00 | 00 00[0m
+[0;32mI (322493) MPU: Accel (g): X=-0.024, Y=0.000, Z=0.000[0m

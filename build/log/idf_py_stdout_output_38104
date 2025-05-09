@@ -1,0 +1,267 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May  8 2025 19:18:56[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (40) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (67) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b104h ( 45316) map[0m
+[0;32mI (106) esp_image: segment 1: paddr=0001b12c vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (106) esp_image: segment 2: paddr=0001b150 vaddr=3ffb0000 size=02314h (  8980) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=0001d46c vaddr=40080000 size=02bach ( 11180) load[0m
+[0;32mI (122) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=16948h ( 92488) map[0m
+[0;32mI (156) esp_image: segment 5: paddr=00036970 vaddr=40082bac size=0a5c0h ( 42432) load[0m
+[0;32mI (179) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (180) boot: Disabling RNG early entropy source...[0m
+[0;32mI (190) cpu_start: Multicore app[0m
+[0;32mI (198) cpu_start: Pro cpu start user code[0m
+[0;32mI (198) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (198) app_init: Application information:[0m
+[0;32mI (198) app_init: Project name:     MPU[0m
+[0;32mI (202) app_init: App version:      1[0m
+[0;32mI (205) app_init: Compile time:     May  8 2025 19:18:12[0m
+[0;32mI (210) app_init: ELF file SHA256:  6cd2cf94b...[0m
+[0;32mI (215) app_init: ESP-IDF:          v5.4.1-dirty[0m
+[0;32mI (219) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (223) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (227) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (231) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (237) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (242) heap_init: At 3FFB2BF8 len 0002D408 (181 KiB): DRAM[0m
+[0;32mI (247) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (253) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (258) heap_init: At 4008D16C len 00012E94 (75 KiB): IRAM[0m
+[0;32mI (265) spi_flash: detected chip: generic[0m
+[0;32mI (267) spi_flash: flash io: dio[0m
+[0;33mW (270) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (283) main_task: Started on CPU0[0m
+[0;32mI (293) main_task: Calling app_main()[0m
+[0;32mI (293) MPU: Initializing I2C Master....[0m
+[0;32mI (293) MPU: Initializing I2C Slave(MPU)....[0m
+[0;32mI (393) MPU: Waking up I2C Slave(MPU)....[0m
+Raw 14-byte dump: 01 0C 00 00 00 00 0D 90 00 00 00 AB FF 73 
+Accel Gs: X=0.016 | Y=0.000 | Z=0.000
+Raw 14-byte dump: 01 0C 00 00 00 00 0D 60 00 00 00 CF FF 92 
+Accel Gs: X=0.016 | Y=0.000 | Z=0.000
+Raw 14-byte dump: 00 DC 00 00 00 00 0D C0 00 00 00 AB FF 7A 
+Accel Gs: X=0.013 | Y=0.000 | Z=0.000
+Raw 14-byte dump: 01 1C 00 00 00 00 0D 70 00 00 00 BC FF 8D 
+Accel Gs: X=0.017 | Y=0.000 | Z=0.000
+Raw 14-byte dump: 01 3C 00 00 00 00 0D A0 00 00 00 D4 FF 9F 
+Accel Gs: X=0.019 | Y=0.000 | Z=0.000
+Raw 14-byte dump: 01 34 00 00 00 00 0D 70 00 00 00 C5 FF 91 
+Accel Gs: X=0.019 | Y=0.000 | Z=0.000
+Raw 14-byte dump: 00 D8 00 00 00 00 0D 70 00 00 00 9E FF 99 
+Accel Gs: X=0.013 | Y=0.000 | Z=0.000
+Raw 14-byte dump: 01 18 00 00 00 00 0D 70 00 00 00 C0 FF 81 
+Accel Gs: X=0.017 | Y=0.000 | Z=0.000
+Raw 14-byte dump: 0F 8C 00 00 00 00 0D 50 00 00 EE C1 04 3F 
+Accel Gs: X=0.243 | Y=0.000 | Z=0.000
+Raw 14-byte dump: 04 E4 00 00 00 00 0D A0 00 00 F1 7B F5 E8 
+Accel Gs: X=0.076 | Y=0.000 | Z=0.000
+Raw 14-byte dump: 2A 88 00 00 00 00 0D 70 00 00 6C 7D DE C0 
+Accel Gs: X=0.665 | Y=0.000 | Z=0.000
+Raw 14-byte dump: FA A0 00 00 00 00 0D 70 00 00 02 CD FD D1 
+Accel Gs: X=-0.084 | Y=0.000 | Z=0.000
+Raw 14-byte dump: 0C B4 00 00 00 00 0D 90 00 00 0D C6 02 B6 
+Accel Gs: X=0.198 | Y=0.000 | Z=0.000
+Raw 14-byte dump: FE FC 00 00 00 00 0D 70 00 00 05 B9 E7 E1 
+Accel Gs: X=-0.016 | Y=0.000 | Z=0.000
+[1;31mE (14493) i2c.master: I2C hardware NACK detected[0m
+[1;31mE (14493) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (14493) i2c.master: s_i2c_synchronous_transaction(924): I2C transaction failed[0m
+[1;31mE (14493) i2c.master: i2c_master_transmit_receive(1220): I2C transaction failed[0m
+[1;31mE (14503) MPU: Burst read failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (15503) i2c.master: I2C hardware NACK detected[0m
+[1;31mE (15503) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (15503) i2c.master: s_i2c_synchronous_transaction(924): I2C transaction failed[0m
+[1;31mE (15503) i2c.master: i2c_master_transmit_receive(1220): I2C transaction failed[0m
+[1;31mE (15513) MPU: Burst read failed: ESP_ERR_INVALID_STATE[0m
+[1;31mE (16513) i2c.master: I2C hardware NACK detected[0m
+[1;31mE (16513) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (16513) i2c.master: s_i2c_synchronous_transaction(924): I2C transaction failed[0m
+[1;31mE (16513) i2c.master: i2c_master_transmit_receive(1220): I2C transaction failed[0m
+[1;31mE (16523) MPU: Burst read failed: ESP_ERR_INVALID_STATE[0m
+Raw 14-byte dump: 09 A0 03 F0 42 60 0D 10 FD CF 01 51 FF B9 
+Accel Gs: X=0.150 | Y=0.062 | Z=1.037
+Raw 14-byte dump: 01 44 00 20 43 98 0D 50 FF 92 0D 62 FF B7 
+Accel Gs: X=0.020 | Y=0.002 | Z=1.056
+Raw 14-byte dump: 02 AC F9 1C 42 94 0D 60 04 A0 02 66 F4 10 
+Accel Gs: X=0.042 | Y=-0.108 | Z=1.040
+Raw 14-byte dump: FD 08 00 AC 43 84 0D 50 FF 70 FA 52 FC 9E 
+Accel Gs: X=-0.046 | Y=0.010 | Z=1.055
+Raw 14-byte dump: FF D8 29 04 34 44 0D 50 14 51 00 BC 01 5A 
+Accel Gs: X=-0.002 | Y=0.641 | Z=0.817
+Raw 14-byte dump: 00 74 24 08 36 88 0D 30 C6 C2 F9 89 F7 88 
+Accel Gs: X=0.007 | Y=0.563 | Z=0.852
+Raw 14-byte dump: 06 98 C7 8C 18 F4 0D 50 F7 8D FF 98 FF 40 
+Accel Gs: X=0.103 | Y=-0.882 | Z=0.390
+Raw 14-byte dump: 04 E8 C3 0C 17 94 0D 60 01 39 FF 9B FD 4A 
+Accel Gs: X=0.077 | Y=-0.952 | Z=0.368
+Raw 14-byte dump: 04 0C 1D 44 36 90 0D 20 4C 10 09 CC F2 D9 
+Accel Gs: X=0.063 | Y=0.457 | Z=0.853
+Raw 14-byte dump: 00 30 37 5C 22 3C 0C F0 00 23 01 50 00 2E 
+Accel Gs: X=0.003 | Y=0.865 | Z=0.535
+Raw 14-byte dump: FE 78 00 6C 43 A8 0D 50 04 A4 03 FC FF CE 
+Accel Gs: X=-0.024 | Y=0.007 | Z=1.057
+Raw 14-byte dump: FE B0 FF 3C 43 44 0D 50 FF C9 00 C8 01 4E 
+Accel Gs: X=-0.021 | Y=-0.012 | Z=1.051
+Raw 14-byte dump: FE D4 FF 78 43 28 0D 50 FF C3 00 DE 00 34 
+Accel Gs: X=-0.018 | Y=-0.008 | Z=1.049
+Raw 14-byte dump: FE A8 FF 68 43 88 0C F0 FF E1 00 CF FF 9A 
+Accel Gs: X=-0.021 | Y=-0.009 | Z=1.055
+Raw 14-byte dump: FE DC FF 4C 43 44 0D 30 FF E5 00 CB FF E6 
+Accel Gs: X=-0.018 | Y=-0.011 | Z=1.051
+Raw 14-byte dump: FE C8 FF 38 43 38 0D 20 FF D4 00 D9 FF 88 
+Accel Gs: X=-0.019 | Y=-0.012 | Z=1.050
+Raw 14-byte dump: FE F4 FF 60 43 3C 0D 50 FF F6 00 DB FF 72 
+Accel Gs: X=-0.016 | Y=-0.010 | Z=1.051
+Raw 14-byte dump: FE F8 FF 5C 43 78 0D 50 FF FB 00 D3 FF 83 
+Accel Gs: X=-0.016 | Y=-0.010 | Z=1.054
+Raw 14-byte dump: FF 0C FE FC 43 28 0D 10 FF DC 00 E6 FF 8A 
+Accel Gs: X=-0.015 | Y=-0.016 | Z=1.049
+Raw 14-byte dump: FE E8 FF 3C 43 9C 0D 30 FF F0 00 D8 FF 79 
+Accel Gs: X=-0.017 | Y=-0.012 | Z=1.056
+Raw 14-byte dump: FE D0 FF 74 43 58 0C F0 00 06 00 FD FF 83 
+Accel Gs: X=-0.019 | Y=-0.009 | Z=1.052
+Raw 14-byte dump: FF 08 FF 20 43 90 0D 50 FF EE 00 C8 FF AD 
+Accel Gs: X=-0.015 | Y=-0.014 | Z=1.056
+Raw 14-byte dump: FE F0 FF 38 43 58 0D 30 FF CD 00 D9 FF 8A 
+Accel Gs: X=-0.017 | Y=-0.012 | Z=1.052
+Raw 14-byte dump: FE D8 FF 24 43 30 0D 30 FF DE 00 DB FF 9F 
+Accel Gs: X=-0.018 | Y=-0.013 | Z=1.050
+Raw 14-byte dump: FF 28 FE D4 43 0C 0D 50 FF EE 00 D3 FF 94 
+Accel Gs: X=-0.013 | Y=-0.018 | Z=1.048
+Raw 14-byte dump: FF 0C FF 54 43 AC 0D 50 FF DC 00 C4 FF 6F 
+Accel Gs: X=-0.015 | Y=-0.010 | Z=1.057
+Raw 14-byte dump: FE D8 FF 04 44 50 0D 20 FF EF 00 E0 FF 8C 
+Accel Gs: X=-0.018 | Y=-0.015 | Z=1.067
+Raw 14-byte dump: FF 00 FF 34 43 88 0D 30 FF F1 00 EA FF 8F 
+Accel Gs: X=-0.016 | Y=-0.012 | Z=1.055
+Raw 14-byte dump: FF 18 FF 34 43 44 0D 30 FF D1 00 CC FF 89 
+Accel Gs: X=-0.014 | Y=-0.012 | Z=1.051
+Raw 14-byte dump: FE F4 FF 00 43 2C 0D 70 FF E0 00 B5 FF 82 
+Accel Gs: X=-0.016 | Y=-0.016 | Z=1.050
+Raw 14-byte dump: FF 04 FF 24 43 80 0D 50 FF EC 00 D0 FF 67 
+Accel Gs: X=-0.015 | Y=-0.013 | Z=1.055
+Raw 14-byte dump: FF 2C FF 2C 43 64 0D 10 FF DF 00 D6 FF 9E 
+Accel Gs: X=-0.013 | Y=-0.013 | Z=1.053
+Raw 14-byte dump: FF 38 FF 40 43 7C 0D 20 FF DE 00 C5 FF 93 
+Accel Gs: X=-0.012 | Y=-0.012 | Z=1.054
+Raw 14-byte dump: FF 2C FF 20 43 64 0D 50 FF E2 00 D5 FF 7B 
+Accel Gs: X=-0.013 | Y=-0.014 | Z=1.053
+Raw 14-byte dump: FF 30 FF 38 43 34 0D 20 FF E8 00 EA FF 99 
+Accel Gs: X=-0.013 | Y=-0.012 | Z=1.050
+Raw 14-byte dump: FF 2C FF 10 43 18 0D 70 FF E8 00 CA FF 79 
+Accel Gs: X=-0.013 | Y=-0.015 | Z=1.048
+Raw 14-byte dump: FF 14 FF 00 43 A0 0D 60 FF D4 00 CC FF 87 
+Accel Gs: X=-0.014 | Y=-0.016 | Z=1.057
+Raw 14-byte dump: FF 20 FF 7C 43 4C 0D 30 FF E6 00 F6 FF 8E 
+Accel Gs: X=-0.014 | Y=-0.008 | Z=1.052
+Raw 14-byte dump: FF 18 FF 30 43 38 0D 20 FF CC 00 B8 FF 7C 
+Accel Gs: X=-0.014 | Y=-0.013 | Z=1.050
+Raw 14-byte dump: FF 24 FF 18 43 10 0D 90 FF EB 00 CE FF 8A 
+Accel Gs: X=-0.013 | Y=-0.014 | Z=1.048
+Raw 14-byte dump: FF 20 FF 00 43 64 0D 50 FF C9 00 D4 FF 7A 
+Accel Gs: X=-0.014 | Y=-0.016 | Z=1.053
+Raw 14-byte dump: FF 3C FF 48 43 54 0D 50 FF D3 01 03 FF 8E 
+Accel Gs: X=-0.012 | Y=-0.011 | Z=1.052
+Raw 14-byte dump: FF 18 FF 58 43 28 0D 20 FF EA 00 F5 FF 8C 
+Accel Gs: X=-0.014 | Y=-0.010 | Z=1.049
+Raw 14-byte dump: FE FC FF 0C 43 A8 0D 60 FF E9 00 EA FF A2 
+Accel Gs: X=-0.016 | Y=-0.015 | Z=1.057
+Raw 14-byte dump: FF 0C FF 1C 43 9C 0D 70 FF EE 00 D6 FF 95 
+Accel Gs: X=-0.015 | Y=-0.014 | Z=1.056
+Raw 14-byte dump: FF 2C FF 30 43 2C 0D 60 FF F1 00 CC FF 9D 
+Accel Gs: X=-0.013 | Y=-0.013 | Z=1.050
+Raw 14-byte dump: FF 18 FE E4 43 5C 0D 50 FF E3 00 C7 FF 98 
+Accel Gs: X=-0.014 | Y=-0.017 | Z=1.052
+Raw 14-byte dump: FF 0C FF 00 43 C4 0D 30 FF EA 00 DC FF 79 
+Accel Gs: X=-0.015 | Y=-0.016 | Z=1.059
+Raw 14-byte dump: FF 48 FF 20 43 F4 0D 70 FF E4 00 CA FF 91 
+Accel Gs: X=-0.011 | Y=-0.014 | Z=1.062
+Raw 14-byte dump: FF 08 FF 34 43 80 0D 70 FF D6 00 C0 FF 91 
+Accel Gs: X=-0.015 | Y=-0.012 | Z=1.055
+Raw 14-byte dump: FE F0 FF 28 43 50 0D 50 FF DA 00 E6 FF B1 
+Accel Gs: X=-0.017 | Y=-0.013 | Z=1.052
+Raw 14-byte dump: FF 38 FF 6C 43 C4 0D 50 FF CF 00 BB FF 8F 
+Accel Gs: X=-0.012 | Y=-0.009 | Z=1.059
+Raw 14-byte dump: FE FC FF 68 43 B0 0C F0 FF F2 00 D7 FF A5 
+Accel Gs: X=-0.016 | Y=-0.009 | Z=1.058
+Raw 14-byte dump: FF 08 FF 14 43 38 0D 70 FF E2 00 C8 FF 74 
+Accel Gs: X=-0.015 | Y=-0.014 | Z=1.050
+Raw 14-byte dump: FF 38 FF 04 43 68 0D 50 FF DD 00 F7 FF 93 
+Accel Gs: X=-0.012 | Y=-0.015 | Z=1.053
+Raw 14-byte dump: FF 10 FF 30 43 A4 0D 70 FF D6 00 ED FF 84 
+Accel Gs: X=-0.015 | Y=-0.013 | Z=1.057
+Raw 14-byte dump: FF 34 FF 60 43 0C 0D 90 FF AE 00 B5 FF 7B 
+Accel Gs: X=-0.012 | Y=-0.010 | Z=1.048
+Raw 14-byte dump: FF 20 FF 50 43 64 0D 70 FF F4 00 CF FF 81 
+Accel Gs: X=-0.014 | Y=-0.011 | Z=1.053
+Raw 14-byte dump: FF 1C FF 1C 43 64 0D 30 FF C8 00 D7 FF 7F 
+Accel Gs: X=-0.014 | Y=-0.014 | Z=1.053
+Raw 14-byte dump: FF 0C FF 24 43 80 0D 50 00 0D 00 E1 FF 8F 
+Accel Gs: X=-0.015 | Y=-0.013 | Z=1.055
+Raw 14-byte dump: FF 24 FF 08 43 D8 0D 60 FF C7 00 E9 FF 8B 
+Accel Gs: X=-0.013 | Y=-0.015 | Z=1.060
+Raw 14-byte dump: FF 34 FF 5C 43 58 0D 60 FF E7 00 DD FF A4 
+Accel Gs: X=-0.012 | Y=-0.010 | Z=1.052
+Raw 14-byte dump: FF 28 FF 10 43 9C 0D 70 FF EE 00 CF FF 93 
+Accel Gs: X=-0.013 | Y=-0.015 | Z=1.056
+Raw 14-byte dump: FF 4C FE F8 43 98 0D 20 FF E9 00 B6 FF 9A 
+Accel Gs: X=-0.011 | Y=-0.016 | Z=1.056
+Raw 14-byte dump: FF 48 FE F4 43 CC 0D 50 FF FA 00 D3 FF 68 
+Accel Gs: X=-0.011 | Y=-0.016 | Z=1.059
+Raw 14-byte dump: FF 08 FF 20 43 30 0D 60 FF E1 00 C8 FF 7D 
+Accel Gs: X=-0.015 | Y=-0.014 | Z=1.050
+Raw 14-byte dump: FF 08 FF 44 43 8C 0D 60 FF DB 00 C8 FF 85 
+Accel Gs: X=-0.015 | Y=-0.011 | Z=1.055
+Raw 14-byte dump: FF 1C FF 24 43 50 0D 70 00 03 00 D9 FF 79 
+Accel Gs: X=-0.014 | Y=-0.013 | Z=1.052
+Raw 14-byte dump: FF 1C FF 34 43 7C 0D C0 FF C7 00 CE FF 9C 
+Accel Gs: X=-0.014 | Y=-0.012 | Z=1.054
+Raw 14-byte dump: FF 2C FF 58 43 68 0D 50 FF F3 00 E7 FF 81 
+Accel Gs: X=-0.013 | Y=-0.010 | Z=1.053
+Raw 14-byte dump: FF 34 FF 00 43 64 0D 70 FF E6 00 CC FF 73 
+Accel Gs: X=-0.012 | Y=-0.016 | Z=1.053
+Raw 14-byte dump: FF 30 FF 74 43 80 0D 50 FF E4 00 EE FF 97 
+Accel Gs: X=-0.013 | Y=-0.009 | Z=1.055
+Raw 14-byte dump: FF 14 FF 08 43 A0 0D 30 FF E7 00 DD FF 84 
+Accel Gs: X=-0.014 | Y=-0.015 | Z=1.057
+Raw 14-byte dump: FE FC FF 60 44 58 0D 50 FF BD 00 9C FF 8C 
+Accel Gs: X=-0.016 | Y=-0.010 | Z=1.068
+Raw 14-byte dump: FF 58 FE BC 43 54 0D A0 FF F2 00 DB FF 91 
+Accel Gs: X=-0.010 | Y=-0.020 | Z=1.052
+Raw 14-byte dump: FF 2C FF 34 43 58 0D C0 FF EA 00 F5 FF 7A 
+Accel Gs: X=-0.013 | Y=-0.012 | Z=1.052
+Raw 14-byte dump: FE FC FF 54 43 D8 0D 50 FF DB 00 DC FF 80 
+Accel Gs: X=-0.016 | Y=-0.010 | Z=1.060
+Raw 14-byte dump: FF 3C FE F4 43 90 0D A0 FF D6 00 C5 FF 87 
+Accel Gs: X=-0.012 | Y=-0.016 | Z=1.056
+Raw 14-byte dump: FE D0 FF 40 43 34 0D A0 FF E1 00 B5 FF 78 
+Accel Gs: X=-0.019 | Y=-0.012 | Z=1.050
+Raw 14-byte dump: FF 48 FF 20 43 C0 0D 60 FF F8 00 DE FF A0 
+Accel Gs: X=-0.011 | Y=-0.014 | Z=1.059
+Raw 14-byte dump: FF 38 FF 48 43 BC 0D D0 FF E5 00 E0 FF 87 
+Accel Gs: X=-0.012 | Y=-0.011 | Z=1.058
+Raw 14-byte dump: FF 4C FE F4 42 D8 0D 70 00 37 01 30 FF 89 
+Accel Gs: X=-0.011 | Y=-0.016 | Z=1.044
