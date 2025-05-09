@@ -1,4 +1,4 @@
-# Install script for directory: D:/Embedded/MPU/main
+# Install script for directory: D:/Embedded/Motion-Processing-Unit/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

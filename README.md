@@ -30,7 +30,7 @@ The ESP-32 microcontroller uses I2C protocol to read the raw values from the ded
 
 ## Present Problems
 
-1. MPU module requires manual reset to start giving Accelerometer values from the last 4 dedicated registers (Y and Z axes values).
+1. MPU module requires manual reset to start giving Accelerometer values from the last 4 dedicated registers (Y and Z axes values).         (9/5/2025)
 
 ## Further Implementation
 

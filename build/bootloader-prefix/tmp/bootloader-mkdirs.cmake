@@ -10,18 +10,18 @@ if(NOT EXISTS "C:/Espressif/frameworks/esp-idf-v5.4.1/components/bootloader/subp
   file(MAKE_DIRECTORY "C:/Espressif/frameworks/esp-idf-v5.4.1/components/bootloader/subproject")
 endif()
 file(MAKE_DIRECTORY
-  "D:/Embedded/MPU/build/bootloader"
-  "D:/Embedded/MPU/build/bootloader-prefix"
-  "D:/Embedded/MPU/build/bootloader-prefix/tmp"
-  "D:/Embedded/MPU/build/bootloader-prefix/src/bootloader-stamp"
-  "D:/Embedded/MPU/build/bootloader-prefix/src"
-  "D:/Embedded/MPU/build/bootloader-prefix/src/bootloader-stamp"
+  "D:/Embedded/Motion-Processing-Unit/build/bootloader"
+  "D:/Embedded/Motion-Processing-Unit/build/bootloader-prefix"
+  "D:/Embedded/Motion-Processing-Unit/build/bootloader-prefix/tmp"
+  "D:/Embedded/Motion-Processing-Unit/build/bootloader-prefix/src/bootloader-stamp"
+  "D:/Embedded/Motion-Processing-Unit/build/bootloader-prefix/src"
+  "D:/Embedded/Motion-Processing-Unit/build/bootloader-prefix/src/bootloader-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "D:/Embedded/MPU/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
+    file(MAKE_DIRECTORY "D:/Embedded/Motion-Processing-Unit/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "D:/Embedded/MPU/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "D:/Embedded/Motion-Processing-Unit/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
 endif()

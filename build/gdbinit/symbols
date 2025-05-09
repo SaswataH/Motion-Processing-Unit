@@ -18,8 +18,8 @@ end
 
 # Load bootloader symbols
 set confirm off
-    add-symbol-file D:/Embedded/MPU/build/bootloader/bootloader.elf
+    add-symbol-file D:/Embedded/Motion-Processing-Unit/build/bootloader/bootloader.elf
 set confirm on
 
 # Load application symbols
-file D:/Embedded/MPU/build/MPU.elf
+file D:/Embedded/Motion-Processing-Unit/build/MPU.elf

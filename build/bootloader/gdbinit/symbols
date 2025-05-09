@@ -22,4 +22,4 @@ set confirm off
 set confirm on
 
 # Load application symbols
-file D:/Embedded/MPU/build/bootloader/bootloader.elf
+file D:/Embedded/Motion-Processing-Unit/build/bootloader/bootloader.elf
