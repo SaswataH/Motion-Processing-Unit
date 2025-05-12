@@ -3,7 +3,7 @@
 ## Description
 
 This is a test of a Motion Processing Unit(MPU) - "MPU 6050" module using an ESP-32 microcontroller.
-The current code uses the 3-axis (X , Y , Z) Accelerometer to measure the total acceleration (Linear + Static) on the sensor.
+The current code uses the 3-axis (X , Y , Z) Accelerometer to measure the total acceleration (Linear + Static) on the sensor and 3-axis (x , Y , Z) Gyroscope to measure the total angular velocity.
 
 When the MPU module is stationary, the accelerometer will read approx. ±1g along the axis aligned with gravity. The remaining axes will provide a value close to ±0g. This mechanism aids us estimating the orientation of the sensor when it's stationary.
 
@@ -30,9 +30,10 @@ The ESP-32 microcontroller uses I2C protocol to read the raw values from the ded
 
 ## Present Problems
 
-1. Calibrating the 6-axis Accelerometer and Gyroscope values. (12/5/2025)
+1. Reviewing Gyroscope values. (12/5/2025)
 
 ## Further Implementation
 
-1. Using the Accelerometer and Gyroscope values to measure the angles in which the sensor is oriented.
-2. Implementing suitable filter algorithms to stabilise short-term Gyroscope values and Long-term Accelerometer values.
+1. Calibrating the 6-axis Accelerometer and Gyroscope values.
+2. Using the Accelerometer and Gyroscope values to measure the angles in which the sensor is oriented.
+3. Implementing suitable filter algorithms to stabilise short-term Gyroscope values and Long-term Accelerometer values.
