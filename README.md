@@ -30,10 +30,9 @@ The ESP-32 microcontroller uses I2C protocol to read the raw values from the ded
 
 ## Present Problems
 
-1. MPU module requires manual reset to start giving Accelerometer values from the last 4 dedicated registers (Y and Z axes values).         (9/5/2025)
+1. Calibrating the 6-axis Accelerometer and Gyroscope values. (9/5/2025)
 
 ## Further Implementation
 
-1. Obtaining and processing the 3-axis Gyroscope values from the dedicated registers.
-2. Using the Accelerometer and Gyroscope values to measure the angles in which the sensor is oriented.
-3. Implementing suitable filter algorithms to stabilise short-term Gyroscope values and Long-term Accelerometer values.
+1. Using the Accelerometer and Gyroscope values to measure the angles in which the sensor is oriented.
+2. Implementing suitable filter algorithms to stabilise short-term Gyroscope values and Long-term Accelerometer values.
