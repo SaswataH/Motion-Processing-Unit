@@ -55,7 +55,7 @@ void mpu_wake()
     ESP_ERROR_CHECK(i2c_master_multi_buffer_transmit(dev_handle, buffer_info, sizeof(buffer_info) / sizeof(i2c_master_transmit_multi_buffer_info_t), -1));
 }
 
-void read_accel()
+void read_accel_gyro()
 {
     uint8_t reg = 0x3B;
     uint8_t data[14] = {0};
@@ -95,5 +95,5 @@ void app_main(void)
 
     vTaskDelay(pdMS_TO_TICKS(100));
 
-    read_accel();
+    read_accel_gyro();
 }
