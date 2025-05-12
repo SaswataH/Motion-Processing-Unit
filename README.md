@@ -30,7 +30,7 @@ The ESP-32 microcontroller uses I2C protocol to read the raw values from the ded
 
 ## Present Problems
 
-1. Calibrating the 6-axis Accelerometer and Gyroscope values. (9/5/2025)
+1. Calibrating the 6-axis Accelerometer and Gyroscope values. (12/5/2025)
 
 ## Further Implementation
 
