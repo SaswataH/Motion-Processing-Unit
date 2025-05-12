@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "MPU",
-    "project_version":    "1798f57-dirty",
+    "project_version":    "144ccc6-dirty",
     "project_path":       "D:/Embedded/Motion-Processing-Unit",
     "idf_path":           "C:/Espressif/frameworks/esp-idf-v5.4.1",
     "build_dir":          "D:/Embedded/Motion-Processing-Unit/build",
@@ -1195,7 +1195,7 @@
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "D:/Embedded/Motion-Processing-Unit/build/esp-idf/main/libmain.a",
-            "sources": [ "D:/Embedded/Motion-Processing-Unit/main/Test.c", "D:/Embedded/Motion-Processing-Unit/main/MPU.c" ],
+            "sources": [ "D:/Embedded/Motion-Processing-Unit/main/Test.c" ],
             "include_dirs": []
         },
         "mbedtls": {

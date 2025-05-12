@@ -1,0 +1,68 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 10 2025 00:07:56[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (40) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (67) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b10ch ( 45324) map[0m
+[0;32mI (106) esp_image: segment 1: paddr=0001b134 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (106) esp_image: segment 2: paddr=0001b158 vaddr=3ffb0000 size=02314h (  8980) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=0001d474 vaddr=40080000 size=02ba4h ( 11172) load[0m
+[0;32mI (122) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=16920h ( 92448) map[0m
+[0;32mI (156) esp_image: segment 5: paddr=00036948 vaddr=40082ba4 size=0a5c8h ( 42440) load[0m
+[0;32mI (179) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (180) boot: Disabling RNG early entropy source...[0m
+[0;32mI (190) cpu_start: Multicore app[0m
+[0;32mI (198) cpu_start: Pro cpu start user code[0m
+[0;32mI (198) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (198) app_init: Application information:[0m
+[0;32mI (198) app_init: Project name:     MPU[0m
+[0;32mI (202) app_init: App version:      144ccc6-dirty[0m
+[0;32mI (206) app_init: Compile time:     May 12 2025 11:03:33[0m
+[0;32mI (211) app_init: ELF file SHA256:  d243893bf...[0m
+[0;32mI (216) app_init: ESP-IDF:          v5.4.1-dirty[0m
+I (220) efuse_init: Min chip rev:     v0.0
+[0;32mI (224) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (228) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (232) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (238) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (243) heap_init: At 3FFB2BF8 len 0002D408 (181 KiB): DRAM[0m
+[0;32mI (248) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (254) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (259) heap_init: At 4008D16C len 00012E94 (75 KiB): IRAM[0m
+[0;32mI (266) spi_flash: detected chip: generic[0m
+[0;32mI (268) spi_flash: flash io: dio[0m
+[0;33mW (271) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (284) main_task: Started on CPU0[0m
+[0;32mI (294) main_task: Calling app_main()[0m
+Initializing I2C Master....
+Initializing I2C Slave....
+Waking up MPU....
+Acc X = -0.061 | Acc Y = 0.000 | Acc Z = 0.000 | Gyro X = -0.160 | Gyro Y = 0.000 | Gyro Z = 0.000
+Acc X = -0.065 | Acc Y = 0.000 | Acc Z = 0.000 | Gyro X = -0.084 | Gyro Y = 0.000 | Gyro Z = 0.000
+Acc X = -0.067 | Acc Y = 0.000 | Acc Z = 0.000 | Gyro X = -0.191 | Gyro Y = 0.000 | Gyro Z = 0.000
+Acc X = -0.065 | Acc Y = 0.000 | Acc Z = 0.000 | Gyro X = 0.061 | Gyro Y = 0.000 | Gyro Z = 0.000
+Acc X = -0.063 | Acc Y = 0.000 | Acc Z = 0.000 | Gyro X = -0.244 | Gyro Y = 0.000 | Gyro Z = 0.000
+Acc X = -0.062 | Acc Y = 0.000 | Acc Z = 0.000 | Gyro X = -0.221 | Gyro Y = 0.000 | Gyro Z = 0.000
+Acc X = -0.064 | Acc Y = 0.000 | Acc Z = 0.000 | Gyro X = -0.229 | Gyro Y = 0.000 | Gyro Z = 0.000
+Acc X = -0.062 | Acc Y = 0.000 | Acc Z = 0.000 | Gyro X = -0.137 | Gyro Y = 0.000 | Gyro Z = 0.000
