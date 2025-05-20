@@ -55,24 +55,77 @@ void mpu_wake()
     ESP_ERROR_CHECK(i2c_master_multi_buffer_transmit(dev_handle, buffer_info, sizeof(buffer_info) / sizeof(i2c_master_transmit_multi_buffer_info_t), -1));
 }
 
+void calibrate(int32_t *offset_arr, int size)
+{
+    int32_t Ax_sum = 0, Ay_sum = 0, Az_sum = 0, Gx_sum = 0, Gy_sum = 0, Gz_sum = 0;
+    int samples = 1000;
+    int i = 0;
+    uint8_t reg = 0x3B;
+    uint8_t data[14] = {0};
+    printf("\nCalibrating...\n");
+    while (i < 1000)
+    {
+        ESP_ERROR_CHECK(i2c_master_transmit_receive(dev_handle, &reg, 1, data, 14, -1));
+
+        int16_t ax = (data[0] << 8) | data[1];
+        Ax_sum += ax;
+        int16_t ay = (data[2] << 8) | data[3];
+        Ay_sum += ay;
+        int16_t az = (data[4] << 8) | data[5];
+        Az_sum += az;
+        int16_t gx = (data[8] << 8) | data[9];
+        Gx_sum += gx;
+        int16_t gy = (data[10] << 8) | data[11];
+        Gy_sum += gy;
+        int16_t gz = (data[12] << 8) | data[13];
+        Gz_sum += gz;
+
+        i++;
+        // printf("%d\n", i);
+        vTaskDelay(pdMS_TO_TICKS(20));
+    }
+    int16_t Ax_offset = Ax_sum / samples;
+    offset_arr[0] = Ax_offset;
+
+    int16_t Ay_offset = Ay_sum / samples;
+    offset_arr[1] = Ay_offset;
+
+    int16_t Az_offset = Az_sum / samples;
+    offset_arr[2] = Az_offset - 16384;
+
+    int16_t Gx_offset = Gx_sum / samples;
+    offset_arr[3] = Gx_offset;
+
+    int16_t Gy_offset = Gy_sum / samples;
+    offset_arr[4] = Gy_offset;
+
+    int16_t Gz_offset = Gz_sum / samples;
+    offset_arr[5] = Gz_offset;
+
+    printf("Ax off = %d |Ay off = %d |Az off = %d |Gx off = %d |Gy off = %d |Gz off = %d \n", Ax_offset, Ay_offset, Az_offset, Gx_offset, Gy_offset, Gz_offset);
+}
+
 void read_accel_gyro()
 {
     uint8_t reg = 0x3B;
     uint8_t data[14] = {0};
 
+    float aRes = 2.0 / 32768.0;
+    float gRes = 250.0 / 32768.0;
+
+    int32_t offset_arr[6];
+    calibrate(offset_arr, 6);
+
     while (1)
     {
         ESP_ERROR_CHECK(i2c_master_transmit_receive(dev_handle, &reg, 1, data, 14, -1));
 
-        int16_t ax = (data[0] << 8) | data[1];
-        int16_t ay = (data[2] << 8) | data[3];
-        int16_t az = (data[4] << 8) | data[5];
-        int16_t gx = (data[8] << 8) | data[9];
-        int16_t gy = (data[10] << 8) | data[11];
-        int16_t gz = (data[12] << 8) | data[13];
-
-        float aRes = 2.0 / 32768.0;
-        float gRes = 250.0 / 32768.0;
+        int16_t ax = ((data[0] << 8) | data[1]) - offset_arr[0];
+        int16_t ay = ((data[2] << 8) | data[3]) - offset_arr[1];
+        int16_t az = ((data[4] << 8) | data[5]) - offset_arr[2];
+        int16_t gx = ((data[8] << 8) | data[9]) - offset_arr[3];
+        int16_t gy = ((data[10] << 8) | data[11]) - offset_arr[4];
+        int16_t gz = ((data[12] << 8) | data[13]) - offset_arr[5];
 
         printf("Acc X = %.3f | Acc Y = %.3f | Acc Z = %.3f | Gyro X = %.3f | Gyro Y = %.3f | Gyro Z = %.3f\n", ax * aRes, ay * aRes, az * aRes, gx * gRes, gy * gRes, gz * gRes);
 
