@@ -30,10 +30,8 @@ The ESP-32 microcontroller uses I2C protocol to read the raw values from the ded
 
 ## Present Problems
 
-1. Reviewing Gyroscope values. (12/5/2025)
+1. Applying a suitable filter algorithms to stabilise short-term Gyroscope values and Long-term Accelerometer values. (20/5/2025)
 
 ## Further Implementation
 
-1. Calibrating the 6-axis Accelerometer and Gyroscope values.
-2. Using the Accelerometer and Gyroscope values to measure the angles in which the sensor is oriented.
-3. Implementing suitable filter algorithms to stabilise short-term Gyroscope values and Long-term Accelerometer values.
+1. Using the Accelerometer and Gyroscope values to measure the angles in which the sensor is oriented.
