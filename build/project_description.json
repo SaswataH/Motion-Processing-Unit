@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "MPU",
-    "project_version":    "caf97c6-dirty",
+    "project_version":    "58d21e3-dirty",
     "project_path":       "D:/Embedded/Motion-Processing-Unit",
     "idf_path":           "C:/Espressif/frameworks/esp-idf-v5.4.1",
     "build_dir":          "D:/Embedded/Motion-Processing-Unit/build",

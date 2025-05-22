@@ -127,7 +127,7 @@ void read_accel_gyro()
         int16_t gy = ((data[10] << 8) | data[11]) - offset_arr[4];
         int16_t gz = ((data[12] << 8) | data[13]) - offset_arr[5];
 
-        printf("Acc X = %.3f | Acc Y = %.3f | Acc Z = %.3f | Gyro X = %.3f | Gyro Y = %.3f | Gyro Z = %.3f\n", ax * aRes, ay * aRes, az * aRes, gx * gRes, gy * gRes, gz * gRes);
+        printf("Acc X = %.3f | Acc Y = %.3f | Acc Z = %.3f | Gyro X = %.3f | Gyro Y = %.3f | Gyro Z = %.3f\n", (ax * aRes) * 9.8, (ay * aRes) * 9.8, (az * aRes) * 9.8, gx * gRes, gy * gRes, gz * gRes);
 
         vTaskDelay(pdMS_TO_TICKS(1000));
     }
