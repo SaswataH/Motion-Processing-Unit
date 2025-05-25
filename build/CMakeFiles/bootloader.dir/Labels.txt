@@ -1,13 +1,13 @@
 # Target labels
  bootloader
 # Source files and their labels
-D:/Embedded/Motion-Processing-Unit/build/CMakeFiles/bootloader
-D:/Embedded/Motion-Processing-Unit/build/CMakeFiles/bootloader.rule
-D:/Embedded/Motion-Processing-Unit/build/CMakeFiles/bootloader-complete.rule
-D:/Embedded/Motion-Processing-Unit/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
-D:/Embedded/Motion-Processing-Unit/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
-D:/Embedded/Motion-Processing-Unit/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
-D:/Embedded/Motion-Processing-Unit/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
-D:/Embedded/Motion-Processing-Unit/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
-D:/Embedded/Motion-Processing-Unit/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
-D:/Embedded/Motion-Processing-Unit/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
+/home/archsas/Embedded/Motion-Processing-Unit/build/CMakeFiles/bootloader
+/home/archsas/Embedded/Motion-Processing-Unit/build/CMakeFiles/bootloader.rule
+/home/archsas/Embedded/Motion-Processing-Unit/build/CMakeFiles/bootloader-complete.rule
+/home/archsas/Embedded/Motion-Processing-Unit/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/home/archsas/Embedded/Motion-Processing-Unit/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/archsas/Embedded/Motion-Processing-Unit/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/archsas/Embedded/Motion-Processing-Unit/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/archsas/Embedded/Motion-Processing-Unit/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/archsas/Embedded/Motion-Processing-Unit/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/archsas/Embedded/Motion-Processing-Unit/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
