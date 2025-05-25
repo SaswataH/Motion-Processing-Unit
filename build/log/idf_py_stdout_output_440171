@@ -1,2 +1,0 @@
-Command: /home/archsas/.espressif/python_env/idf6.0_py3.13_env/bin/python /home/archsas/esp/esp-idf/tools/idf_monitor.py -p PORT -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/archsas/Embedded/Motion-Processing-Unit/build/MPU.elf /home/archsas/Embedded/Motion-Processing-Unit/build/bootloader/bootloader.elf -m '/home/archsas/.espressif/python_env/idf6.0_py3.13_env/bin/python' '/home/archsas/esp/esp-idf/tools/idf.py' '-p' 'PORT'
-[Errno 2] could not open port PORT: [Errno 2] No such file or directory: 'PORT'
